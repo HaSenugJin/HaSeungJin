@@ -9,6 +9,7 @@ public class BossController : MonoBehaviour
     const int STATE_SLIDE = 3;
 
     private GameObject Target;
+    private GameObject Boss;
 
     private Animator Anim;
 
@@ -32,6 +33,7 @@ public class BossController : MonoBehaviour
     private void Awake()
     {
         Target = GameObject.Find("Player");
+        Boss = GameObject.Find("Boss");
 
         Anim = GetComponent<Animator>();
 
@@ -41,7 +43,7 @@ public class BossController : MonoBehaviour
     void Start()
     {
         CoolDown = 1.5f;
-        Speed = 0.3f;
+        Speed = 1.0f;
         HP = 30000;
 
         SkillAttack = false;
@@ -70,9 +72,11 @@ public class BossController : MonoBehaviour
         if (active)
         {
             active = false;
+            StartCoroutine(onCooldown());
             choice = onController();
-            //StartCoroutine(onCooldown());
+            
         }
+
         else
         {
             switch (choice)
@@ -109,11 +113,14 @@ public class BossController : MonoBehaviour
             {
                 SkillAttack = false;
             }
+            
 
             if (Attack)
             {
                 Attack = false;
+
             }
+
         }
 
         // ** 로직
@@ -138,30 +145,46 @@ public class BossController : MonoBehaviour
             fTime -= Time.deltaTime;
             yield return null;
         }
+
+        fTime = 0.5f;
     }
 
     private void onAttack()
     {
+  
+        Attack = true;
+
+        float Distance = Vector3.Distance(Target.transform.position, transform.position);
+
+
+        if (Distance > 0.5f)
         {
-            print("onAttack");
+            Attack = true;
+            Anim.SetTrigger("Attack");
+        }
+        else
+        {
+            Attack = false;
+        }
+
+        if (!Attack)
+        {
+            Anim.SetFloat("Speed", Movement.x);
+            transform.position -= Movement * Time.deltaTime;
         }
 
         active = true;
+        
     }
 
     private void onWalk()
     {
-        print("onWalk");
         Walk = true;
         
         // ** 목적지에 도착할 때까지......
         float Distance = Vector3.Distance(EndPoint, transform.position);
 
-
-        print(EndPoint);
-        print(Distance);
-
-        if(Distance > 0.5f)
+        if(Distance > 1.0f)
         {
             Vector3 Direction = (EndPoint - transform.position).normalized;
 
