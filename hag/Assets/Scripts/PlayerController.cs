@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class PlayerController : MonoBehaviour
 {
     // ** 움직이는 속도
@@ -51,7 +49,7 @@ public class PlayerController : MonoBehaviour
     public bool DirRight;
 
 
-    private float CoolDown;
+    public float CoolDown;
 
 
     private void Awake()
@@ -83,7 +81,7 @@ public class PlayerController : MonoBehaviour
         DirLeft = false;
         DirRight = false;
 
-        CoolDown = 1.0f;
+        CoolDown = ControllerManager.GetInstance().shotcooldown;
 
         for (int i = 0; i < 7; ++i)
             stageBack[i] = GameObject.Find(i.ToString());
@@ -205,7 +203,7 @@ public class PlayerController : MonoBehaviour
             yield return null;
         }
 
-        CoolDown = 1.0f;
+        CoolDown = ControllerManager.GetInstance().shotcooldown;
         onAttack = true;
     }
 

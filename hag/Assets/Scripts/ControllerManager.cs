@@ -18,4 +18,6 @@ public class ControllerManager
     public bool DirRight;
 
     public float BulletSpeed = 10.0f;
+
+    public float shotcooldown = 1.0f;
 }

@@ -8,7 +8,6 @@ public class Test : MonoBehaviour
     private List<GameObject> Images = new List<GameObject>();
     private List<GameObject> Buttons = new List<GameObject>();
     private List<Image> ButtonImages = new List<Image>();
-    private float cooldown;
 
     private void Start()
     {
@@ -16,66 +15,69 @@ public class Test : MonoBehaviour
 
         for (int i = 0; i < SkillsObj.transform.childCount; ++i)
         {
-            Images.Add(SkillsObj.transform.GetChild(i).gameObject);
+            GameObject obj = SkillsObj.transform.GetChild(i).gameObject;
+            Images.Add(obj);
+            Buttons.Add(obj.transform.GetChild(0).gameObject);
+            ButtonImages.Add(obj.transform.GetChild(0).GetComponent<Image>());
         }
-            
-        for (int i = 0; i < Images.Count; ++i)
-        {
-            Buttons.Add(Images[i].transform.GetChild(0).gameObject);
-        }
-
-        for (int i = 0; i < Buttons.Count; ++i)
-        {
-            ButtonImages.Add(Buttons[i].GetComponent<Image>());
-        }
-
-        cooldown = 0.0f;
     }
 
-    public void PushButton()
+    public void skill1()
     {
         ButtonImages[0].fillAmount = 0;
         Buttons[0].GetComponent<Button>().enabled = false;
+        StartCoroutine(pushbutton_c(0, 0.5f));
 
-        StartCoroutine(PushButton_Coroutine1());
-    }
-
-    public void Testcase1()
-    {
-        cooldown = 0.5f;
         ControllerManager.GetInstance().BulletSpeed += 3.0f;
     }
 
-    IEnumerator PushButton_Coroutine1()
+    public void skill2()
     {
-        float cool = cooldown;
+        ButtonImages[1].fillAmount = 0;
+        Buttons[1].GetComponent<Button>().enabled = false;
+        StartCoroutine(pushbutton_c(1, 0.5f));
 
-        while (ButtonImages[0].fillAmount != 1)
+        if (ControllerManager.GetInstance().shotcooldown <= 1.0f)
         {
-            ButtonImages[0].fillAmount += Time.deltaTime * cool;
-            yield return null;
+            ControllerManager.GetInstance().shotcooldown -= 0.1f;
+            print(ControllerManager.GetInstance().shotcooldown);
+            if(ControllerManager.GetInstance().shotcooldown <= 0.3f)
+            {
+                ControllerManager.GetInstance().shotcooldown = 0.3f;
+                print(ControllerManager.GetInstance().shotcooldown);
+            }
         }
 
-        Buttons[0].GetComponent<Button>().enabled = true;
     }
 
-    public void Testcase2()
+    public void skill3()
     {
-        cooldown = 0.5f;
+        ButtonImages[2].fillAmount = 0;
+        Buttons[2].GetComponent<Button>().enabled = false;
+        StartCoroutine(pushbutton_c(2, 0.5f));
     }
 
-    public void Testcase3()
+    public void skill4()
     {
-        cooldown = 0.5f;
+        ButtonImages[3].fillAmount = 0;
+        Buttons[3].GetComponent<Button>().enabled = false;
+        StartCoroutine(pushbutton_c(3, 0.5f));
     }
 
-    public void Testcase4()
+    public void skill5()
     {
-        cooldown = 0.5f;
+        ButtonImages[4].fillAmount = 0;
+        Buttons[4].GetComponent<Button>().enabled = false;
+        StartCoroutine(pushbutton_c(4, 0.5f));
     }
 
-    public void Testcase5()
+    IEnumerator pushbutton_c(int _inedx, float cooldown)
     {
-        cooldown = 0.5f;
+        while(ButtonImages[_inedx].fillAmount!=1)
+        {
+            ButtonImages[_inedx].fillAmount += Time.deltaTime * cooldown;
+            yield return null;
+        }
+        Buttons[_inedx].GetComponent<Button>().enabled = true;
     }
 }
