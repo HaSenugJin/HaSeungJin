@@ -361,6 +361,7 @@
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Textures/Test.cs"
 -langversion:9.0
 
 /deterministic
