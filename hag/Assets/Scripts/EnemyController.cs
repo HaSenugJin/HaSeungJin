@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     public GameObject Target;
 
     public float Speed;
-    public int HP;
+    private int HP;
     private Animator Anim;
     private Vector3 Movement;
 
@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
     private bool Attack;
     private bool Run;
     private bool SkillAttack;
+    private int a;
 
     private List<GameObject> Bullets = new List<GameObject>();
     private GameObject BulletPrefab;
@@ -30,7 +31,7 @@ public class EnemyController : MonoBehaviour
     {
         Speed = 0.2f;
         Movement = new Vector3(1.0f, 0.0f, 0.0f);
-        HP = 3;
+        HP = ControllerManager.GetInstance().EnemyHP;
 
         Attack = false;
         SkillAttack = true;

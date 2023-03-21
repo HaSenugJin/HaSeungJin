@@ -223,4 +223,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   Speed: 0
-  HP: 0

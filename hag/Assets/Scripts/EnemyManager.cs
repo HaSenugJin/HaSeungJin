@@ -61,7 +61,6 @@ public class EnemyManager : MonoBehaviour
 
             // ** 복제된 UI를 캔버스에 위치시킨다.
             Bar.transform.parent = GameObject.Find("EnemyHpCanvas").transform;
-            
 
             // ** Enemy 작동 스크립트 포함.
             //Obj.AddComponent<EnemyController>();

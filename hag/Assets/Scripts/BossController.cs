@@ -202,9 +202,7 @@ public class BossController : MonoBehaviour
 
     private void onSlide()
     {
-        {
-            print("onSlide");
-        }
+
 
         active = true;
     }

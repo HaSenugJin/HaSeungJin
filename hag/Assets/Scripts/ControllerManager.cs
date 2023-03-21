@@ -20,4 +20,5 @@ public class ControllerManager
     public float BulletSpeed = 10.0f;
     public int player_HP = 100;
     public float shotcooldown = 1.0f;
+    public int EnemyHP = 3;
 }

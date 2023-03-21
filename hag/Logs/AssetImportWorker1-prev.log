@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16194 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ko' Physical Memory: 16318 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/SGA/Desktop/H123/hag
+C:/Users/하승진/Desktop/H123/hag
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49842
-Successfully changed project path to: C:/Users/SGA/Desktop/H123/hag
-C:/Users/SGA/Desktop/H123/hag
+51838
+Successfully changed project path to: C:/Users/하승진/Desktop/H123/hag
+C:/Users/하승진/Desktop/H123/hag
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,529 +47,575 @@ C:/Users/SGA/Desktop/H123/hag
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4972] Host "[IP] 192.168.0.192 [Port] 0 [Flags] 2 [Guid] 3965770803 [EditorId] 3965770803 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [412] Host "[IP] 192.168.45.139 [Port] 0 [Flags] 2 [Guid] 1693695582 [EditorId] 1693695582 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CTVQBE8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4972] Host "[IP] 192.168.0.192 [Port] 0 [Flags] 2 [Guid] 3965770803 [EditorId] 3965770803 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [412] Host "[IP] 192.168.45.139 [Port] 0 [Flags] 2 [Guid] 1693695582 [EditorId] 1693695582 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CTVQBE8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 23.05 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 36.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.20f1 (577897200b8b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/SGA/Desktop/H123/hag/Assets
+[Subsystems] Discovering subsystems at path C:/Users/하승진/Desktop/H123/hag/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Renderer: NVIDIA GeForce GTX 1650 SUPER (ID=0x2187)
     Vendor:   NVIDIA
-    VRAM:     3949 MB
-    Driver:   31.0.15.3118
+    VRAM:     3943 MB
+    Driver:   31.0.15.3129
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004409 seconds.
+Registered in 0.008056 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 154 ms
-Refreshing native plugins compatible for Editor in 20.84 ms, found 2 plugins.
+Android Extension - Scanning For ADB Devices 251 ms
+Refreshing native plugins compatible for Editor in 37.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.556 seconds
+- Completed reload, in  0.829 seconds
 Domain Reload Profiling:
-	ReloadAssembly (557ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (830ms)
+		BeginReloadAssembly (79ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (435ms)
-			LoadAssemblies (52ms)
+		EndReloadAssembly (653ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (71ms)
+			SetupTypeCache (102ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (312ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (479ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (199ms)
+				InitializePlatformSupportModulesInManaged (315ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (21ms)
+				RefreshPlugins (38ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (59ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001315 seconds.
+Registered in 0.002707 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Domain Reload Profiling:
+	ReloadAssembly (808ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (606ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (157ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (282ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1437 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (56.6 KB). Loaded Objects now: 1913.
+Memory consumption went from 74.5 MB to 74.5 MB.
+Total: 2.835800 ms (FindLiveObjects: 0.159800 ms CreateObjectMapping: 0.039700 ms MarkObjects: 2.567600 ms  DeleteObjects: 0.067900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 341777.554319 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(4001f7645ec89ed4e88ce01030284aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(4001f7645ec89ed4e88ce01030284aea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7025bb773e1abe4a06936cdcda9ee586') in 0.011158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Anumations
+  artifactKey: Guid(d043347cd97d7504683fffe122355160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Anumations using Guid(d043347cd97d7504683fffe122355160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5386b8941f800203e71e3df3368054c') in 0.003843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.540186 seconds.
+  path: Assets/Resources/Prefabs/HP.prefab
+  artifactKey: Guid(998e35418fdddbe4d86c3c0a8e76a841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/HP.prefab using Guid(998e35418fdddbe4d86c3c0a8e76a841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a83ab1e062c6537f27937fc5ad2d9c2') in 0.040194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Prefabs/Player.prefab
+  artifactKey: Guid(eca9e82ece2b8584ea3991f556df9840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Player.prefab using Guid(eca9e82ece2b8584ea3991f556df9840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f7124a00af554ac53702d7f7b3f9a4') in 0.077331 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003062 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.742 seconds
+Domain Reload Profiling:
+	ReloadAssembly (742ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (539ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (155ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (252ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1924.
+Memory consumption went from 75.9 MB to 75.9 MB.
+Total: 6.666300 ms (FindLiveObjects: 0.292900 ms CreateObjectMapping: 0.037900 ms MarkObjects: 6.310100 ms  DeleteObjects: 0.024300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002124 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.001 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1001ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (794ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (151ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (388ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (282ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1927.
+Memory consumption went from 75.9 MB to 75.9 MB.
+Total: 2.404600 ms (FindLiveObjects: 0.141500 ms CreateObjectMapping: 0.045600 ms MarkObjects: 2.200300 ms  DeleteObjects: 0.016100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002759 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.732 seconds
+Domain Reload Profiling:
+	ReloadAssembly (733ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (526ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (148ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (248ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1930.
+Memory consumption went from 75.9 MB to 75.9 MB.
+Total: 4.500100 ms (FindLiveObjects: 0.224600 ms CreateObjectMapping: 0.071100 ms MarkObjects: 4.155900 ms  DeleteObjects: 0.047600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002738 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.725 seconds
+Domain Reload Profiling:
+	ReloadAssembly (726ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (526ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (146ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (251ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.7 KB). Loaded Objects now: 1933.
+Memory consumption went from 75.9 MB to 75.9 MB.
+Total: 2.345100 ms (FindLiveObjects: 0.131100 ms CreateObjectMapping: 0.036200 ms MarkObjects: 2.160100 ms  DeleteObjects: 0.016800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002798 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.743 seconds
+Domain Reload Profiling:
+	ReloadAssembly (744ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (540ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (261ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1936.
+Memory consumption went from 75.9 MB to 75.9 MB.
+Total: 3.324600 ms (FindLiveObjects: 0.282500 ms CreateObjectMapping: 0.039600 ms MarkObjects: 2.983100 ms  DeleteObjects: 0.018100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002093 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.715 seconds
+Domain Reload Profiling:
+	ReloadAssembly (716ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (515ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (143ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (246ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.7 KB). Loaded Objects now: 1939.
+Memory consumption went from 76.0 MB to 75.9 MB.
+Total: 4.190600 ms (FindLiveObjects: 0.162500 ms CreateObjectMapping: 0.134000 ms MarkObjects: 3.874900 ms  DeleteObjects: 0.018200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002193 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.714 seconds
+Domain Reload Profiling:
+	ReloadAssembly (714ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (517ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (164ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1942.
+Memory consumption went from 76.0 MB to 75.9 MB.
+Total: 2.337700 ms (FindLiveObjects: 0.134600 ms CreateObjectMapping: 0.035400 ms MarkObjects: 2.150700 ms  DeleteObjects: 0.016000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002768 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.569 seconds
+- Completed reload, in  0.717 seconds
 Domain Reload Profiling:
-	ReloadAssembly (570ms)
-		BeginReloadAssembly (77ms)
+	ReloadAssembly (718ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (424ms)
-			LoadAssemblies (50ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (514ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (192ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (30ms)
-				ProcessInitializeOnLoadAttributes (126ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1420 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (56.6 KB). Loaded Objects now: 1896.
-Memory consumption went from 72.1 MB to 72.0 MB.
-Total: 1.793900 ms (FindLiveObjects: 0.089400 ms CreateObjectMapping: 0.021900 ms MarkObjects: 1.632700 ms  DeleteObjects: 0.049100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 254.722918 seconds.
-  path: Assets/Scripts/BackGroundController.cs
-  artifactKey: Guid(be901fccf7e6ecd41954151b895cd2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/BackGroundController.cs using Guid(be901fccf7e6ecd41954151b895cd2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f83b42de49630843a79c3f0296004b3') in 0.021188 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.943204 seconds.
-  path: Assets/Textures/Player.png
-  artifactKey: Guid(838a057e6809c5642be329a88f18fad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Player.png using Guid(838a057e6809c5642be329a88f18fad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84766b019cd6fb3d2fb1a0d8ec961863') in 0.170728 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Textures/shadow.png
-  artifactKey: Guid(dbf39673898d61b42a70825d30bf0dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/shadow.png using Guid(dbf39673898d61b42a70825d30bf0dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d61bf9548c407c02641c2dd8a98c058') in 0.036836 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001196 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.560 seconds
-Domain Reload Profiling:
-	ReloadAssembly (560ms)
-		BeginReloadAssembly (97ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (398ms)
-			LoadAssemblies (52ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (117ms)
+			SetupTypeCache (146ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (182ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (32ms)
-				ProcessInitializeOnLoadAttributes (119ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1407 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1908.
-Memory consumption went from 74.8 MB to 74.8 MB.
-Total: 1.687800 ms (FindLiveObjects: 0.087300 ms CreateObjectMapping: 0.024000 ms MarkObjects: 1.565100 ms  DeleteObjects: 0.010800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001680 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.555 seconds
-Domain Reload Profiling:
-	ReloadAssembly (556ms)
-		BeginReloadAssembly (91ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (402ms)
-			LoadAssemblies (56ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (186ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (241ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (121ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1407 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1911.
-Memory consumption went from 74.8 MB to 74.8 MB.
-Total: 1.681600 ms (FindLiveObjects: 0.086800 ms CreateObjectMapping: 0.024200 ms MarkObjects: 1.557400 ms  DeleteObjects: 0.012700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001733 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.574 seconds
-Domain Reload Profiling:
-	ReloadAssembly (574ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (415ms)
-			LoadAssemblies (59ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (124ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (184ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (29ms)
-				ProcessInitializeOnLoadAttributes (123ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1408 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1915.
-Memory consumption went from 74.8 MB to 74.8 MB.
-Total: 1.823600 ms (FindLiveObjects: 0.097400 ms CreateObjectMapping: 0.024100 ms MarkObjects: 1.684800 ms  DeleteObjects: 0.016100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1922.498358 seconds.
-  path: Assets/_Heathen Engineering/Assets/Common/Images/Heathen Corporate/Heathen Logo With FullName.png
-  artifactKey: Guid(cf617b713155f6941bab066aab8710ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/Common/Images/Heathen Corporate/Heathen Logo With FullName.png using Guid(cf617b713155f6941bab066aab8710ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e1d20da59b7723610114d5b4bf41f9') in 0.048105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/_Heathen Engineering/Assets/Common/Images/Heathen Corporate/Heathen Logo With ShortName.png
-  artifactKey: Guid(8c3da12796561974389dc214061914cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/Common/Images/Heathen Corporate/Heathen Logo With ShortName.png using Guid(8c3da12796561974389dc214061914cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a0f68db9f41169607e097355bc535f') in 0.011098 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.780688 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 N Icon.png
-  artifactKey: Guid(0135e3d1b81285f48997c72fd061f8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 N Icon.png using Guid(0135e3d1b81285f48997c72fd061f8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6add085e3adb44dae60477a8961ffcce') in 0.029114 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NE Icon.png
-  artifactKey: Guid(279a7f16bcc31014ea2d1e135f042805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 NE Icon.png using Guid(279a7f16bcc31014ea2d1e135f042805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806b70991f5c9145061ae4c38b57c68f') in 0.012841 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 S Icon.png
-  artifactKey: Guid(4e424f4b39c7f494faefd764418e86a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 S Icon.png using Guid(4e424f4b39c7f494faefd764418e86a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b08f99a1177f152ff7890a3899929d') in 0.011600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SW Icon.png
-  artifactKey: Guid(5a459e69f1835a3478400adb5f1138f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 1 SW Icon.png using Guid(5a459e69f1835a3478400adb5f1138f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffdc583ae91e6529c67af0ab68a283e3') in 0.011895 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NW Icon.png
-  artifactKey: Guid(0908671c4d9d28e4890451f605e68243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 NW Icon.png using Guid(0908671c4d9d28e4890451f605e68243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d6de51d23aa26a366be91c6146b216') in 0.018738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SW Icon.png
-  artifactKey: Guid(b986971d1c7b79f4da924287d73529da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 SW Icon.png using Guid(b986971d1c7b79f4da924287d73529da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2e6f79361cc246df2036224d76c7eb') in 0.011436 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 E Icon.png
-  artifactKey: Guid(e0cd4bae4d3ba9448ae4405c2c6a2ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 E Icon.png using Guid(e0cd4bae4d3ba9448ae4405c2c6a2ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315264ae7f84c250b97e408c7b25e656') in 0.011907 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 E Icon.png
-  artifactKey: Guid(2750da8e4b41f294090c5d2a83c0992f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 E Icon.png using Guid(2750da8e4b41f294090c5d2a83c0992f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda02ea603d86832290220f6a736bc02') in 0.012213 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 N Icon.png
-  artifactKey: Guid(d10be4c155f6e254a998cc68201d1afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 N Icon.png using Guid(d10be4c155f6e254a998cc68201d1afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be845db940c312fcc71575a408ea42f') in 0.012920 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 E Icon.png
-  artifactKey: Guid(c3c804cbbfd6a8a4c8e930a1817c8780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 E Icon.png using Guid(c3c804cbbfd6a8a4c8e930a1817c8780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05fda53841622ea9de1f9e3a1131dae') in 0.011858 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NW Icon.png
-  artifactKey: Guid(afa13aa3dd1037b4684bb0e9a8e18d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 NW Icon.png using Guid(afa13aa3dd1037b4684bb0e9a8e18d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b521c64fdfd22c2d4e7f9554c170ac5e') in 0.011418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 W Icon.png
-  artifactKey: Guid(23add5d3efd8ecd49af5c748108f341b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 2 W Icon.png using Guid(23add5d3efd8ecd49af5c748108f341b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36574cf221b9d07af12df745af6987f') in 0.012168 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 NE Icon.png
-  artifactKey: Guid(a718555c3c9d59846ac98a0c328a6de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 NE Icon.png using Guid(a718555c3c9d59846ac98a0c328a6de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f9d229586addaf29c73c844e66fa3d3') in 0.013129 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 W Icon.png
-  artifactKey: Guid(91f687269d00d8548a0c2a0e7e4736e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 3 W Icon.png using Guid(91f687269d00d8548a0c2a0e7e4736e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835c1549918ec7a439a0805bafecebdc') in 0.010826 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.485447 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 S Icon.png
-  artifactKey: Guid(eec1e2ce573a2614cbf0ced6d609e47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 S Icon.png using Guid(eec1e2ce573a2614cbf0ced6d609e47b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5819e7899adc00169fb9c6dbabe3a89a') in 0.013301 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 E Icon.png
-  artifactKey: Guid(00ed21c7ef7e3a44b94e06d4ac3927ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 E Icon.png using Guid(00ed21c7ef7e3a44b94e06d4ac3927ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851e71ed0e262afc85cdcc4a2f6e5024') in 0.013605 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 SW Icon.png
-  artifactKey: Guid(c252b24ff5831154d8ec8eaf6aae771d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 4 SW Icon.png using Guid(c252b24ff5831154d8ec8eaf6aae771d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c304498bbcc07a9453a3ce3a1a53bf') in 0.012406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 N Icon.png
-  artifactKey: Guid(fa24baa939b84ad47bcbddd283623c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 N Icon.png using Guid(fa24baa939b84ad47bcbddd283623c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9de10c7a47019a72bec45b366f3e912') in 0.014844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 S Icon.png
-  artifactKey: Guid(d6335867c9dc6514aacb877716335be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 S Icon.png using Guid(d6335867c9dc6514aacb877716335be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47a865cb0da7882f2edde5170d233ce') in 0.012301 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 E Icon.png
-  artifactKey: Guid(a46e79e029da1d346bafdc2c86ce723e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 E Icon.png using Guid(a46e79e029da1d346bafdc2c86ce723e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ac9efa860e12346ed30fee984cfebf') in 0.012867 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 SE Icon.png
-  artifactKey: Guid(d4622e6f5db00d741b8679abf793e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 SE Icon.png using Guid(d4622e6f5db00d741b8679abf793e099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb1388a7469b18f1b2ba47cfc48a7c6') in 0.013818 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 7 E Icon.png
-  artifactKey: Guid(3f18113a534a8544d94b42a95ef80ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 7 E Icon.png using Guid(3f18113a534a8544d94b42a95ef80ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9cb2c34cb3627d88ffbc3a9f61cab3') in 0.013297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 7 S Icon.png
-  artifactKey: Guid(9647c288cc4ffdf4696259c4d0838725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 7 S Icon.png using Guid(9647c288cc4ffdf4696259c4d0838725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28240688ac796fd382907e5de905201d') in 0.014408 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 SW Icon.png
-  artifactKey: Guid(66cea11fb6a86534ab82d8712d6f782b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 5 SW Icon.png using Guid(66cea11fb6a86534ab82d8712d6f782b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45dff93cc95d34f997b85ecc0f565c31') in 0.012264 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 NW Icon.png
-  artifactKey: Guid(6525d93bdc5c93142a517c6f47ef8545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 NW Icon.png using Guid(6525d93bdc5c93142a517c6f47ef8545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32fb1213595290b264236e3689b814b') in 0.011949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 S Icon.png
-  artifactKey: Guid(6b7fcd744b6435c42a82416b73b99e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 S Icon.png using Guid(6b7fcd744b6435c42a82416b73b99e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c96ddf265d12edf56ecb93037781406') in 0.011262 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 N Icon.png
-  artifactKey: Guid(06f9cca2a215cad41966d4e9e9ff06f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 N Icon.png using Guid(06f9cca2a215cad41966d4e9e9ff06f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81bf5b1d267e56a70f435e2b17be9504') in 0.012420 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 SW Icon.png
-  artifactKey: Guid(122305796e017fb4ea7f820bb04db8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Heathen Engineering/Assets/UX/Icons/Flat Icons [Free]/Free Flat Arrow 6 SW Icon.png using Guid(122305796e017fb4ea7f820bb04db8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9aa0cb576afa775b925eebacc5b410f') in 0.013527 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001662 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
-Domain Reload Profiling:
-	ReloadAssembly (601ms)
-		BeginReloadAssembly (96ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (442ms)
-			LoadAssemblies (56ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (123ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (199ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (30ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (154ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1407 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (24.6 KB). Loaded Objects now: 1920.
-Memory consumption went from 74.9 MB to 74.9 MB.
-Total: 1.982000 ms (FindLiveObjects: 0.093900 ms CreateObjectMapping: 0.025300 ms MarkObjects: 1.842900 ms  DeleteObjects: 0.018700 ms)
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.7 KB). Loaded Objects now: 1945.
+Memory consumption went from 76.0 MB to 76.0 MB.
+Total: 3.546700 ms (FindLiveObjects: 0.145800 ms CreateObjectMapping: 0.034500 ms MarkObjects: 3.333500 ms  DeleteObjects: 0.031700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -582,564 +628,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 153.765123 seconds.
-  path: Assets/Icons/Free Flat Arrow 7 W Icon.png
-  artifactKey: Guid(e84e4078783da5147bc34c68e2842556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Arrow 7 W Icon.png using Guid(e84e4078783da5147bc34c68e2842556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b78db3248f188d740a0d4c73aba226') in 0.059969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Icons/Free Flat Arrow Curved Left 2 Icon.png
-  artifactKey: Guid(663a79f194b91454aa36d58ffb23feb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Arrow Curved Left 2 Icon.png using Guid(663a79f194b91454aa36d58ffb23feb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3799363210d6d2d98c6bd0d8635b9ee4') in 0.012764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Icons/Free Flat Award Icon.png
-  artifactKey: Guid(879eb3196bae02649b9360b472267f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Award Icon.png using Guid(879eb3196bae02649b9360b472267f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b568a3f1b24ec189a61f8570951c52') in 0.011758 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Arrow Curved Left 1 Icon.png
-  artifactKey: Guid(1e08dbd0de1d24b4fa9ac49c8b10c0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Arrow Curved Left 1 Icon.png using Guid(1e08dbd0de1d24b4fa9ac49c8b10c0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe5111a2a9f9477ce6f752b99721b10') in 0.012310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Icons/Free Flat Arrow Curved Right 2 Icon.png
-  artifactKey: Guid(2bc9d759bddc7c449b69b96a63557c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Arrow Curved Right 2 Icon.png using Guid(2bc9d759bddc7c449b69b96a63557c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6926c288801f949b1af3f1648c2fc0dc') in 0.011881 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Icons/Free Flat Bag 2 Icon.png
-  artifactKey: Guid(e40cf289098674f4a98b0bba32cf9c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Bag 2 Icon.png using Guid(e40cf289098674f4a98b0bba32cf9c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9cccb23eec63a767a718ba54270939') in 0.010485 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.208165 seconds.
-  path: Assets/Icons/Free Flat Battery Empty Icon.png
-  artifactKey: Guid(52ef2ea9601187e4c9fd3db7dd7027f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery Empty Icon.png using Guid(52ef2ea9601187e4c9fd3db7dd7027f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b018a0389897745bf0e2a08ac899c6d') in 0.011431 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Battery Smooth 1 Icon.png
-  artifactKey: Guid(897fca193fcbd464caf717391a549ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery Smooth 1 Icon.png using Guid(897fca193fcbd464caf717391a549ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8d4354a3d3cd689bd31d028f352a93') in 0.012334 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Battery Smooth Fill Icon.png
-  artifactKey: Guid(b47e5e900aad8344f8c4b8bf0a328d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery Smooth Fill Icon.png using Guid(b47e5e900aad8344f8c4b8bf0a328d3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeeeeca4269f8df32cc84bd08769dcdf') in 0.011607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Battery Tick 3 Icon.png
-  artifactKey: Guid(6c7218760d7e1b041a1cbf797895f78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery Tick 3 Icon.png using Guid(6c7218760d7e1b041a1cbf797895f78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbec8d44306cfc6b7ae09cbc46b0971e') in 0.011069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Battery Tick 1 Icon.png
-  artifactKey: Guid(2c2664dc6312ab641ac1abe6324ceca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery Tick 1 Icon.png using Guid(2c2664dc6312ab641ac1abe6324ceca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34f0aba7994885434b867bf9be0851a') in 0.012935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Battery Tick 6 Icon.png
-  artifactKey: Guid(4f21aab22562181448516fa15782bad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery Tick 6 Icon.png using Guid(4f21aab22562181448516fa15782bad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46048fbfb230dffcf8355d5354211176') in 0.011659 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Border Double 5-1pt Icon.png
-  artifactKey: Guid(13810fc7317ad384fa9d1745157efbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Double 5-1pt Icon.png using Guid(13810fc7317ad384fa9d1745157efbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de5157990f0d13f1a4f641f1f5d0011') in 0.010437 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Border Double 4-1pt Icon.png
-  artifactKey: Guid(12f86861311f44d498be1af5893d3779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Double 4-1pt Icon.png using Guid(12f86861311f44d498be1af5893d3779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff70af63ee8458cc177ae6d807fe52f8') in 0.009055 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Battery Tick 5 Icon.png
-  artifactKey: Guid(04bc28bea5a22c644b2f8b78da6de920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery Tick 5 Icon.png using Guid(04bc28bea5a22c644b2f8b78da6de920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3de0096c9ba83f82cad179902e82dc4') in 0.012283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Border Double 2-1pt Icon.png
-  artifactKey: Guid(01e5a57de5f823146b89862d2f42f93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Double 2-1pt Icon.png using Guid(01e5a57de5f823146b89862d2f42f93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed4f7484433d7ac9f48a2613978c7f7') in 0.009304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Border Double 3-1pt Icon.png
-  artifactKey: Guid(a7a29f624782e684fa9767fcc0f313f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Double 3-1pt Icon.png using Guid(a7a29f624782e684fa9767fcc0f313f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d21fb005bc1799bc558e74c27d118e8') in 0.011304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Icons/Free Flat Battery No Dash Icon.png
-  artifactKey: Guid(ba2f65608a2209040afff27eab9cece5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Battery No Dash Icon.png using Guid(ba2f65608a2209040afff27eab9cece5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7bdd2b8a80cac64a6c6ab7e65b3059') in 0.011673 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Icons/Free Flat Border Double 1-2pt Icon.png
-  artifactKey: Guid(92a6e63d8da7f3342b5c23c8da734580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Double 1-2pt Icon.png using Guid(92a6e63d8da7f3342b5c23c8da734580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b4d8e9f48b659945db1d54122b62b6') in 0.009023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Icons/Free Flat Border Double 1-3pt Icon.png
-  artifactKey: Guid(71a05f27a813b0b40ba97c72bf8c59f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Double 1-3pt Icon.png using Guid(71a05f27a813b0b40ba97c72bf8c59f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68988c1ecd7ed91c6697f9d2132147b6') in 0.009949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.267394 seconds.
-  path: Assets/Icons/Free Flat Border Single 2pt Icon.png
-  artifactKey: Guid(d3583677195ecc645bee6ca3d5c03068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Single 2pt Icon.png using Guid(d3583677195ecc645bee6ca3d5c03068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ea5d2287a1516b4cd1e2a48560f774') in 0.013687 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Icons/Free Flat Border Single 6pt Icon.png
-  artifactKey: Guid(90be2c78025cc29449fdd74841bb3484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Single 6pt Icon.png using Guid(90be2c78025cc29449fdd74841bb3484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c144774be64d13434c4abdad77a69d46') in 0.010072 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Border Single 3pt Icon.png
-  artifactKey: Guid(c60e730a62e7dc2458a6b0ba7621a1ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Single 3pt Icon.png using Guid(c60e730a62e7dc2458a6b0ba7621a1ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c75bef273f650417474044952edc145') in 0.010213 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Icons/Free Flat Border Single 4pt Icon.png
-  artifactKey: Guid(057efff16d907304c8b0990c295fe5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Single 4pt Icon.png using Guid(057efff16d907304c8b0990c295fe5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b787541f0e39002ff096098a9510c63') in 0.010178 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Border Single 7pt Icon.png
-  artifactKey: Guid(dda637b01e0d3f54cb9342e29bfd1121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Border Single 7pt Icon.png using Guid(dda637b01e0d3f54cb9342e29bfd1121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd106b7d8253c39ef4841aca41635065') in 0.009911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.215769 seconds.
-  path: Assets/Icons/Free Flat Button Blank Circle Icon.png
-  artifactKey: Guid(b8e8e3f5289b61440b0df71eeecea4ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Circle Icon.png using Guid(b8e8e3f5289b61440b0df71eeecea4ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d2a5b8ec15df5af2faacf2d972a512b') in 0.011914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Icons/Free Flat Button Blank Cross Icon.png
-  artifactKey: Guid(dfcc201f2cac247418588a8f8601299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Cross Icon.png using Guid(dfcc201f2cac247418588a8f8601299a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92de2d0dc59e07c18f72efe6ca807ba') in 0.013886 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Button Blank Left Bumper Icon.png
-  artifactKey: Guid(90bb85824309d2d4d8cdb0544041a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Left Bumper Icon.png using Guid(90bb85824309d2d4d8cdb0544041a973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd700fe71a33eb3be20e045e87c9d4b21') in 0.016425 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Button Blank Triangle Icon.png
-  artifactKey: Guid(7b25fbafa09b7ed4c853b32bed5e90f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Triangle Icon.png using Guid(7b25fbafa09b7ed4c853b32bed5e90f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c570b56bc37290ca819f3805f4823ef') in 0.012859 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Button Blank X Icon.png
-  artifactKey: Guid(f16ca8d9b20ab364ab5f5fb683243731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank X Icon.png using Guid(f16ca8d9b20ab364ab5f5fb683243731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8574b259b36b10ac0a3d14bc2d276d81') in 0.011975 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Icons/Free Flat Button Blank Right 2 Icon.png
-  artifactKey: Guid(463c2aaea7772194fbd59989df2c5135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Right 2 Icon.png using Guid(463c2aaea7772194fbd59989df2c5135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7acd6ee1d5b91d476defc77c563b47ed') in 0.014417 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Icons/Free Flat Button Blank Right Icon.png
-  artifactKey: Guid(3fa719a8f0beb164b89eacd7130bb9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Right Icon.png using Guid(3fa719a8f0beb164b89eacd7130bb9f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab10c5aa02d5da8e885e4be15ff08d3') in 0.013338 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Icons/Free Flat Button Blank Left Icon.png
-  artifactKey: Guid(ced01e781c3826c448f19d0a7e13d7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Left Icon.png using Guid(ced01e781c3826c448f19d0a7e13d7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897a040a7b6dab9f249c53aef786907c') in 0.010712 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Icons/Free Flat Button Blank Right 3 Icon.png
-  artifactKey: Guid(5b55b5f730766e840a5af1096769a00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Blank Right 3 Icon.png using Guid(5b55b5f730766e840a5af1096769a00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf637e5084abcef968e47d8af2902d3') in 0.011924 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.327784 seconds.
-  path: Assets/Icons/Free Flat Button Solid A Icon.png
-  artifactKey: Guid(19b84d13b4e51a64b8aa6f9532611ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid A Icon.png using Guid(19b84d13b4e51a64b8aa6f9532611ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdbadf31bc9f94e6a8d50b5d2430d7fb') in 0.011957 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Button Solid Left 1 Icon.png
-  artifactKey: Guid(5bc5c58f25a195e48a39ed8a641b7399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Left 1 Icon.png using Guid(5bc5c58f25a195e48a39ed8a641b7399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341e1cffaa3414865f0b21a68249c3d1') in 0.013414 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Button Solid Left Bumper Icon.png
-  artifactKey: Guid(6f2bf985368854e409f94054cafc28b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Left Bumper Icon.png using Guid(6f2bf985368854e409f94054cafc28b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0a0c7236c8445253785c7a60043367') in 0.012625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Icons/Free Flat Button Solid Right 2 Icon.png
-  artifactKey: Guid(33cd37725f2325248af5a05d1ebac12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Right 2 Icon.png using Guid(33cd37725f2325248af5a05d1ebac12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e9d8ab16f120b816317b4ae46bfb86') in 0.017679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Button Solid Left 3 Icon.png
-  artifactKey: Guid(18e5191cf4ec7cb4fb09b913d3cb123f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Left 3 Icon.png using Guid(18e5191cf4ec7cb4fb09b913d3cb123f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395faff7c7d7af8f4f6976f0e95f6ced') in 0.011582 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Button Solid Circle Icon.png
-  artifactKey: Guid(c4e2123aca855c547899d4e1cbd4312b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Circle Icon.png using Guid(c4e2123aca855c547899d4e1cbd4312b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9439ca4fd23a31fb1e2a082ee9a87057') in 0.012124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Button Solid Left Trigger Icon.png
-  artifactKey: Guid(99e3ae56e068f9d4a880289d87a4c4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Left Trigger Icon.png using Guid(99e3ae56e068f9d4a880289d87a4c4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7ff2abdd8003b9159c4b10077cf048') in 0.011744 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Icons/Free Flat Button Solid Right 1 Icon.png
-  artifactKey: Guid(c5592df54283ce742af9371403fc8a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Right 1 Icon.png using Guid(c5592df54283ce742af9371403fc8a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8515cfc20c15b8cca51e477a705dc54') in 0.011998 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Icons/Free Flat Button Solid Square Icon.png
-  artifactKey: Guid(380a24cb7426df2488b581cba5fe7a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid Square Icon.png using Guid(380a24cb7426df2488b581cba5fe7a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9418a4a10ee648c54eba2ddb07009555') in 0.012851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.294030 seconds.
-  path: Assets/Icons/Free Flat Button Solid X Icon.png
-  artifactKey: Guid(31261ef829c8d5443941fedf93581633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Button Solid X Icon.png using Guid(31261ef829c8d5443941fedf93581633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3cd2ffb41297b590e562707d3d8f68') in 0.033570 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Chat 2 Blank Icon.png
-  artifactKey: Guid(da3f1e13ca1ae7f478c9b1a43fe699a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Chat 2 Blank Icon.png using Guid(da3f1e13ca1ae7f478c9b1a43fe699a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf89253a30834c043c66c7c441cc5c28') in 0.013288 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Icons/Free Flat Chat 1 Ellipsis Icon.png
-  artifactKey: Guid(3ac79dc5d95aecf40b0a769e033134fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Chat 1 Ellipsis Icon.png using Guid(3ac79dc5d95aecf40b0a769e033134fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ead9928efe3b5f6beb720e727765bf') in 0.013070 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Chat 3 Bars Icon.png
-  artifactKey: Guid(45f301519d9427048b776fdec7ec376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Chat 3 Bars Icon.png using Guid(45f301519d9427048b776fdec7ec376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054e485a164f0f292d954165ce39ce61') in 0.012034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Cloud 1 Icon.png
-  artifactKey: Guid(42e143c86e7453d4f8f631ea354c035a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Cloud 1 Icon.png using Guid(42e143c86e7453d4f8f631ea354c035a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a3534230e28f8c52dd1ab16b5c8a86') in 0.012740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Icons/Free Flat Chat 3 Ellipsis Icon.png
-  artifactKey: Guid(98e0f9ed3a2516b4888cbb15bc0a3b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Chat 3 Ellipsis Icon.png using Guid(98e0f9ed3a2516b4888cbb15bc0a3b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fcb326ba7c3679565c276a32bf9be6') in 0.012043 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Icons/Free Flat Circle Dash Icon.png
-  artifactKey: Guid(a569a5f6afddaa34a9757d84bb77e9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Circle Dash Icon.png using Guid(a569a5f6afddaa34a9757d84bb77e9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97f3dcdb1c1e8c0ac707e97d075e54a') in 0.012551 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Connection 1 Icon.png
-  artifactKey: Guid(aa594d32530d2e84fbddfe4be182a215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Connection 1 Icon.png using Guid(aa594d32530d2e84fbddfe4be182a215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00cfc2950855db5cf1c6dbc76376579') in 0.012301 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Icons/Free Flat Chat 3 Exclaim Icon.png
-  artifactKey: Guid(078f2bfa61d319f42b811c4c87166211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Chat 3 Exclaim Icon.png using Guid(078f2bfa61d319f42b811c4c87166211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198fa62dbb2b77af30466ddb8a053ed7') in 0.014557 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Icons/Free Flat Connection 2 Icon.png
-  artifactKey: Guid(5d52258ac0c672b4696b3d924f44d149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Connection 2 Icon.png using Guid(5d52258ac0c672b4696b3d924f44d149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1769135f25eb23f50e8f2cf159e408b') in 0.011870 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Cloud Icon.png
-  artifactKey: Guid(dabc19380a76426458ac691061a1a10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Cloud Icon.png using Guid(dabc19380a76426458ac691061a1a10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f115d61b6d02125048afe59399f94ca') in 0.012757 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.067565 seconds.
-  path: Assets/Icons/Free Flat Disk 1 Icon.png
-  artifactKey: Guid(8a03f4e4f5e68804cadf129ecd68c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Disk 1 Icon.png using Guid(8a03f4e4f5e68804cadf129ecd68c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d597b3542fd84c221b9a7d14d5f0be') in 0.018892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Disk 5 Icon.png
-  artifactKey: Guid(abccf8751e994124bb259458fbbf08c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Disk 5 Icon.png using Guid(abccf8751e994124bb259458fbbf08c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c116e18bb5e7d6fac28ea042e08e22') in 0.020223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Disk 3 Icon.png
-  artifactKey: Guid(22538c55dffce6f47834b48a5970cd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Disk 3 Icon.png using Guid(22538c55dffce6f47834b48a5970cd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7819669ff2679763441ff8caa07485') in 0.012828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.789337 seconds.
-  path: Assets/Icons/Free Flat Exit Door Icon.png
-  artifactKey: Guid(b1b7bca5eb410a54a82c3d0e0173e568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Exit Door Icon.png using Guid(b1b7bca5eb410a54a82c3d0e0173e568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fb4ee93dff5a76ecfedb9ddbdc8440') in 0.014048 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Gear 3 Icon.png
-  artifactKey: Guid(4cc60f0142748304ca70d11a2ce32203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Gear 3 Icon.png using Guid(4cc60f0142748304ca70d11a2ce32203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c7ccaf7f659351a80f58e43f4786b3') in 0.015191 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Icons/Free Flat Funnel Icon.png
-  artifactKey: Guid(50578edbd10cc3a438c38d6d4493b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Funnel Icon.png using Guid(50578edbd10cc3a438c38d6d4493b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b1f8d5d3f1524f6ec873da791232985') in 0.012869 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.219533 seconds.
-  path: Assets/Icons/Free Flat Gradient Circle (Left) Icon.png
-  artifactKey: Guid(eb947f65937e82c47a6d1c17463829da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Gradient Circle (Left) Icon.png using Guid(eb947f65937e82c47a6d1c17463829da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1269ff2d7c1e4f2f8a1740017282a841') in 0.039352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Gradient Circle (Top) Icon.png
-  artifactKey: Guid(797c89b2982d2754892436de08157cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Gradient Circle (Top) Icon.png using Guid(797c89b2982d2754892436de08157cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262196fe71911547be6ecb4bb2175267') in 0.014174 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Icons/Free Flat Gradient Horizontal (Right) Icon.png
-  artifactKey: Guid(153fa9138019fcc44a09720d23956c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Gradient Horizontal (Right) Icon.png using Guid(153fa9138019fcc44a09720d23956c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6eb4ec92faf9e81b1b26150e91fa09') in 0.010804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.577585 seconds.
-  path: Assets/Icons/Free Flat Gradient Vertical (Top) Icon.png
-  artifactKey: Guid(2c95e0623afa9ee4fa6d3c2920292e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Gradient Vertical (Top) Icon.png using Guid(2c95e0623afa9ee4fa6d3c2920292e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b53c46f686ceb2de5bf3594d747685') in 0.034815 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Icons/Free Flat Hat Solid ESW Icon.png
-  artifactKey: Guid(946f65581e11fc94c83c26309552581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Solid ESW Icon.png using Guid(946f65581e11fc94c83c26309552581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7988ea6ed7c7262a8767672a0ce0f0') in 0.014147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Icons/Free Flat Hat Solid ENW Icon.png
-  artifactKey: Guid(4ad0bc8bc8bb92648a4dd9f7c65814d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Solid ENW Icon.png using Guid(4ad0bc8bc8bb92648a4dd9f7c65814d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be139293f97f4483f7813d5f0c35fc4d') in 0.014373 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.299185 seconds.
-  path: Assets/Icons/Free Flat Hat Solid NESW Icon.png
-  artifactKey: Guid(ad28ff0024282714d98193f0b11e99c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Solid NESW Icon.png using Guid(ad28ff0024282714d98193f0b11e99c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1745e4f871d5e7a04fd8068d766c5d') in 0.030855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Hat Solid NW Icon.png
-  artifactKey: Guid(4123cf49a9e94bf4e853f60226e46a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Solid NW Icon.png using Guid(4123cf49a9e94bf4e853f60226e46a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ac5bf2993edae6fd8d0a75671ad59a') in 0.012935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Hat Solid SE Icon.png
-  artifactKey: Guid(ecd240902c8ca3141bfbc2512673e3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Solid SE Icon.png using Guid(ecd240902c8ca3141bfbc2512673e3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f8d7d9334e96a67fa956db5fe911a3') in 0.012418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.225156 seconds.
-  path: Assets/Icons/Free Flat Hat Split E Icon.png
-  artifactKey: Guid(30990340d6554dc439a6db77a98c2e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Split E Icon.png using Guid(30990340d6554dc439a6db77a98c2e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4915dba603ffc24537085f356e57b4') in 0.020695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Icons/Free Flat Hat Split N Icon.png
-  artifactKey: Guid(f49975360a7f21c488118ad3121430d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Split N Icon.png using Guid(f49975360a7f21c488118ad3121430d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657c1a40b3b1b30c767461605cffea29') in 0.026416 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Icons/Free Flat Hat Split EW Icon.png
-  artifactKey: Guid(d1cf728dc5f8f1146bbdb20b1d77e043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Split EW Icon.png using Guid(d1cf728dc5f8f1146bbdb20b1d77e043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf2ba307fe4b3374cab5dcc127381a9') in 0.013228 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.159841 seconds.
-  path: Assets/Icons/Free Flat Hat Split NW Icon.png
-  artifactKey: Guid(0882a00e59f52a543800a1a52bbba249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Split NW Icon.png using Guid(0882a00e59f52a543800a1a52bbba249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe04394c9c5956c10bee8b755505ea2') in 0.035752 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Hat Split SW Icon.png
-  artifactKey: Guid(2d2efb71714622f48a1b75dcb0fbe9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hat Split SW Icon.png using Guid(2d2efb71714622f48a1b75dcb0fbe9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f14d1f8b810f7c1a2a5ccd92e7795f9') in 0.040345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Icons/Free Flat Heart Empty Icon.png
-  artifactKey: Guid(2b128a5e4d59a054e9193a83052697e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Heart Empty Icon.png using Guid(2b128a5e4d59a054e9193a83052697e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e47be1876297f26ada530dc6a26cce3') in 0.015383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.234624 seconds.
-  path: Assets/Icons/Free Flat Hyphen Icon.png
-  artifactKey: Guid(540b141eb0ec4494d9b42bd9ea32cd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Hyphen Icon.png using Guid(540b141eb0ec4494d9b42bd9ea32cd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436ec8b1ce7a1c638e4c584160815581') in 0.016834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Icons/Free Flat Lock Closed Icon.png
-  artifactKey: Guid(640b86b0058321e4fab8001b90531991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Lock Closed Icon.png using Guid(640b86b0058321e4fab8001b90531991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b1517062eb955e10e91e5478f4c9fa') in 0.015204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Magnify Minus Icon.png
-  artifactKey: Guid(729052d35d545f2459aa6859cdcac322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Magnify Minus Icon.png using Guid(729052d35d545f2459aa6859cdcac322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e0844c5f2671b1a608280ebc5e7948') in 0.013237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.450451 seconds.
-  path: Assets/Icons/Free Flat Media Left Icon.png
-  artifactKey: Guid(6a736cfd9250d5c4a9ff3e0e4ad0cb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Media Left Icon.png using Guid(6a736cfd9250d5c4a9ff3e0e4ad0cb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deadd9e574df049f066f6686c245beb4') in 0.030995 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Icons/Free Flat Media Stop Icon.png
-  artifactKey: Guid(7d0e2c51f326f034bb2ac5081607bc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Media Stop Icon.png using Guid(7d0e2c51f326f034bb2ac5081607bc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '717381e66d92898632682c147274edb3') in 0.013718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Icons/Free Flat Media Right Icon.png
-  artifactKey: Guid(6523bf926843dbb4e979cedb7370c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Media Right Icon.png using Guid(6523bf926843dbb4e979cedb7370c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd63a8049cb0332558f4e8f8fe4264966') in 0.015527 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.306537 seconds.
-  path: Assets/Icons/Free Flat Menu 4 Icon.png
-  artifactKey: Guid(1ab4b47fe981ba54bb256ded73fe7301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Menu 4 Icon.png using Guid(1ab4b47fe981ba54bb256ded73fe7301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5250bd07567d08a32e6449b4c5b52bbe') in 0.027636 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Menu 7 Icon.png
-  artifactKey: Guid(9b466b84db50ef34ea05f95f37e7d439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Menu 7 Icon.png using Guid(9b466b84db50ef34ea05f95f37e7d439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78bf61c4461e79abb37741e26c93210') in 0.017971 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Icons/Free Flat Menu 9 Icon.png
-  artifactKey: Guid(c53a8d00e4c3bb34998868ca02b1cd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Menu 9 Icon.png using Guid(c53a8d00e4c3bb34998868ca02b1cd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f527e423fb5442bffd70797dc53bd9') in 0.013844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.429747 seconds.
-  path: Assets/Icons/Free Flat Mic Icon.png
-  artifactKey: Guid(f2f9800a1d8f6624db87fcc401513e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Mic Icon.png using Guid(f2f9800a1d8f6624db87fcc401513e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed091f7437db00fb0fe0fe80a121c1a') in 0.031408 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Icons/Free Flat Mic No Crossless Icon.png
-  artifactKey: Guid(17a49a70c2f55784b88d0fb593781488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Mic No Crossless Icon.png using Guid(17a49a70c2f55784b88d0fb593781488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f807a353f46bb54efbdf4fefebe29638') in 0.018120 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Icons/Free Flat Mic Off Dash Icon.png
-  artifactKey: Guid(c6a91fdbbdde167459002f1c9ca6b127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Mic Off Dash Icon.png using Guid(c6a91fdbbdde167459002f1c9ca6b127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014988e79e1959bcd295520c6a850790') in 0.016833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.133817 seconds.
-  path: Assets/Icons/Free Flat Move Out Icon.png
-  artifactKey: Guid(27e3504e0ecab4f478e174d2f4f4be75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Move Out Icon.png using Guid(27e3504e0ecab4f478e174d2f4f4be75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cd566aad102c4ae7a25bc14dd68199') in 0.044111 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Icons/Free Flat Pen Icon.png
-  artifactKey: Guid(705f0467455c3f0479897da07daeb0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Pen Icon.png using Guid(705f0467455c3f0479897da07daeb0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8379e578d277ef7456b6909e8b300007') in 0.058492 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Icons/Free Flat Music No Dash Icon.png
-  artifactKey: Guid(68398e08cb2ba1d419e4d40d1cbf9249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Music No Dash Icon.png using Guid(68398e08cb2ba1d419e4d40d1cbf9249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ecbf30f8bff90bca73cb6a00a4b41dc') in 0.011094 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.236286 seconds.
-  path: Assets/Icons/Free Flat People 2 Icon.png
-  artifactKey: Guid(c2b97174e9f46424eae9d83a5ca15158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat People 2 Icon.png using Guid(c2b97174e9f46424eae9d83a5ca15158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcd94b16ca1fa9d0657593123ba0b68') in 0.028348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Icons/Free Flat Signal Up 1 Icon.png
-  artifactKey: Guid(01eead9d665b57646bca62095606183a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Signal Up 1 Icon.png using Guid(01eead9d665b57646bca62095606183a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c724fee17b2966b7d74dc8ea4dd0fb') in 0.012916 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Icons/Free Flat Signal Up 2 Icon.png
-  artifactKey: Guid(0eb838ecab1c6554cb140a94de6ce907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/Free Flat Signal Up 2 Icon.png using Guid(0eb838ecab1c6554cb140a94de6ce907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d2c6e0da2ffa3655e52451fdccc976') in 0.012929 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001953 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.720 seconds
+Domain Reload Profiling:
+	ReloadAssembly (721ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (520ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (151ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (241ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (155ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1411 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1948.
+Memory consumption went from 76.0 MB to 76.0 MB.
+Total: 2.884400 ms (FindLiveObjects: 0.140800 ms CreateObjectMapping: 0.035200 ms MarkObjects: 2.693500 ms  DeleteObjects: 0.014100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
