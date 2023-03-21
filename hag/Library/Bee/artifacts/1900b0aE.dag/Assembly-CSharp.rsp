@@ -349,6 +349,7 @@
 "Assets/99. Resource/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightFlicker.cs"
 "Assets/99. Resource/Yoge/ParallaxBackground 1/Scripts/CameraMovement.cs"
 "Assets/99. Resource/Yoge/ParallaxBackground 1/Scripts/Parallax.cs"
+"Assets/Anumations/New Folder/SidebarController.cs"
 "Assets/FX/Scripts/CFX_AutoDestructShuriken.cs"
 "Assets/FX/Scripts/CFX_LightIntensityFade.cs"
 "Assets/Scripts/BackGroundController.cs"
@@ -361,7 +362,8 @@
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Textures/Test.cs"
+"Assets/Scripts/Test.cs"
+"Assets/Scripts/UI/SiderbarController.cs"
 -langversion:9.0
 
 /deterministic
