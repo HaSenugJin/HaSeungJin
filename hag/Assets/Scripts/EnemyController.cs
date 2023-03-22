@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public GameObject Target;
+   
+
 
     public float Speed;
     private int HP;
@@ -23,8 +25,12 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         Target = GameObject.Find("Player");
+
         BulletPrefab = Resources.Load("Prefabs/Enemy/EnemyBullet") as GameObject;
+        
         Anim = GetComponent<Animator>();
+
+       
     }
 
     void Start()
@@ -77,7 +83,7 @@ public class EnemyController : MonoBehaviour
         {
             --HP;
 
-            if(HP <= 0 )
+            if(HP <= 0)
             {
                 Anim.SetTrigger("Die");
                 GetComponent<CapsuleCollider2D>().enabled = false;
@@ -111,9 +117,10 @@ public class EnemyController : MonoBehaviour
         CoolDown = 1.0f;
     }
 
-
+    
     private void DestroyEnemy()
     {
+
         Destroy(gameObject, 0.016f);
     }
 }

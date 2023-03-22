@@ -355,6 +355,7 @@
 "Assets/Scripts/BackGroundController.cs"
 "Assets/Scripts/BossController.cs"
 "Assets/Scripts/BulletController.cs"
+"Assets/Scripts/ButtonController.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/ControllerManager.cs"
 "Assets/Scripts/EnemyBullet.cs"
@@ -366,6 +367,7 @@
 "Assets/Scripts/UI/EnemyHpBar.cs"
 "Assets/Scripts/UI/PlayerHpbar.cs"
 "Assets/Scripts/UI/SiderbarController.cs"
+"Assets/Scripts/UI/UiController.cs"
 -langversion:9.0
 
 /deterministic
