@@ -120,7 +120,6 @@ public class EnemyController : MonoBehaviour
     
     private void DestroyEnemy()
     {
-
         Destroy(gameObject, 0.016f);
     }
 }
