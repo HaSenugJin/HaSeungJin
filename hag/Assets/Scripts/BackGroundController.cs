@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BackGroundController : MonoBehaviour
 {
-
     public GameObject[] backgrounds = new GameObject[4];
 
     // ** BackGround 가 모여있는 계층구조의 최상위 객체(부모)
@@ -57,15 +56,15 @@ public class BackGroundController : MonoBehaviour
 
     void Start()
     {
-        offset[0] = new Vector3(1.0f, 0.0f, 0.0f);
-        offset[1] = new Vector3(0.5f, 0.0f, 0.0f);
-        offset[2] = new Vector3(0.25f, 0.0f, 0.0f);
-        offset[3] = new Vector3(0.0f, 0.0f, 0.0f);
+        offset[0] = new Vector3(0.0f, -7.25f, 0.0f);
+        offset[1] = new Vector3(0.0f, 0.0f, 0.0f);
+        offset[2] = new Vector3(0.0f, 0.0f, 0.0f);
+        offset[3] = new Vector3(0.0f, 1.5f, 0.0f);
 
-        backgrounds[0].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+        backgrounds[0].transform.position = new Vector3(0.0f, -7.25f, 0.0f);
         backgrounds[1].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
         backgrounds[2].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
-        backgrounds[3].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+        backgrounds[3].transform.position = new Vector3(0.0f, 1.5f, 0.0f);
 
         // ** 구성요소에 포함된 이미지를 받아온다.
         for (int i = 0; i < backgrounds.Length; ++i)
@@ -74,63 +73,56 @@ public class BackGroundController : MonoBehaviour
             sprites[i] = spriteRenderers[i].sprite;
 
             backgrounds[i].transform.position = offset[i];
+            // ** 시작지점을 설정.
+            endPoint = sprites[i].bounds.size.x * 0.5f + transform.position.x;
+            // ** 종료지점을 설정.
+            exitPoint = -(sprites[i].bounds.size.x * 0.5f) + player.transform.position.x;
         }
-
-        // ** 시작지점을 설정.
-        endPoint = sprite.bounds.size.x * 0.5f + transform.position.x;
-
-        /*
-        Test = new GameObject("Gozmo");
-        Test.AddComponent<MyGizmo>();
-        Test.transform.position = new Vector3(endPoint, 0.0f, 0.0f);
-         */
-
-        // ** 종료지점을 설정.
-        exitPoint = -(sprite.bounds.size.x * 0.5f) + player.transform.position.x;
     }
 
     void Update()
     {
-        // ** 이동정보 셋팅
-        movemane = new Vector3(
-            Input.GetAxisRaw("Horizontal") * Time.deltaTime * Speed + offset.x,
+        for (int i = 0; i < backgrounds.Length; ++i)
+        {
+            // ** 이동정보 셋팅
+            movemane = new Vector3(
+            Input.GetAxisRaw("Horizontal") * Time.deltaTime * Speed + offset[i].x,
             0.0f, 0.0f);
+        }
 
         // ** singleton
-        if(ControllerManager.GetInstance().DirRight)
+        if (ControllerManager.GetInstance().DirRight)
         {
             transform.position -= movemane;
             endPoint -= movemane.x;
         }
 
         // ** 동일한 이미지 복사
-        if (player.transform.position.x + (sprite.bounds.size.x * 0.5f) + 1 > endPoint)
+        for(int i =0;i < backgrounds.Length;++i)
         {
-            // ** 이미지를 복제한다.
-            GameObject Obj =  Instantiate(this.gameObject);
-
-            // ** 본제된 이미지의 부모를 설정한다.
-            Obj.transform.parent = parent.transform;
-
-            // ** 복제된 이미지의 이름을 설정한다.
-            Obj.transform.name = transform.name;
-
-            if(GameObject.Find("1"))
+            if (player.transform.position.x + (sprites[i].bounds.size.x * 0.5f) + 1 > endPoint)
             {
-                print("111");
+                // ** 이미지를 복제한다.
+                GameObject Obj = Instantiate(this.gameObject);
+
+                // ** 본제된 이미지의 부모를 설정한다.
+                Obj.transform.parent = parent.transform;
+
+                // ** 복제된 이미지의 이름을 설정한다.
+                Obj.transform.name = transform.name;
+
+                // ** 복제된 이미지의 위치를 설정한다.
+                Obj.transform.position = new Vector3(
+                    endPoint + 25.0f,
+                    0.0f, 0.0f);
+
+                // ** 시작지점을 변경한다.
+                endPoint += endPoint + 25.0f;
             }
 
-            // ** 복제된 이미지의 위치를 설정한다.
-            Obj.transform.position = new Vector3(
-                endPoint + 25.0f,
-                0.0f, 0.0f);
-
-            // ** 시작지점을 변경한다.
-            endPoint += endPoint + 25.0f;
+            // ** 종료지점에 도달하면 삭제한다.
+            if (transform.position.x + (sprites[i].bounds.size.x * 0.5f) - 2 < exitPoint)
+                Destroy(this.gameObject);
         }
-
-        // ** 종료지점에 도달하면 삭제한다.
-        if(transform.position.x + (sprite.bounds.size.x * 0.5f) - 2 < exitPoint)
-            Destroy(this.gameObject);
     }
 }
