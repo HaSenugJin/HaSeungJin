@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class BackGroundController : MonoBehaviour
 {
+
+    public GameObject[] backgrounds = new GameObject[4];
+
     // ** BackGround 가 모여있는 계층구조의 최상위 객체(부모)
     private Transform parent;
 
     // ** Sprite를 포함하고 있는 구성요소
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer[] spriteRenderers = new SpriteRenderer[4];
 
     // ** 이미지
-    private Sprite sprite;
+    private Sprite[] sprites = new Sprite[4];
 
     // ** 생성지점
     private float endPoint;
@@ -30,7 +33,7 @@ public class BackGroundController : MonoBehaviour
     private Vector3 movemane;
 
     // ** 이미지가 중앙 위치에 정상적으로 노출될 수 있도록 하기 위한 완충역할.
-    private Vector3 offset = new Vector3(0.0f, 7.5f, 0.0f);
+    private Vector3[] offset = new Vector3[4];
 
     private void Awake()
     {
@@ -40,17 +43,38 @@ public class BackGroundController : MonoBehaviour
         // ** 부모객체를 받아온다.
         parent = GameObject.Find("BackGround").transform;
 
-        // ** 현재 이미지를 담고있는 구성요소를 받아온다.
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         // ** 플레이어 이미지를 담고있는 구성요소를 받아온다.
         playerController = player.GetComponent<PlayerController>();
+
+        for (int i = 0; i < backgrounds.Length; ++i)
+        {
+            backgrounds[i] = GameObject.Find("BackGround").transform.GetChild(i).gameObject;
+
+            // ** 현재 이미지를 담고있는 구성요소를 받아온다.
+            spriteRenderers[i] = backgrounds[i].GetComponent<SpriteRenderer>();
+        }
     }
 
     void Start()
     {
+        offset[0] = new Vector3(1.0f, 0.0f, 0.0f);
+        offset[1] = new Vector3(0.5f, 0.0f, 0.0f);
+        offset[2] = new Vector3(0.25f, 0.0f, 0.0f);
+        offset[3] = new Vector3(0.0f, 0.0f, 0.0f);
+
+        backgrounds[0].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+        backgrounds[1].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+        backgrounds[2].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+        backgrounds[3].transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+
         // ** 구성요소에 포함된 이미지를 받아온다.
-        sprite = spriteRenderer.sprite;
+        for (int i = 0; i < backgrounds.Length; ++i)
+        {
+            backgrounds[i] = GameObject.Find("BackGround").transform.GetChild(i).gameObject;
+            sprites[i] = spriteRenderers[i].sprite;
+
+            backgrounds[i].transform.position = offset[i];
+        }
 
         // ** 시작지점을 설정.
         endPoint = sprite.bounds.size.x * 0.5f + transform.position.x;
@@ -90,6 +114,11 @@ public class BackGroundController : MonoBehaviour
 
             // ** 복제된 이미지의 이름을 설정한다.
             Obj.transform.name = transform.name;
+
+            if(GameObject.Find("1"))
+            {
+                print("111");
+            }
 
             // ** 복제된 이미지의 위치를 설정한다.
             Obj.transform.position = new Vector3(
