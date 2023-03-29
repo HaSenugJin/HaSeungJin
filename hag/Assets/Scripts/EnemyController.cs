@@ -5,8 +5,6 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public GameObject Target;
-   
-
 
     public float Speed;
     private int HP;
@@ -29,19 +27,17 @@ public class EnemyController : MonoBehaviour
         BulletPrefab = Resources.Load("Prefabs/Enemy/EnemyBullet") as GameObject;
         
         Anim = GetComponent<Animator>();
-
-       
     }
 
     void Start()
     {
-        Speed = 0.2f;
+        Speed = 2.0f;
         Movement = new Vector3(1.0f, 0.0f, 0.0f);
         HP = ControllerManager.GetInstance().EnemyHP;
-
+        CoolDown = 5.0f;
         Attack = false;
         SkillAttack = true;
-        CoolDown = 5.0f;
+        
     }
 
     void Update()
@@ -51,19 +47,10 @@ public class EnemyController : MonoBehaviour
 
         float Distance = Vector3.Distance(Target.transform.position, transform.position);
 
-        if (Distance < 0.5f)
+        if (Distance < 8.0f)
         {
             Attack = true;
-            Anim.SetTrigger("Attack");
-        }
-        else if (Distance < 8.0f && !Attack)
-        {
-            if (SkillAttack)
-            {
-                Attack = true;
-                SkillAttack = false;
-                StartCoroutine(Skill());
-            }
+            StartCoroutine(Skill());
         }
         else
         {
@@ -91,35 +78,35 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    IEnumerator Skill()
+    private IEnumerator Skill()
     {
-        Anim.SetTrigger("Skill");
-
-        GameObject Obj = Instantiate(BulletPrefab);
-
-        Obj.transform.position = Target.transform.position;
-
-        // ** 총알의 BullerController 스크립트를 받아온다.
-        EnemyBullet Controller = Obj.AddComponent<EnemyBullet>();
-
-        // ** 총알의 SpriteRenderer를 받아온다.
-        SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
-
-        // ** 모든 설정이 종료되었다면 저장소에 보관한다.
-        Bullets.Add(Obj);
-
         while (CoolDown > 0.0f)
         {
-            CoolDown -= Time.deltaTime;
-            yield return null;
-        }
+            GameObject Obj = Instantiate(BulletPrefab);
 
-        CoolDown = 1.0f;
+            Obj.transform.position = Target.transform.position;
+
+            // ** 총알의 BullerController 스크립트를 받아온다.
+            EnemyBullet Controller = Obj.AddComponent<EnemyBullet>();
+
+            // ** 총알의 SpriteRenderer를 받아온다.
+            SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
+
+            // ** 모든 설정이 종료되었다면 저장소에 보관한다.
+            Bullets.Add(Obj);
+            Anim.SetTrigger("Skill");
+            CoolDown -= Time.deltaTime;
+            yield return new WaitForSeconds(CoolDown);
+        }
     }
 
-    
     private void DestroyEnemy()
     {
         Destroy(gameObject, 0.016f);
+    }
+
+    private void attack()
+    {
+
     }
 }
