@@ -157,8 +157,6 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(OnAttack());
         }
 
-
-
         // ** 좌측 쉬프트키를 입력한다면.....
         if (Input.GetKey(KeyCode.LeftShift))
             // ** 피격
