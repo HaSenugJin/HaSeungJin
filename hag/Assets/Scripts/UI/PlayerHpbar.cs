@@ -20,16 +20,6 @@ public class PlayerHpbar : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButton(0))
-        {
-            ControllerManager.GetInstance().player_HP -= 1;
-        }
-
-        if (Input.GetMouseButton(1))
-        {
-            ControllerManager.GetInstance().player_HP += 1;
-        }
-
         HPbar.value = ControllerManager.GetInstance().player_HP;
 
         if(ControllerManager.GetInstance().player_HP <= 0)

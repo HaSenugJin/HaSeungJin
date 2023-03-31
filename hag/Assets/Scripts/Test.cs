@@ -8,10 +8,12 @@ public class Test : MonoBehaviour
     private List<GameObject> Images = new List<GameObject>();
     private List<GameObject> Buttons = new List<GameObject>();
     private List<Image> ButtonImages = new List<Image>();
+ 
 
     private void Start()
     {
         GameObject SkillsObj = GameObject.Find("Skills");
+ 
 
         for (int i = 0; i < SkillsObj.transform.childCount; ++i)
         {
@@ -28,7 +30,11 @@ public class Test : MonoBehaviour
         Buttons[0].GetComponent<Button>().enabled = false;
         StartCoroutine(pushbutton_c(0, 0.5f));
 
-        ControllerManager.GetInstance().BulletSpeed += 3.0f;
+        if(ControllerManager.GetInstance().moeny>=1000)
+        {
+            ControllerManager.GetInstance().BulletSpeed += 3.0f;
+            ControllerManager.GetInstance().moeny -= 1000;
+        }
     }
 
     public void skill2()
@@ -37,17 +43,11 @@ public class Test : MonoBehaviour
         Buttons[1].GetComponent<Button>().enabled = false;
         StartCoroutine(pushbutton_c(1, 0.5f));
 
-        if (ControllerManager.GetInstance().shotcooldown <= 1.0f)
+        if (ControllerManager.GetInstance().moeny >= 1000)
         {
-            ControllerManager.GetInstance().shotcooldown -= 0.1f;
-            print(ControllerManager.GetInstance().shotcooldown);
-            if(ControllerManager.GetInstance().shotcooldown <= 0.2f)
-            {
-                ControllerManager.GetInstance().shotcooldown = 0.2f;
-                print(ControllerManager.GetInstance().shotcooldown);
-            }
+            ControllerManager.GetInstance().PlayerBulletDmg += 1.0f;
+            ControllerManager.GetInstance().moeny -= 1000;
         }
-
     }
 
     public void skill3()
@@ -55,6 +55,11 @@ public class Test : MonoBehaviour
         ButtonImages[2].fillAmount = 0;
         Buttons[2].GetComponent<Button>().enabled = false;
         StartCoroutine(pushbutton_c(2, 0.5f));
+        if (ControllerManager.GetInstance().moeny >= 1000)
+        {
+            ControllerManager.GetInstance().player_HP += 1.0f;
+            ControllerManager.GetInstance().moeny -= 1000;
+        }
     }
 
     public void skill4()
@@ -62,6 +67,11 @@ public class Test : MonoBehaviour
         ButtonImages[3].fillAmount = 0;
         Buttons[3].GetComponent<Button>().enabled = false;
         StartCoroutine(pushbutton_c(3, 0.5f));
+        if (ControllerManager.GetInstance().moeny >= 1000)
+        {
+            ControllerManager.GetInstance().PlayerSpeed += 1.0f;
+            ControllerManager.GetInstance().moeny -= 1000;
+        }
     }
 
     public void skill5()
@@ -69,6 +79,15 @@ public class Test : MonoBehaviour
         ButtonImages[4].fillAmount = 0;
         Buttons[4].GetComponent<Button>().enabled = false;
         StartCoroutine(pushbutton_c(4, 0.5f));
+
+        if (ControllerManager.GetInstance().moeny >= 1000)
+        {
+            print(ControllerManager.GetInstance().moeny);
+            if (ControllerManager.GetInstance().boom == false)
+            {
+                ControllerManager.GetInstance().boom = true;
+            }
+        }
     }
 
     IEnumerator pushbutton_c(int _inedx, float cooldown)

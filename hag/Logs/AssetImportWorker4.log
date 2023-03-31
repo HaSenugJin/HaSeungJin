@@ -1,0 +1,325 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16194 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/SGA/Desktop/H123/hag
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+51513
+Successfully changed project path to: C:/Users/SGA/Desktop/H123/hag
+C:/Users/SGA/Desktop/H123/hag
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [22180] Host "[IP] 192.168.0.192 [Port] 0 [Flags] 2 [Guid] 2121528165 [EditorId] 2121528165 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [22180] Host "[IP] 192.168.0.192 [Port] 0 [Flags] 2 [Guid] 2121528165 [EditorId] 2121528165 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HQKDT44) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 31.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.20f1 (577897200b8b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/SGA/Desktop/H123/hag/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3118
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005069 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 171 ms
+Refreshing native plugins compatible for Editor in 24.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.744 seconds
+Domain Reload Profiling:
+	ReloadAssembly (744ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (559ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (94ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (393ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (231ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (25ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (65ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002343 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.592 seconds
+Domain Reload Profiling:
+	ReloadAssembly (592ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (435ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (125ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (204ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (33ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1512 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (56.3 KB). Loaded Objects now: 1992.
+Memory consumption went from 77.3 MB to 77.2 MB.
+Total: 1.937000 ms (FindLiveObjects: 0.095000 ms CreateObjectMapping: 0.029000 ms MarkObjects: 1.748300 ms  DeleteObjects: 0.063600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 14385.440339 seconds.
+  path: Assets/Textures/Skill/33-Flash.png
+  artifactKey: Guid(50f3591c2877549fcb580587faa60f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/33-Flash.png using Guid(50f3591c2877549fcb580587faa60f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc28710287abec3f94e0264ca933d1d2') in 0.152106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Textures/Skill/39-Hesitation.png
+  artifactKey: Guid(636d0e7efb0b743ac8d69aecea8bc7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/39-Hesitation.png using Guid(636d0e7efb0b743ac8d69aecea8bc7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541a4fc6891f2729233c4a7eb2bd1edc') in 0.021450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.026827 seconds.
+  path: Assets/Textures/Skill/113-Rage.png
+  artifactKey: Guid(3519c3c0b82d14d4d9769f1dc86904db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/113-Rage.png using Guid(3519c3c0b82d14d4d9769f1dc86904db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921617ea7d6e4cfb3a8643fb134ff395') in 0.029156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/Skill/128-Spear-Stab.png
+  artifactKey: Guid(ca3860a6754f24499ba86e277a813d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/128-Spear-Stab.png using Guid(ca3860a6754f24499ba86e277a813d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0d4b8951bccaa9b8e45923cb79a3ee') in 0.052223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Textures/Skill/126-Steal.png
+  artifactKey: Guid(2728f77a1347547bca66ec2ed7475fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/126-Steal.png using Guid(2728f77a1347547bca66ec2ed7475fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675e12b280b63595088b99c8e130a5f3') in 0.022281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Textures/Skill/116-Fire-Pillar.png
+  artifactKey: Guid(0c3d8ebc26e1b4293a424fbae11829f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/116-Fire-Pillar.png using Guid(0c3d8ebc26e1b4293a424fbae11829f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f9e0642b39d0650f9ca5ab40287c60') in 0.025040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Textures/Skill/117-Empower.png
+  artifactKey: Guid(e1975cbea357b484f99f95249a50d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/117-Empower.png using Guid(e1975cbea357b484f99f95249a50d4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d4eb87ce6bc9314a1a204480e9ea5f') in 0.029652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Textures/Skill/120-Float.png
+  artifactKey: Guid(aded89c3cc39746f0b06cc98bf2ae990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/120-Float.png using Guid(aded89c3cc39746f0b06cc98bf2ae990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8d5bf04ba577adf1d5f893f92f7d8b') in 0.023860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.641137 seconds.
+  path: Assets/Textures/Skill/129-Throw-Spear.png
+  artifactKey: Guid(e86c94d6498544255ba708eb4b975121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/129-Throw-Spear.png using Guid(e86c94d6498544255ba708eb4b975121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363b1132b70b6b420b746eb64fb3c432') in 0.021959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Textures/Skill/143-Necromancy.png
+  artifactKey: Guid(ae810be1fcb5d4c1c9cc702c5cd72a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/143-Necromancy.png using Guid(ae810be1fcb5d4c1c9cc702c5cd72a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685f9ad967fec33c5477ea9047025d09') in 0.022506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Textures/Skill/136-Heart-Rip.png
+  artifactKey: Guid(5e5ca445963574a5eb55eb7465de0257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/136-Heart-Rip.png using Guid(5e5ca445963574a5eb55eb7465de0257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec2abe2126a8d8e87502d0601c792b7') in 0.019124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Textures/Skill/137-Song1.png
+  artifactKey: Guid(b64b95058510047fab49fe1c457f8c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/137-Song1.png using Guid(b64b95058510047fab49fe1c457f8c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ed210ae229839a3e8e4f8ac1b63fa0') in 0.029288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/Skill/135-Bulletproof.png
+  artifactKey: Guid(766686793cc92444db6e8e6f7c37a238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/135-Bulletproof.png using Guid(766686793cc92444db6e8e6f7c37a238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b340c310c9fcb366d385fc3417ddf9') in 0.018057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Textures/Skill/133-Gamble.png
+  artifactKey: Guid(281a946ab0b1b496896813c70c9c31f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/133-Gamble.png using Guid(281a946ab0b1b496896813c70c9c31f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db82cbf1856f2ca49f275c36b622253c') in 0.019273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.199621 seconds.
+  path: Assets/Textures/Skill/145-Electromancy.png
+  artifactKey: Guid(e52a8ab58cb3f4de68874cf58e6a2d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/145-Electromancy.png using Guid(e52a8ab58cb3f4de68874cf58e6a2d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d96083f2cf4eaeba27a67ad2c5c4549') in 0.027790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Textures/Skill/150-Phycomancy.png
+  artifactKey: Guid(fa3ab781962ed482b80a780752f5f33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/150-Phycomancy.png using Guid(fa3ab781962ed482b80a780752f5f33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6cf7f54a4accfb3684ab72f2caf5dd') in 0.038424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.586276 seconds.
+  path: Assets/Textures/Skill/17-Crystal-Pillar.png
+  artifactKey: Guid(5c34271640c724778b7f0afa7d039e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/17-Crystal-Pillar.png using Guid(5c34271640c724778b7f0afa7d039e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2faff39db0f1eaa444b1a75598921c95') in 0.075753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/Skill/29-Endure.png
+  artifactKey: Guid(e7182f8ca6d0e4557a282faee33572ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/29-Endure.png using Guid(e7182f8ca6d0e4557a282faee33572ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7461828412b646f08c485b571d034cf4') in 0.024901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Textures/Skill/14-Corrupt-Mind.png
+  artifactKey: Guid(8ba259bb0a28241f686bb8959ab8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/14-Corrupt-Mind.png using Guid(8ba259bb0a28241f686bb8959ab8d3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c199f82e00225f2bd55f7b17292481e') in 0.021706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Textures/Skill/30-Relax.png
+  artifactKey: Guid(4d91779f49b864c149e194a5756ca87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/30-Relax.png using Guid(4d91779f49b864c149e194a5756ca87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2312bc1f8506af6300e42ae1dbacc99f') in 0.020671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/Skill/23-Demi.png
+  artifactKey: Guid(55502c66063344fb2b31606342a3cba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/23-Demi.png using Guid(55502c66063344fb2b31606342a3cba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c28acdedeaca959a088da04dcb0431') in 0.018028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Textures/Skill/32-Fissure.png
+  artifactKey: Guid(12c482f80b554437a9b0e3c179b2618f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/32-Fissure.png using Guid(12c482f80b554437a9b0e3c179b2618f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9a62a336bf6c53fc8b600e4f6fd1c2') in 0.020302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/Skill/31-Fire.png
+  artifactKey: Guid(76199b45dab4b48e1ae362f84e1becbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/31-Fire.png using Guid(76199b45dab4b48e1ae362f84e1becbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c1f63667a2afeb2fe5ba8ea61e21c9') in 0.019688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Textures/Skill/10-Charge.png
+  artifactKey: Guid(d6bf9fd619ff24ce58267141ada9bbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/10-Charge.png using Guid(d6bf9fd619ff24ce58267141ada9bbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3453ce49e226409223d54374f53dbc8f') in 0.019414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/Skill/4-Apply-Poison.png
+  artifactKey: Guid(c8de558d1809a431b853143ea7327b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/4-Apply-Poison.png using Guid(c8de558d1809a431b853143ea7327b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1ae287ad3d307e6a667bccbd11bbe8') in 0.020116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Textures/Skill/12-Chastity.png
+  artifactKey: Guid(a2cffcaec0f9b4ff18ef979fbd9c8b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Skill/12-Chastity.png using Guid(a2cffcaec0f9b4ff18ef979fbd9c8b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a720ed6758cda197a7f903bfa78fbb6a') in 0.020804 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

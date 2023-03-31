@@ -8,9 +8,9 @@ public class EnemyBullet : MonoBehaviour
 
     // ** 총알이 충돌한 횟수
     private int hp;
-
+    private int playerhp;
     private GameObject Target;
-
+    private float BulletDmg;
     // ** 총알이 날아가야할 방향
     public Vector3 Direction { get; set; }
 
@@ -22,26 +22,29 @@ public class EnemyBullet : MonoBehaviour
     private void Start()
     {
         // ** 속도 초기값
-        Speed = ControllerManager.GetInstance().BulletSpeed;
+        Speed = 15.0f;
 
         // ** 충돌 횟수를 지정한다.
         hp = 1;
+        Direction = (Target.transform.position - transform.position);
+        Direction.Normalize();
     }
 
     private void Update()
     {
+        Direction = (Target.transform.position - transform.position).normalized;
         // ** 방향으로 속도만큼 위치를 변경
-        Target.transform.position -= transform.position * Speed * Time.deltaTime;
+        transform.position += Direction * Speed * Time.deltaTime;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // ** 충돌횟수 차감.
         --hp;
-
+        BulletDmg = ControllerManager.GetInstance().EnemyBulletDmg;
         // ** collision = 충돌한 대상. 
         if (collision.transform.tag == "Player")
         {
-
+            ControllerManager.GetInstance().player_HP -= BulletDmg;
         }
 
         // ** 총알의 충돌 횟수가 0이 되면 총알 삭제.

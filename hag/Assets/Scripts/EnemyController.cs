@@ -8,11 +8,9 @@ public class EnemyController : MonoBehaviour
     public float CoolDown;
     public float Speed;
     private GameObject BulletPrefab;
-    private int HP;
+    public float HP;
     private Animator Anim;
     private Vector3 Movement;
-
-    private float Direction;
     private bool Attack;
 
     private List<GameObject> Bullets = new List<GameObject>();
@@ -45,12 +43,16 @@ public class EnemyController : MonoBehaviour
             Attack = true;
             Anim.SetTrigger("Skill");
         }
-        else if (Attack)
+        else if (Attack && HP > 0)
         {
-
             Anim.SetFloat("Speed", Movement.x);
             transform.position -= Movement * Time.deltaTime;
-        
+        }
+
+        if (HP <= 0)
+        {
+            Anim.SetTrigger("Die");
+            GetComponent<CapsuleCollider2D>().enabled = false;
         }
     }
 
@@ -58,13 +60,7 @@ public class EnemyController : MonoBehaviour
     {
         if(collision.tag == "Bullet")
         {
-            --HP;
-
-            if(HP <= 0)
-            {
-                Anim.SetTrigger("Die");
-                GetComponent<CapsuleCollider2D>().enabled = false;
-            }
+            HP -= ControllerManager.GetInstance().PlayerBulletDmg;
         }
     }
 
@@ -73,9 +69,14 @@ public class EnemyController : MonoBehaviour
         Destroy(gameObject, 0.016f);
     }
 
+    private void Moeny()
+    {
+        ControllerManager.GetInstance().moeny += 100;
+    }
+
     private void attack()
     {
-        Attack = false;
+        Attack = true;
     }
 
     private void BU()
@@ -85,14 +86,7 @@ public class EnemyController : MonoBehaviour
         // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
         Obj.transform.position = transform.position;
 
-        // ** 총알의 BullerController 스크립트를 받아온다.
-        BulletController Controller = Obj.AddComponent<BulletController>();
-
-        // ** 총알의 SpriteRenderer를 받아온다.
-        SpriteRenderer buleltRenderer = Obj.GetComponent<SpriteRenderer>();
-
         // ** 모든 설정이 종료되었다면 저장소에 보관한다.
         Bullets.Add(Obj);
-
     }
 }

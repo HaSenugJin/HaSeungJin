@@ -89,7 +89,6 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-
     private void Update()
     {
         if (ControllerManager.GetInstance().DirRight)
