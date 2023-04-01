@@ -15,10 +15,6 @@ public class PlayerController : MonoBehaviour
     // ** 플레이어의 SpriteRenderer 구성요소를 받아오기위해...
     private SpriteRenderer playerRenderer;
 
-    // ** [상태체크]
-
-    private bool onHit; // 피격상태
-
     // ** 복제할 총알 원본
     private GameObject BulletPrefab;
 
@@ -50,6 +46,7 @@ public class PlayerController : MonoBehaviour
 
     public float CoolDown;
     private bool playerdie;
+    private bool Vectory;
 
     private void Awake()
     {
@@ -63,6 +60,8 @@ public class PlayerController : MonoBehaviour
         BulletPrefab = Resources.Load("Prefabs/Bullet") as GameObject;
         //fxPrefab = Resources.Load("Prefabs/FX/Smoke") as GameObject;
         fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
+
+        plyaerhp = ControllerManager.GetInstance().player_HP;
     }
 
     // ** 유니티 기본 제공 함수
@@ -70,8 +69,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerdie = false;
+        Vectory = false;
         // ** 초기값 셋팅      
-        onHit = false;
+
         Direction = 1.0f;
         Attack = false;
         DirLeft = false;
@@ -84,13 +84,20 @@ public class PlayerController : MonoBehaviour
     // ** 프레임마다 반복적으로 실행되는 함수.
     void Update()
     {
-        plyaerhp = ControllerManager.GetInstance().player_HP;
-        if(plyaerhp <= 0)
+        if (ControllerManager.GetInstance().EnemyKill >= 10)
+        {
+            Vectory = true;
+            animator.SetTrigger("Vectory");
+        }
+        if (Vectory) return;
+
+        if (plyaerhp <= 0)
         {
             playerdie = true;
             animator.SetTrigger("Die");
         }
         if (playerdie) return;
+
         // **  Input.GetAxis =     -1 ~ 1 사이의 값을 반환함. 
         float Hor = Input.GetAxisRaw("Horizontal"); // -1 or 0 or 1 셋중에 하나를 반환.
         float Ver = Input.GetAxisRaw("Vertical"); // -1 or 0 or 1 셋중에 하나를 반환.
@@ -109,9 +116,13 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            if(!Attack)
-            {
+            // ** 플레이어의 좌표가 17.0f 보다 작을때 플레이어를 움직인다.
+            if (transform.position.x < 17.0f && !Attack)
                 transform.position += Movement;
+            else
+            {
+                ControllerManager.GetInstance().DirRight = true;
+                ControllerManager.GetInstance().DirLeft = false;
             }
         }
 
@@ -120,13 +131,10 @@ public class PlayerController : MonoBehaviour
             ControllerManager.GetInstance().DirRight = false;
             ControllerManager.GetInstance().DirLeft = true;
 
-            // ** 플레이어의 좌표가 -15.0 보다 클때 플레이어만 움직인다.
-            if (transform.position.x > -15.0f)
-                if(!Attack)
-                {
-                    // ** 실제 플레이어를 움직인다.
-                    transform.position += Movement;
-                }
+            // ** 플레이어의 좌표가 -15.0 보다 클때 플레이어를 움직인다.
+            if (transform.position.x > -15.0f && !Attack)
+                // ** 실제 플레이어를 움직인다.
+                transform.position += Movement;
         }
 
         if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || 
@@ -192,10 +200,11 @@ public class PlayerController : MonoBehaviour
         Attack = false;
     }
 
-    private void SetHit()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // ** 함수가 실행되면 피격모션이 비활성화 된다.
-        // ** 함수는 애니매이션 클립의 이벤트 프레임으로 삽입됨.
-        onHit = false;
+        if (collision.transform.tag == "Back")
+        {
+            plyaerhp = 0f;
+        }
     }
 }

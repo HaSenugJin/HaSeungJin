@@ -8,6 +8,8 @@ TagManager:
   - FxTemporaire
   - Bullet
   - EnB
+  - Enemy
+  - Back
   layers:
   - Default
   - TransparentFX

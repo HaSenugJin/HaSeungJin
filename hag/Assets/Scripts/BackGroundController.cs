@@ -87,17 +87,17 @@ public class BackGroundController : MonoBehaviour
 
     void Update()
     {
-        
+
         if (backgrounds.Length <= i)
             i = 0;
-        
+
         // ** 이동정보 셋팅
         movemane = new Vector3(
         Input.GetAxisRaw("Horizontal") * Time.deltaTime * Speed + offset[i].x,
         0.0f, 0.0f);
-      
+
         // ** singleton
-        
+
         if (ControllerManager.GetInstance().DirRight)
         {
             transform.position -= movemane;

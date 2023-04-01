@@ -51,6 +51,7 @@ public class EnemyController : MonoBehaviour
 
         if (HP <= 0)
         {
+            
             Anim.SetTrigger("Die");
             GetComponent<CapsuleCollider2D>().enabled = false;
         }
@@ -66,11 +67,13 @@ public class EnemyController : MonoBehaviour
 
     private void DestroyEnemy()
     {
+        
         Destroy(gameObject, 0.016f);
     }
 
     private void Moeny()
     {
+        ControllerManager.GetInstance().EnemyKill += 1;
         ControllerManager.GetInstance().moeny += 100;
     }
 

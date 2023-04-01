@@ -45,10 +45,16 @@ public class EnemyBullet : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             ControllerManager.GetInstance().player_HP -= BulletDmg;
+           
         }
+
+        if(collision.transform.tag == "Wall")
+            Destroy(this.gameObject, 0.016f);
 
         // ** 총알의 충돌 횟수가 0이 되면 총알 삭제.
         if (hp == 0)
+        {
             Destroy(this.gameObject, 0.016f);
+        }
     }
 }
