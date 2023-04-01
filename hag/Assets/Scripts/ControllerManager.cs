@@ -26,4 +26,8 @@ public class ControllerManager
     public float PlayerSpeed = 5.0f;
     public int moeny = 10000;
     public int EnemyKill=0;
+
+    //W
+    public float WHP = 20.0f;
+    public float WBulletDmg = 3.0f;
 }

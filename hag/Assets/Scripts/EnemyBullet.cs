@@ -8,7 +8,6 @@ public class EnemyBullet : MonoBehaviour
 
     // ** 총알이 충돌한 횟수
     private int hp;
-    private int playerhp;
     private GameObject Target;
     private float BulletDmg;
     // ** 총알이 날아가야할 방향
@@ -45,7 +44,6 @@ public class EnemyBullet : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             ControllerManager.GetInstance().player_HP -= BulletDmg;
-           
         }
 
         if(collision.transform.tag == "Wall")

@@ -12,8 +12,6 @@ public class boom : MonoBehaviour
 
             List<GameObject> list = new List<GameObject>();
 
-
-
             for (int i = 0; i < ParentObj.transform.childCount; ++i)
             {
                 EnemyController controller = ParentObj.transform.GetChild(i).GetComponent<EnemyController>();
@@ -21,16 +19,12 @@ public class boom : MonoBehaviour
                 //list.Add(ParentObj.transform.GetChild(i).gameObject);
             }
 
-
             /*
             foreach(GameObject element in list)
             {
                 controller.HP = 0;
             }
              */
-            
-
-
 
             ControllerManager.GetInstance().boom = false;
         }

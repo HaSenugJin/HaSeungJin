@@ -378,6 +378,8 @@
 "Assets/Scripts/UI/PlayerHpbar.cs"
 "Assets/Scripts/UI/SiderbarController.cs"
 "Assets/Scripts/UI/UiController.cs"
+"Assets/Scripts/W2.cs"
+"Assets/Scripts/W2B.cs"
 -langversion:9.0
 
 /deterministic

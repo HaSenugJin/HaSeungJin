@@ -84,9 +84,21 @@ public class PlayerController : MonoBehaviour
     // ** 프레임마다 반복적으로 실행되는 함수.
     void Update()
     {
-        if (ControllerManager.GetInstance().EnemyKill >= 10)
+        if (ControllerManager.GetInstance().EnemyKill >= 3)
         {
             Vectory = true;
+
+            GameObject ParentObj = GameObject.Find("EnemyList");
+
+            List<GameObject> list = new List<GameObject>();
+
+            for (int i = 0; i < ParentObj.transform.childCount; ++i)
+            {
+                EnemyController controller = ParentObj.transform.GetChild(i).GetComponent<EnemyController>();
+                controller.HP = 0;
+                //list.Add(ParentObj.transform.GetChild(i).gameObject);
+            }
+
             animator.SetTrigger("Vectory");
         }
         if (Vectory) return;
@@ -204,7 +216,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.transform.tag == "Back")
         {
-            plyaerhp = 0f;
+            plyaerhp = 0.0f;
         }
     }
 }

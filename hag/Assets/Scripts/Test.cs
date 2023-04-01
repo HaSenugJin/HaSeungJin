@@ -82,7 +82,7 @@ public class Test : MonoBehaviour
 
         if (ControllerManager.GetInstance().moeny >= 1000)
         {
-            print(ControllerManager.GetInstance().moeny);
+            ControllerManager.GetInstance().moeny -= 1000;
             if (ControllerManager.GetInstance().boom == false)
             {
                 ControllerManager.GetInstance().boom = true;

@@ -11,6 +11,7 @@ public class EnemyHpBar : MonoBehaviour
     // ** 세부위치 조정
     private Vector3 offset;
 
+    /*
     private void Start()
     {
         // ** 위치 셋팅
@@ -24,7 +25,8 @@ public class EnemyHpBar : MonoBehaviour
     {
         // ** WorldToScreenPoint = 월드좌표를 카메라 좌표로 변환.
         // ** 월드상에 있는 타겟의 좌표를 카메라 좌표로 변환하여, UI에 셋팅한다.
-        transform.position = Camera.main.WorldToScreenPoint(Target.transform.position + offset);
+        //transform.position = Camera.main.WorldToScreenPoint(Target.transform.position + offset);
         Destroy(gameObject);
     }
+    */
 }

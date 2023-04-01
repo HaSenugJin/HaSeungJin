@@ -75,7 +75,6 @@ public class BossController : MonoBehaviour
             StartCoroutine(onCooldown());
             choice = onController();
         }
-
         else
         {
             switch (choice)

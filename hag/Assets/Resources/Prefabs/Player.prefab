@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -171009821
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1dd7833c21c8d32449cc18f3e8c7f759, type: 3}
+  m_Sprite: {fileID: -30232495, guid: 761a94d453f9efb43bd8d3acf9bcc0cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   - {fileID: 0}
   DirLeft: 0
   DirRight: 0
+  Attack: 0
   CoolDown: 0
 --- !u!70 &4002494814178086148
 CapsuleCollider2D:

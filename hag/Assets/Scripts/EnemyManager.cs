@@ -7,6 +7,9 @@ public class EnemyManager : MonoBehaviour
     private EnemyManager() { }
     private static EnemyManager instance = null;
 
+    private bool W2;
+    private GameObject Wspown;
+
     public static EnemyManager GetInstance
     {
         get
@@ -22,6 +25,7 @@ public class EnemyManager : MonoBehaviour
 
     // ** Enemy로 사용할 원형 객체
     private GameObject Prefab;
+
     private GameObject HPPrefab;
 
     // ** 플레이어의 누적 이동 거리
@@ -30,6 +34,7 @@ public class EnemyManager : MonoBehaviour
 
     private void Awake()
     {
+        W2 = true;
         if (instance == null)
         {
             instance = this;
@@ -44,14 +49,17 @@ public class EnemyManager : MonoBehaviour
 
             // ** Enemy로 사용할 원형 객체
             Prefab = Resources.Load("Prefabs/Enemy/Enemy") as GameObject;
+
             HPPrefab = Resources.Load("Prefabs/HP") as GameObject;
+
+            Wspown = Resources.Load("W2") as GameObject;
         }
     }
 
     // ** 시작하자마자 Start함수를 코루틴 함수로 실행
     private IEnumerator Start()
     {
-        while(true)
+        while(ControllerManager.GetInstance().EnemyKill <= 3)
         {
             // ** Enemy 원형객체를 복제한다.
             GameObject Obj = Instantiate(Prefab);
@@ -91,6 +99,21 @@ public class EnemyManager : MonoBehaviour
         if (ControllerManager.GetInstance().DirRight)
         {
             Distance += Input.GetAxisRaw("Horizontal") * Time.deltaTime;
+        }
+
+        if(W2==true)
+        {
+            if (ControllerManager.GetInstance().EnemyKill == 10)
+            {
+                // ** Enemy 원형객체를 복제한다.
+                GameObject Obj = Instantiate(Wspown);
+
+                // ** 클론의 위치를 초기화.
+                Obj.transform.position = new Vector3(
+                    18.0f, Random.Range(-8.2f, -5.2f), 0.0f);
+
+                W2 = false;
+            }
         }
     }
 }
