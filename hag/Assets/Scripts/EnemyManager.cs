@@ -8,7 +8,11 @@ public class EnemyManager : MonoBehaviour
     private static EnemyManager instance = null;
 
     private bool W2;
+    private bool U9;
     private GameObject Wspown;
+    private GameObject Uspown;
+
+    private int Enemy;
 
     public static EnemyManager GetInstance
     {
@@ -35,6 +39,7 @@ public class EnemyManager : MonoBehaviour
     private void Awake()
     {
         W2 = true;
+        U9 = true;
         if (instance == null)
         {
             instance = this;
@@ -53,14 +58,16 @@ public class EnemyManager : MonoBehaviour
             HPPrefab = Resources.Load("Prefabs/HP") as GameObject;
 
             Wspown = Resources.Load("W2") as GameObject;
+            Uspown = Resources.Load("U9") as GameObject;
         }
     }
 
     // ** 시작하자마자 Start함수를 코루틴 함수로 실행
     private IEnumerator Start()
     {
-        while(ControllerManager.GetInstance().EnemyKill <= 3)
+        while(Enemy <= 18)
         {
+            ++Enemy;
             // ** Enemy 원형객체를 복제한다.
             GameObject Obj = Instantiate(Prefab);
 
@@ -101,9 +108,9 @@ public class EnemyManager : MonoBehaviour
             Distance += Input.GetAxisRaw("Horizontal") * Time.deltaTime;
         }
 
-        if(W2==true)
+        if(W2 == true)
         {
-            if (ControllerManager.GetInstance().EnemyKill == 10)
+            if (ControllerManager.GetInstance().EnemyKill >= 10)
             {
                 // ** Enemy 원형객체를 복제한다.
                 GameObject Obj = Instantiate(Wspown);
@@ -113,6 +120,21 @@ public class EnemyManager : MonoBehaviour
                     18.0f, Random.Range(-8.2f, -5.2f), 0.0f);
 
                 W2 = false;
+            }
+        }
+
+        if (U9 == true)
+        {
+            if (ControllerManager.GetInstance().EnemyKill >= 20)
+            {
+                // ** Enemy 원형객체를 복제한다.
+                GameObject Obj = Instantiate(Uspown);
+
+                // ** 클론의 위치를 초기화.
+                Obj.transform.position = new Vector3(
+                    18.0f, Random.Range(-8.2f, -5.2f), 0.0f);
+
+                U9 = false;
             }
         }
     }

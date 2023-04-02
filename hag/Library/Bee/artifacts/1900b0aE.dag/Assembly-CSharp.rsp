@@ -380,6 +380,8 @@
 "Assets/Scripts/UI/UiController.cs"
 "Assets/Scripts/W2.cs"
 "Assets/Scripts/W2B.cs"
+"Assets/U9/U9.cs"
+"Assets/U9/U9B.cs"
 -langversion:9.0
 
 /deterministic

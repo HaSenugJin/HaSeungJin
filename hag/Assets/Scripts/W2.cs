@@ -19,7 +19,7 @@ public class W2 : MonoBehaviour
     private void Awake()
     {
         Target = GameObject.Find("Player");
-        BulletPrefab = Resources.Load("Prefabs/Enemy/EnemyBullet") as GameObject;
+        BulletPrefab = Resources.Load("Prefabs/Enemy/W2B") as GameObject;
 
         Anim = GetComponent<Animator>();
     }
@@ -43,7 +43,7 @@ public class W2 : MonoBehaviour
             Attack = true;
             Anim.SetTrigger("Attack");
         }
-        else if (Attack)
+        else if (Attack && HP > 0)
         {
             Anim.SetFloat("Speed", Movement.x);
             transform.position -= Movement * Time.deltaTime;

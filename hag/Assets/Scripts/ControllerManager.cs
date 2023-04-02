@@ -30,4 +30,8 @@ public class ControllerManager
     //W
     public float WHP = 20.0f;
     public float WBulletDmg = 3.0f;
+
+    //u9
+    public float UHP = 30.0f;
+    public float UBulletDmg = 6.0f;
 }

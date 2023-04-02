@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
     // ** 프레임마다 반복적으로 실행되는 함수.
     void Update()
     {
-        if (ControllerManager.GetInstance().EnemyKill >= 3)
+        if (ControllerManager.GetInstance().EnemyKill >= 21)
         {
             Vectory = true;
 
