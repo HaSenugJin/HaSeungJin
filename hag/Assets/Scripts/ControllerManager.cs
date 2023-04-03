@@ -17,6 +17,7 @@ public class ControllerManager
     public bool DirLeft;
     public bool DirRight;
     public bool boom=false;
+    public bool Stun = false;
 
     public float BulletSpeed = 10.0f;
     public float PlayerBulletDmg = 1.0f;
@@ -29,9 +30,10 @@ public class ControllerManager
 
     //W
     public float WHP = 20.0f;
-    public float WBulletDmg = 3.0f;
+    public float WBulletDmg = 2.0f;
 
     //u9
     public float UHP = 30.0f;
-    public float UBulletDmg = 6.0f;
+    public float UBulletDmg = 4.0f;
+    public float BDmg = 6.0f;
 }

@@ -10,12 +10,15 @@ public class EnemyBullet : MonoBehaviour
     private int hp;
     private GameObject Target;
     private float BulletDmg;
+    private GameObject fxPrefab;
     // ** 총알이 날아가야할 방향
     public Vector3 Direction { get; set; }
 
     private void Awake()
     {
         Target = GameObject.Find("Player");
+        fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
+        BulletDmg = ControllerManager.GetInstance().EnemyBulletDmg;
     }
 
     private void Start()
@@ -39,11 +42,17 @@ public class EnemyBullet : MonoBehaviour
     {
         // ** 충돌횟수 차감.
         --hp;
-        BulletDmg = ControllerManager.GetInstance().EnemyBulletDmg;
+
+        GameObject Obj = Instantiate(fxPrefab);
+
+        // ** 이펙트효과의 위치를 지정
+        Obj.transform.position = transform.position;
+
         // ** collision = 충돌한 대상. 
         if (collision.transform.tag == "Player")
         {
             ControllerManager.GetInstance().player_HP -= BulletDmg;
+            Destroy(this.gameObject, 0.016f);
         }
 
         if(collision.transform.tag == "Wall")

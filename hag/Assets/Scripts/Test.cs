@@ -8,12 +8,10 @@ public class Test : MonoBehaviour
     private List<GameObject> Images = new List<GameObject>();
     private List<GameObject> Buttons = new List<GameObject>();
     private List<Image> ButtonImages = new List<Image>();
- 
 
     private void Start()
     {
         GameObject SkillsObj = GameObject.Find("Skills");
- 
 
         for (int i = 0; i < SkillsObj.transform.childCount; ++i)
         {
@@ -24,16 +22,40 @@ public class Test : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            skill1();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            skill2();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            skill3();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            skill4();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            skill5();
+        }
+    }
+
     public void skill1()
     {
         ButtonImages[0].fillAmount = 0;
         Buttons[0].GetComponent<Button>().enabled = false;
-        StartCoroutine(pushbutton_c(0, 0.5f));
+        //StartCoroutine(pushbutton_c(0, 0.5f));
 
-        if(ControllerManager.GetInstance().moeny>=1000)
+        if (ControllerManager.GetInstance().moeny >= 500)
         {
             ControllerManager.GetInstance().BulletSpeed += 3.0f;
-            ControllerManager.GetInstance().moeny -= 1000;
+            ControllerManager.GetInstance().moeny -= 500;
         }
     }
 
@@ -41,12 +63,12 @@ public class Test : MonoBehaviour
     {
         ButtonImages[1].fillAmount = 0;
         Buttons[1].GetComponent<Button>().enabled = false;
-        StartCoroutine(pushbutton_c(1, 0.5f));
+        //StartCoroutine(pushbutton_c(1, 0.5f));
 
-        if (ControllerManager.GetInstance().moeny >= 1000)
+        if (ControllerManager.GetInstance().moeny >= 500)
         {
             ControllerManager.GetInstance().PlayerBulletDmg += 1.0f;
-            ControllerManager.GetInstance().moeny -= 1000;
+            ControllerManager.GetInstance().moeny -= 500;
         }
     }
 
@@ -54,11 +76,11 @@ public class Test : MonoBehaviour
     {
         ButtonImages[2].fillAmount = 0;
         Buttons[2].GetComponent<Button>().enabled = false;
-        StartCoroutine(pushbutton_c(2, 0.5f));
-        if (ControllerManager.GetInstance().moeny >= 1000)
+        //StartCoroutine(pushbutton_c(2, 0.5f));
+        if (ControllerManager.GetInstance().moeny >= 500)
         {
             ControllerManager.GetInstance().player_HP += 1.0f;
-            ControllerManager.GetInstance().moeny -= 1000;
+            ControllerManager.GetInstance().moeny -= 500;
         }
     }
 
@@ -66,11 +88,11 @@ public class Test : MonoBehaviour
     {
         ButtonImages[3].fillAmount = 0;
         Buttons[3].GetComponent<Button>().enabled = false;
-        StartCoroutine(pushbutton_c(3, 0.5f));
-        if (ControllerManager.GetInstance().moeny >= 1000)
+        //StartCoroutine(pushbutton_c(3, 0.5f));
+        if (ControllerManager.GetInstance().moeny >= 500)
         {
             ControllerManager.GetInstance().PlayerSpeed += 1.0f;
-            ControllerManager.GetInstance().moeny -= 1000;
+            ControllerManager.GetInstance().moeny -= 500;
         }
     }
 
@@ -78,7 +100,7 @@ public class Test : MonoBehaviour
     {
         ButtonImages[4].fillAmount = 0;
         Buttons[4].GetComponent<Button>().enabled = false;
-        StartCoroutine(pushbutton_c(4, 0.5f));
+        //StartCoroutine(pushbutton_c(4, 0.5f));
 
         if (ControllerManager.GetInstance().moeny >= 1000)
         {
@@ -90,6 +112,7 @@ public class Test : MonoBehaviour
         }
     }
 
+    /*
     IEnumerator pushbutton_c(int _inedx, float cooldown)
     {
         while(ButtonImages[_inedx].fillAmount!=1)
@@ -99,4 +122,5 @@ public class Test : MonoBehaviour
         }
         Buttons[_inedx].GetComponent<Button>().enabled = true;
     }
+    */
 }

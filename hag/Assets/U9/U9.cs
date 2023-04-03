@@ -8,18 +8,21 @@ public class U9 : MonoBehaviour
     public float CoolDown;
     public float Speed;
     private GameObject BulletPrefab;
+    private GameObject onSkill;
     public float HP;
     private Animator Anim;
     private Vector3 Movement;
     private bool Attack;
+    private bool Skill;
 
     private List<GameObject> Bullets = new List<GameObject>();
+    private List<GameObject> Skills = new List<GameObject>();
 
     private void Awake()
     {
         Target = GameObject.Find("Player");
         BulletPrefab = Resources.Load("Prefabs/Enemy/U9B") as GameObject;
-
+        onSkill = Resources.Load("B")as GameObject;
         Anim = GetComponent<Animator>();
     }
 
@@ -29,6 +32,7 @@ public class U9 : MonoBehaviour
         Movement = new Vector3(1.0f, 0.0f, 0.0f);
         HP = ControllerManager.GetInstance().UHP;
         Attack = true;
+        Skill = true;
     }
 
     void Update()
@@ -37,7 +41,7 @@ public class U9 : MonoBehaviour
         Movement = ControllerManager.GetInstance().DirRight ?
         new Vector3(Speed + 1.0f, 0.0f, 0.0f) : new Vector3(Speed, 0.0f, 0.0f);
 
-        if (Distance < 8.0f)
+        if (Distance < 12.0f)
         {
             Attack = true;
             Anim.SetTrigger("Attack");
@@ -50,9 +54,22 @@ public class U9 : MonoBehaviour
 
         if (HP <= 0)
         {
-
             Anim.SetTrigger("Die");
             GetComponent<CapsuleCollider2D>().enabled = false;
+        }
+
+        if(HP <= 10.0f && Skill == true)
+        {
+            Anim.SetTrigger("Skill");
+
+            GameObject Obj = Instantiate(onSkill);
+
+            // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
+            Obj.transform.position = transform.position;
+
+            // ** 모든 설정이 종료되었다면 저장소에 보관한다.
+            Skills.Add(Obj);
+            Skill = false;
         }
     }
 

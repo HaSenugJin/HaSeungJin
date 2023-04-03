@@ -355,6 +355,7 @@
 "Assets/Anumations/sid/SidebarController.cs"
 "Assets/FX/Scripts/CFX_AutoDestructShuriken.cs"
 "Assets/FX/Scripts/CFX_LightIntensityFade.cs"
+"Assets/Resources/B.cs"
 "Assets/Scripts/BackGroundController.cs"
 "Assets/Scripts/boom.cs"
 "Assets/Scripts/BossController.cs"
@@ -378,10 +379,10 @@
 "Assets/Scripts/UI/PlayerHpbar.cs"
 "Assets/Scripts/UI/SiderbarController.cs"
 "Assets/Scripts/UI/UiController.cs"
-"Assets/Scripts/W2.cs"
-"Assets/Scripts/W2B.cs"
 "Assets/U9/U9.cs"
 "Assets/U9/U9B.cs"
+"Assets/W2/W2.cs"
+"Assets/W2/W2B.cs"
 -langversion:9.0
 
 /deterministic

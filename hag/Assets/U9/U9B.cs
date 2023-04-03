@@ -10,12 +10,15 @@ public class U9B : MonoBehaviour
     private int hp;
     private GameObject Target;
     private float BulletDmg;
+    public GameObject fxPrefab;
     // ** 총알이 날아가야할 방향
     public Vector3 Direction { get; set; }
 
     private void Awake()
     {
+        BulletDmg = ControllerManager.GetInstance().UBulletDmg;
         Target = GameObject.Find("Player");
+        fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
     }
 
     private void Start()
@@ -24,7 +27,7 @@ public class U9B : MonoBehaviour
         Speed = 15.0f;
 
         // ** 충돌 횟수를 지정한다.
-        hp = 1;
+        hp = 3;
         Direction = (Target.transform.position - transform.position);
         Direction.Normalize();
     }
@@ -39,11 +42,15 @@ public class U9B : MonoBehaviour
     {
         // ** 충돌횟수 차감.
         --hp;
-        BulletDmg = ControllerManager.GetInstance().UBulletDmg;
+        GameObject Obj = Instantiate(fxPrefab);
+
+        // ** 이펙트효과의 위치를 지정
+        Obj.transform.position = transform.position;
         // ** collision = 충돌한 대상. 
         if (collision.transform.tag == "Player")
         {
             ControllerManager.GetInstance().player_HP -= BulletDmg;
+            Destroy(this.gameObject, 0.016f);
         }
 
         if (collision.transform.tag == "Wall")

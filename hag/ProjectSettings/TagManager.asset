@@ -10,6 +10,7 @@ TagManager:
   - EnB
   - Enemy
   - Back
+  - B
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Enemy
   - Wall
   - Back
-  - 
+  - B
   - 
   - 
   - 

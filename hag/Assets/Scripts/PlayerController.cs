@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
    
-    private float plyaerhp;
+
     // ** 움직임을 저장하는 벡터
     private Vector3 Movement;
 
@@ -60,8 +61,6 @@ public class PlayerController : MonoBehaviour
         BulletPrefab = Resources.Load("Prefabs/Bullet") as GameObject;
         //fxPrefab = Resources.Load("Prefabs/FX/Smoke") as GameObject;
         fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
-
-        plyaerhp = ControllerManager.GetInstance().player_HP;
     }
 
     // ** 유니티 기본 제공 함수
@@ -103,7 +102,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Vectory) return;
 
-        if (plyaerhp <= 0)
+        if (ControllerManager.GetInstance().player_HP <= 0)
         {
             playerdie = true;
             animator.SetTrigger("Die");
@@ -129,7 +128,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             // ** 플레이어의 좌표가 17.0f 보다 작을때 플레이어를 움직인다.
-            if (transform.position.x < 17.0f && !Attack)
+            if (transform.position.x < 17.0f)
                 transform.position += Movement;
             else
             {
@@ -144,7 +143,7 @@ public class PlayerController : MonoBehaviour
             ControllerManager.GetInstance().DirLeft = true;
 
             // ** 플레이어의 좌표가 -15.0 보다 클때 플레이어를 움직인다.
-            if (transform.position.x > -15.0f && !Attack)
+            if (transform.position.x > -15.0f)
                 // ** 실제 플레이어를 움직인다.
                 transform.position += Movement;
         }
@@ -216,7 +215,17 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.transform.tag == "Back")
         {
-            plyaerhp = 0.0f;
+            ControllerManager.GetInstance().player_HP = 0.0f;
         }
+    }
+
+    private void D()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    private void V()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
