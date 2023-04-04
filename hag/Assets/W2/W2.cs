@@ -43,7 +43,7 @@ public class W2 : MonoBehaviour
             Attack = true;
             Anim.SetTrigger("Attack");
         }
-        else if (Attack && HP > 0)
+        else if (Attack && HP > 0 && ControllerManager.GetInstance().Idle)
         {
             Anim.SetFloat("Speed", Movement.x);
             transform.position -= Movement * Time.deltaTime;
@@ -54,6 +54,12 @@ public class W2 : MonoBehaviour
 
             Anim.SetTrigger("Die");
             GetComponent<CapsuleCollider2D>().enabled = false;
+        }
+
+        if (ControllerManager.GetInstance().player_HP <= 0.0f)
+        {
+            Anim.SetTrigger("Idle");
+            ControllerManager.GetInstance().Idle = false;
         }
     }
 

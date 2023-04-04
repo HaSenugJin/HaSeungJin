@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-   
-
     // ** 움직임을 저장하는 벡터
     private Vector3 Movement;
 
@@ -52,7 +50,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         // ** player 의 Animator를 받아온다.
-        animator = this.GetComponent<Animator>();
+        animator = this.GetComponent<Animator>(); 
 
         // ** player 의 SpriteRenderer를 받아온다.
         playerRenderer = this.GetComponent<SpriteRenderer>();
@@ -83,20 +81,10 @@ public class PlayerController : MonoBehaviour
     // ** 프레임마다 반복적으로 실행되는 함수.
     void Update()
     {
-        if (ControllerManager.GetInstance().EnemyKill >= 21)
+        if (ControllerManager.GetInstance().EnemyKill >= 31)
         {
+            ControllerManager.GetInstance().Win = true;
             Vectory = true;
-
-            GameObject ParentObj = GameObject.Find("EnemyList");
-
-            List<GameObject> list = new List<GameObject>();
-
-            for (int i = 0; i < ParentObj.transform.childCount; ++i)
-            {
-                EnemyController controller = ParentObj.transform.GetChild(i).GetComponent<EnemyController>();
-                controller.HP = 0;
-                //list.Add(ParentObj.transform.GetChild(i).gameObject);
-            }
 
             animator.SetTrigger("Vectory");
         }
@@ -106,6 +94,7 @@ public class PlayerController : MonoBehaviour
         {
             playerdie = true;
             animator.SetTrigger("Die");
+            ControllerManager.GetInstance().loss = true;
         }
         if (playerdie) return;
 
@@ -217,15 +206,5 @@ public class PlayerController : MonoBehaviour
         {
             ControllerManager.GetInstance().player_HP = 0.0f;
         }
-    }
-
-    private void D()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
-    private void V()
-    {
-        SceneManager.LoadScene("MainMenu");
     }
 }

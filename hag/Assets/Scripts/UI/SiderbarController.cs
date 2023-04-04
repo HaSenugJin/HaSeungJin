@@ -1,32 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class SiderbarController : MonoBehaviour
 {
     public GameObject sidebar;
     private Animator An;
 
-    public bool check;
-
-
     private void Awake()
     {
         An = sidebar.GetComponent<Animator>();
     }
 
-    void Start()
+    private void Update()
     {
-        check = false;
+        if (ControllerManager.GetInstance().loss)
+        {
+            An.SetBool("Move", ControllerManager.GetInstance().loss);
+        }
     }
 
-
-
-    public void ClickButton()
+    public void On()
     {
-        check = !check;
-
-        An.SetBool("Move", check);
-        
+        SceneManager.LoadScene("MainMenu");
+        Destroy(GameObject.Find("GameManager"));
     }
 }

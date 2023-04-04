@@ -16,8 +16,10 @@ public class ControllerManager
 
     public bool DirLeft;
     public bool DirRight;
-    public bool boom=false;
-    public bool Stun = false;
+    public bool boom = false;
+    public bool loss = false;
+    public bool Win = false;
+    public bool Idle = true;
 
     public float BulletSpeed = 10.0f;
     public float PlayerBulletDmg = 1.0f;
@@ -25,7 +27,7 @@ public class ControllerManager
     public float EnemyHP = 7.0f;
     public float EnemyBulletDmg = 1.0f;
     public float PlayerSpeed = 5.0f;
-    public int moeny = 10000;
+    public int moeny = 0;
     public int EnemyKill=0;
 
     //W

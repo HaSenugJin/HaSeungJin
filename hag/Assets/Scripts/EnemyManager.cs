@@ -11,6 +11,7 @@ public class EnemyManager : MonoBehaviour
     private bool U9;
     private GameObject Wspown;
     private GameObject Uspown;
+    private GameObject Game;
 
     private int Enemy;
 
@@ -30,16 +31,14 @@ public class EnemyManager : MonoBehaviour
     // ** Enemy로 사용할 원형 객체
     private GameObject Prefab;
 
-
-
     // ** 플레이어의 누적 이동 거리
     public float Distance;
-
 
     private void Awake()
     {
         W2 = true;
         U9 = true;
+        
         if (instance == null)
         {
             instance = this;
@@ -55,7 +54,6 @@ public class EnemyManager : MonoBehaviour
             // ** Enemy로 사용할 원형 객체
             Prefab = Resources.Load("Prefabs/Enemy/Enemy") as GameObject;
 
-
             Wspown = Resources.Load("W2") as GameObject;
             Uspown = Resources.Load("U9") as GameObject;
         }
@@ -64,7 +62,7 @@ public class EnemyManager : MonoBehaviour
     // ** 시작하자마자 Start함수를 코루틴 함수로 실행
     private IEnumerator Start()
     {
-        while(Enemy <= 18)
+        while(Enemy <= 28 && ControllerManager.GetInstance().Idle && ControllerManager.GetInstance().Win == false)
         {
             ++Enemy;
             // ** Enemy 원형객체를 복제한다.
@@ -82,8 +80,6 @@ public class EnemyManager : MonoBehaviour
 
             // ** 클론의 계층구조 설정.
             Obj.transform.parent = Parent.transform;
-
-
 
             // ** 1.5초 휴식.
             yield return new WaitForSeconds(1.5f);

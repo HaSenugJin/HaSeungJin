@@ -46,7 +46,7 @@ public class U9 : MonoBehaviour
             Attack = true;
             Anim.SetTrigger("Attack");
         }
-        else if (Attack && HP > 0)
+        else if (Attack && HP > 0 && ControllerManager.GetInstance().Idle)
         {
             Anim.SetFloat("Speed", Movement.x);
             transform.position -= Movement * Time.deltaTime;
@@ -70,6 +70,12 @@ public class U9 : MonoBehaviour
             // ** 모든 설정이 종료되었다면 저장소에 보관한다.
             Skills.Add(Obj);
             Skill = false;
+        }
+
+        if (ControllerManager.GetInstance().player_HP <= 0.0f)
+        {
+            Anim.SetTrigger("Idle");
+            ControllerManager.GetInstance().Idle = false;
         }
     }
 
