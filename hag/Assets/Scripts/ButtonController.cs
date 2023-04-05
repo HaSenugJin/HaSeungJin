@@ -8,6 +8,7 @@ public class ButtonController : MonoBehaviour
 {
     public void GameStart()
     {
+        ControllerManager.GetInstance().GameIsPaused = true;
         ControllerManager.GetInstance().boom = false;
         ControllerManager.GetInstance().loss = false;
         ControllerManager.GetInstance().Win = false;
@@ -26,6 +27,5 @@ public class ButtonController : MonoBehaviour
         ControllerManager.GetInstance().UBulletDmg = 4.0f;
         ControllerManager.GetInstance().BDmg = 6.0f;
         SceneManager.LoadScene("Game Start");
-
     }
 }

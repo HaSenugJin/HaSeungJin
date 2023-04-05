@@ -54,7 +54,7 @@ public class Test : MonoBehaviour
 
         if (ControllerManager.GetInstance().moeny >= 500)
         {
-            ControllerManager.GetInstance().BulletSpeed += 3.0f;
+            ControllerManager.GetInstance().BulletSpeed += 5.0f;
             ControllerManager.GetInstance().moeny -= 500;
         }
     }
