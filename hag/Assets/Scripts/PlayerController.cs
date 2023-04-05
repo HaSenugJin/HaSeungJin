@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    AudioSource audioSoure;
     // ** 움직임을 저장하는 벡터
     private Vector3 Movement;
 
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
     // ** 초기값을 설정할 때 사용
     void Start()
     {
+        audioSoure = GetComponent<AudioSource>();
         playerdie = false;
         Vectory = false;
         // ** 초기값 셋팅      
@@ -148,10 +150,12 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyUp(KeyCode.J))
             {
+                audioSoure.Play();
                 if (Attack == false)
                 {
                     // ** 공격모션을 실행 시킨다.
                     animator.SetTrigger("Attack");
+                   
                     Attack = true;
                 }
                 // ** 총알원본을 본제한다.

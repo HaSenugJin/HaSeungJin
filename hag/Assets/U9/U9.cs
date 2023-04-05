@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class U9 : MonoBehaviour
 {
+    AudioSource audioSoure;
     public GameObject Target;
     public float CoolDown;
     public float Speed;
@@ -28,6 +29,7 @@ public class U9 : MonoBehaviour
 
     void Start()
     {
+        audioSoure = GetComponent<AudioSource>();
         Speed = 6.0f;
         Movement = new Vector3(1.0f, 0.0f, 0.0f);
         HP = ControllerManager.GetInstance().UHP;
@@ -43,8 +45,11 @@ public class U9 : MonoBehaviour
 
         if (Distance < 12.0f)
         {
-            Attack = true;
+            
+            
+            
             Anim.SetTrigger("Attack");
+            Attack = true;
         }
         else if (Attack && HP > 0 && ControllerManager.GetInstance().Idle)
         {
@@ -105,6 +110,7 @@ public class U9 : MonoBehaviour
 
     private void BU()
     {
+        audioSoure.Play();
         GameObject Obj = Instantiate(BulletPrefab);
 
         // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.

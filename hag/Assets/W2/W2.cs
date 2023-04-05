@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class W2 : MonoBehaviour
 {
+    AudioSource audioSoure;
     public GameObject Target;
     public float CoolDown;
     public float Speed;
@@ -26,6 +27,7 @@ public class W2 : MonoBehaviour
 
     void Start()
     {
+        audioSoure = GetComponent<AudioSource>();
         Speed = 6.0f;
         Movement = new Vector3(1.0f, 0.0f, 0.0f);
         HP = ControllerManager.GetInstance().WHP;
@@ -89,6 +91,7 @@ public class W2 : MonoBehaviour
 
     private void BU()
     {
+        audioSoure.Play();
         GameObject Obj = Instantiate(BulletPrefab);
 
         // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.

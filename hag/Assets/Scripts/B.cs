@@ -23,6 +23,7 @@ public class B : MonoBehaviour
 
     private void Start()
     {
+        
         // ** 속도 초기값
         Speed = 10.0f;
         hp = 7;
@@ -38,10 +39,10 @@ public class B : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         // ** collision = 충돌한 대상. 
         if (collision.transform.tag == "Player")
         {
+            
             ControllerManager.GetInstance().player_HP -= BulletDmg;
             GameObject Obj = Instantiate(fxPrefab);
 
