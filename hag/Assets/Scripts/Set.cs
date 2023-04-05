@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class Set : MonoBehaviour
 {
-    public GameObject pauseMenuCanvas;
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(ControllerManager.GetInstance().GameIsPaused == false)
+            On();
+            else
+            off();
+        }
+
+
         if (ControllerManager.GetInstance().GameIsPaused == false)
         {
             Time.timeScale = 1f;

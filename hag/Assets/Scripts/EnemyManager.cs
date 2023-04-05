@@ -11,7 +11,7 @@ public class EnemyManager : MonoBehaviour
     private bool U9;
     private GameObject Wspown;
     private GameObject Uspown;
-    private GameObject Game;
+
 
     private int Enemy;
 
@@ -82,7 +82,7 @@ public class EnemyManager : MonoBehaviour
             Obj.transform.parent = Parent.transform;
 
             // ** 1.5ÃÊ ÈÞ½Ä.
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(1.0f);
         }
     }
 

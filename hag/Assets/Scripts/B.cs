@@ -25,7 +25,7 @@ public class B : MonoBehaviour
     {
         // ** 속도 초기값
         Speed = 10.0f;
-        hp = 5;
+        hp = 7;
         Direction = (Target.transform.position - transform.position);
         Direction.Normalize();
     }

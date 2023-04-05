@@ -28,7 +28,7 @@ public class U9 : MonoBehaviour
 
     void Start()
     {
-        Speed = 2.0f;
+        Speed = 6.0f;
         Movement = new Vector3(1.0f, 0.0f, 0.0f);
         HP = ControllerManager.GetInstance().UHP;
         Attack = true;

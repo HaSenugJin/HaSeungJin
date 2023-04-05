@@ -67,7 +67,7 @@ public class Test : MonoBehaviour
 
         if (ControllerManager.GetInstance().moeny >= 500)
         {
-            ControllerManager.GetInstance().PlayerBulletDmg += 1.0f;
+            ControllerManager.GetInstance().PlayerBulletDmg += 0.5f;
             ControllerManager.GetInstance().moeny -= 500;
         }
     }
