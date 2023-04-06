@@ -57,8 +57,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -112,16 +114,16 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonController
-    methodName: GameStart
+    methodName: GameExit
   - assembly: Assembly-CSharp
-    fullTypeName: Test
-    methodName: skill2
+    fullTypeName: ButtonController
+    methodName: GameStart
   - assembly: Assembly-CSharp
     fullTypeName: SiderbarController
     methodName: On
   - assembly: Assembly-CSharp
-    fullTypeName: Test
-    methodName: skill1
+    fullTypeName: Set
+    methodName: Game
   - assembly: Assembly-CSharp
     fullTypeName: Win
     methodName: On
@@ -131,15 +133,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Set
     methodName: On
-  - assembly: Assembly-CSharp
-    fullTypeName: Test
-    methodName: skill4
-  - assembly: Assembly-CSharp
-    fullTypeName: Test
-    methodName: skill3
-  - assembly: Assembly-CSharp
-    fullTypeName: Test
-    methodName: skill5
   sceneClasses:
     Assets/Scenes/Game Start.unity:
     - Class: 1
@@ -165,6 +158,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -233,7 +230,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4508}
     - Class: 114
-      Script: {instanceID: 20700}
+      Script: {instanceID: 20664}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -280,6 +277,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -1184,4 +1185,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game Start.unity
-  playerPath: C:/Users/SGA/Desktop/Step_01.exe
+  playerPath: C:/Users/SGA/Desktop/Game/Step_01.exe

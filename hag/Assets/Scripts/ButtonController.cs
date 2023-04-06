@@ -24,4 +24,9 @@ public class ButtonController : MonoBehaviour
         ControllerManager.GetInstance().EnemyHP = 8.0f;
         SceneManager.LoadScene("Game Start");
     }
+
+    public void GameExit()
+    {
+        Application.Quit();
+    }
 }

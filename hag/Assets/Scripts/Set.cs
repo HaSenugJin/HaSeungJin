@@ -45,4 +45,9 @@ public class Set : MonoBehaviour
         audioSoure.Play();
         ControllerManager.GetInstance().GameIsPaused = false;
     }
+
+    public void Game()
+    {
+        Application.Quit();
+    }
 }
