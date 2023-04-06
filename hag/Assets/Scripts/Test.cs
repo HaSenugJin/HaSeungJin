@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class Test : MonoBehaviour
 {
-    private List<GameObject> Images = new List<GameObject>();
-    private List<GameObject> Buttons = new List<GameObject>();
-    private List<Image> ButtonImages = new List<Image>();
+    //private List<GameObject> Images = new List<GameObject>();
+    //private List<GameObject> Buttons = new List<GameObject>();
+    //private List<Image> ButtonImages = new List<Image>();
 
     private void Start()
     {
         GameObject SkillsObj = GameObject.Find("Skills");
-
+        /*
         for (int i = 0; i < SkillsObj.transform.childCount; ++i)
         {
             GameObject obj = SkillsObj.transform.GetChild(i).gameObject;
@@ -20,6 +20,7 @@ public class Test : MonoBehaviour
             Buttons.Add(obj.transform.GetChild(0).gameObject);
             ButtonImages.Add(obj.transform.GetChild(0).GetComponent<Image>());
         }
+        */
     }
 
     private void Update()
@@ -48,9 +49,11 @@ public class Test : MonoBehaviour
 
     public void skill1()
     {
+        /*
         ButtonImages[0].fillAmount = 0;
         Buttons[0].GetComponent<Button>().enabled = false;
         //StartCoroutine(pushbutton_c(0, 0.5f));
+        */
 
         if (ControllerManager.GetInstance().moeny >= 500)
         {
@@ -61,9 +64,11 @@ public class Test : MonoBehaviour
 
     public void skill2()
     {
+        /*
         ButtonImages[1].fillAmount = 0;
         Buttons[1].GetComponent<Button>().enabled = false;
         //StartCoroutine(pushbutton_c(1, 0.5f));
+        */
 
         if (ControllerManager.GetInstance().moeny >= 500)
         {
@@ -74,9 +79,12 @@ public class Test : MonoBehaviour
 
     public void skill3()
     {
+        /*
         ButtonImages[2].fillAmount = 0;
         Buttons[2].GetComponent<Button>().enabled = false;
         //StartCoroutine(pushbutton_c(2, 0.5f));
+        */
+
         if (ControllerManager.GetInstance().moeny >= 500)
         {
             ControllerManager.GetInstance().player_HP += 1.0f;
@@ -86,9 +94,12 @@ public class Test : MonoBehaviour
 
     public void skill4()
     {
+        /*
         ButtonImages[3].fillAmount = 0;
         Buttons[3].GetComponent<Button>().enabled = false;
         //StartCoroutine(pushbutton_c(3, 0.5f));
+        */
+        
         if (ControllerManager.GetInstance().moeny >= 500)
         {
             ControllerManager.GetInstance().PlayerSpeed += 1.0f;
@@ -98,9 +109,11 @@ public class Test : MonoBehaviour
 
     public void skill5()
     {
+        /*
         ButtonImages[4].fillAmount = 0;
         Buttons[4].GetComponent<Button>().enabled = false;
         //StartCoroutine(pushbutton_c(4, 0.5f));
+        */
 
         if (ControllerManager.GetInstance().moeny >= 1000)
         {
