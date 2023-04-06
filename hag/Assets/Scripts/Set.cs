@@ -13,24 +13,27 @@ public class Set : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (ControllerManager.GetInstance().loss == false && ControllerManager.GetInstance().Win == false)
         {
-            if(ControllerManager.GetInstance().GameIsPaused == false)
-            On();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (ControllerManager.GetInstance().GameIsPaused == false)
+                    On();
+                else
+                    off();
+            }
+
+
+            if (ControllerManager.GetInstance().GameIsPaused == false)
+            {
+
+                Time.timeScale = 1f;
+            }
             else
-            off();
-        }
+            {
 
-
-        if (ControllerManager.GetInstance().GameIsPaused == false)
-        {
-            
-            Time.timeScale = 1f;
-        }
-        else
-        {
-            
-            Time.timeScale = 0f;
+                Time.timeScale = 0f;
+            }
         }
     }
 

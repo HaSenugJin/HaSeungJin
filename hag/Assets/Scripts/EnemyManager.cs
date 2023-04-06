@@ -82,7 +82,7 @@ public class EnemyManager : MonoBehaviour
             Obj.transform.parent = Parent.transform;
 
             // ** 1.5ÃÊ ÈÞ½Ä.
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(1.5f);
         }
     }
 

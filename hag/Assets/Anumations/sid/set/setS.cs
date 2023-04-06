@@ -15,13 +15,16 @@ public class setS : MonoBehaviour
 
     private void Update()
     {
-        if (ControllerManager.GetInstance().GameIsPaused)
+        if(ControllerManager.GetInstance().loss==false && ControllerManager.GetInstance().Win == false)
         {
-            set.transform.position = new Vector3(-987.0f, 540.0f, 0.0f);
-        }
-        else
-        {
-            set.transform.position = new Vector3(960.0f, 540.0f, 0.0f);
+            if (ControllerManager.GetInstance().GameIsPaused)
+            {
+                set.transform.position = new Vector3(-987.0f, 540.0f, 0.0f);
+            }
+            else
+            {
+                set.transform.position = new Vector3(960.0f, 540.0f, 0.0f);
+            }
         }
     }
 }
