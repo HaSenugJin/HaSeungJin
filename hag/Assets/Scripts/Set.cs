@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Set : MonoBehaviour
 {
@@ -22,7 +23,6 @@ public class Set : MonoBehaviour
                 else
                     off();
             }
-
 
             if (ControllerManager.GetInstance().GameIsPaused == false)
             {
@@ -48,9 +48,13 @@ public class Set : MonoBehaviour
         audioSoure.Play();
         ControllerManager.GetInstance().GameIsPaused = false;
     }
-
     public void Game()
     {
         Application.Quit();
+    }
+
+    public void main()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

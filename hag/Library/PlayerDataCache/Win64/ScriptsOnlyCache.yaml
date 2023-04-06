@@ -36,6 +36,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -118,6 +119,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SiderbarController
     methodName: On
+  - assembly: Assembly-CSharp
+    fullTypeName: Set
+    methodName: main
   - assembly: Assembly-CSharp
     fullTypeName: Set
     methodName: Game
@@ -1182,4 +1186,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game Start.unity
-  playerPath: C:/Users/SGA/Desktop/Game/Step_01.exe
+  playerPath: "C:/Users/\uD558\uC2B9\uC9C4/Desktop/Ga/Step_01.exe"
