@@ -62,7 +62,7 @@ public class EnemyManager : MonoBehaviour
     // ** 시작하자마자 Start함수를 코루틴 함수로 실행
     private IEnumerator Start()
     {
-        while(Enemy <= 28 && ControllerManager.GetInstance().Idle && ControllerManager.GetInstance().Win == false)
+        while(Enemy <= 48 && ControllerManager.GetInstance().Idle && ControllerManager.GetInstance().Win == false)
         {
             ++Enemy;
             // ** Enemy 원형객체를 복제한다.
@@ -95,7 +95,7 @@ public class EnemyManager : MonoBehaviour
 
         if(W2 == true)
         {
-            if (ControllerManager.GetInstance().EnemyKill >= 10)
+            if (ControllerManager.GetInstance().EnemyKill >= 30)
             {
                 // ** Enemy 원형객체를 복제한다.
                 GameObject Obj = Instantiate(Wspown);
@@ -110,7 +110,7 @@ public class EnemyManager : MonoBehaviour
 
         if (U9 == true)
         {
-            if (ControllerManager.GetInstance().EnemyKill >= 20)
+            if (ControllerManager.GetInstance().EnemyKill >= 50)
             {
                 // ** Enemy 원형객체를 복제한다.
                 GameObject Obj = Instantiate(Uspown);

@@ -357,6 +357,7 @@
 "Assets/ExampleManager.cs"
 "Assets/FX/Scripts/CFX_AutoDestructShuriken.cs"
 "Assets/FX/Scripts/CFX_LightIntensityFade.cs"
+"Assets/SceneMgr.cs"
 "Assets/Scripts/B.cs"
 "Assets/Scripts/BackGroundController.cs"
 "Assets/Scripts/boom.cs"

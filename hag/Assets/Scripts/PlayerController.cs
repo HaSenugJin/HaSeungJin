@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
     {
         if(ControllerManager.GetInstance().GameIsPaused == false)
         {
-            if (ControllerManager.GetInstance().EnemyKill >= 31)
+            if (ControllerManager.GetInstance().EnemyKill >= 51)
             {
                 ControllerManager.GetInstance().Win = true;
                 Vectory = true;

@@ -19,8 +19,8 @@ public class ButtonController : MonoBehaviour
         ControllerManager.GetInstance().PlayerSpeed = 6.0f;
         ControllerManager.GetInstance().moeny = 0;
         ControllerManager.GetInstance().EnemyKill = 0;
-        ControllerManager.GetInstance().WHP = 40.0f;
-        ControllerManager.GetInstance().UHP = 60.0f;
+        ControllerManager.GetInstance().WHP = 80.0f;
+        ControllerManager.GetInstance().UHP = 150.0f;
         ControllerManager.GetInstance().EnemyHP = 8.0f;
         SceneManager.LoadScene("Game Start");
     }

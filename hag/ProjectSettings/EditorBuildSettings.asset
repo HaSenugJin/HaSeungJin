@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Start.unity
     guid: 9a90bcc737332eb4386d7b363ada5362
+  - enabled: 1
+    path: Assets/Scenes/DataManager.unity
+    guid: d0d8efaabb4667c4aa5bd65455c24b7f
+  - enabled: 1
+    path: Assets/Scenes/ProgressScene.unity
+    guid: 7ebd69fa0910ca14ca04d63463a74e19
   m_configObjects: {}

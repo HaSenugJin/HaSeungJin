@@ -32,11 +32,11 @@ public class ControllerManager
     public int EnemyKill = 0;
 
     //W
-    public float WHP = 40.0f;
-    public float WBulletDmg = 3.0f;
+    public float WHP = 80.0f;
+    public float WBulletDmg = 7.0f;
 
     //u9
-    public float UHP = 60.0f;
-    public float UBulletDmg = 6.0f;
-    public float BDmg = 15.0f;
+    public float UHP = 150.0f;
+    public float UBulletDmg = 10.0f;
+    public float BDmg = 25.0f;
 }
