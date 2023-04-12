@@ -7,52 +7,33 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class MemberForm
 {
-    public int gender;
-    public string name;
     public int index;
+    public string name;
     public int age;
+    public int gender;
 
-    public MemberForm(int gender, string name, int index, int age)
+    public MemberForm(int index, string name, int age, int gender)
     {
-        this.gender = gender;
-        this.name = name;
         this.index = index;
+        this.name = name;
         this.age = age;
+        this.gender = gender;
     }
 }
 
 public class ExampleManager : MonoBehaviour
 {
-    string URL = "https://script.google.com/macros/s/AKfycbyFdsBmsUbLCBHusOyYEzuH5zy6KL79PNsDpCXWxRW-Ve9V0mtrKj69nKdI2DW1-4bdNQ/exec";
+    string URL = "https://script.google.com/macros/s/AKfycbwzwFulNGZgzlmNtrusrmJdqrOzs0eWIGhOGgYeYZKahT_GGACWDkZustH8vtwkDYYzKg/exec";
 
     IEnumerator Start()
     {
-        //요청을 하기위한 작업
-        //UnityWebRequest request = UnityWebRequest.Get(URL);
+        WWWForm form = new WWWForm();
+        form.AddField("value", "값");
+        UnityWebRequest www = UnityWebRequest.Post(URL,form);
+        yield return www.SendWebRequest();
 
-        /*
-        MemberForm member = new MemberForm("변사또", 45);
-
-        WWWForm from = new WWWForm();
-
-        from.AddField("Name", member.Name);
-        from.AddField("Age", member.Age);
-        */
-
-        
-
-        using (UnityWebRequest request = UnityWebRequest.Get(URL))
-        {
-            yield return request.SendWebRequest();
-
-            MemberForm json = JsonUtility.FromJson<MemberForm>(request.downloadHandler.text);
-
-            //응답에 대한 작업
-            print(json.index);
-            print(json.name);
-            print(json.age);
-            print(json.gender);
-        }
+        string data = www.downloadHandler.text;
+        print(data);
     }
 
     public void NextScene()
@@ -60,3 +41,32 @@ public class ExampleManager : MonoBehaviour
         SceneManager.LoadScene("ProgressScene");
     }
 }
+
+/*
+//요청을 하기위한 작업
+UnityWebRequest request = UnityWebRequest.Get(URL);
+
+MemberForm member = new MemberForm("ddt", 44, 2);
+
+WWWForm from = new WWWForm();
+
+//from.AddField(nameof(member.index), member.index);
+from.AddField("name", member.name);
+from.AddField("age", member.age);
+from.AddField("gender", member.gender);
+
+yield return request.SendWebRequest();
+*/
+
+/*
+using (UnityWebRequest request = UnityWebRequest.Get(URL))
+{
+    MemberForm json = JsonUtility.FromJson<MemberForm>(request.downloadHandler.text);
+    yield return request.SendWebRequest();
+    //응답에 대한 작업
+    print(json.index);
+    print(json.name);
+    print(json.age);
+    print(json.gender);
+}
+*/
