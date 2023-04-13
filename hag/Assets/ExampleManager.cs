@@ -3,37 +3,72 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class MemberForm
 {
-    public int index;
-    public string name;
-    public int age;
-    public int gender;
-
-    public MemberForm(int index, string name, int age, int gender)
-    {
-        this.index = index;
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-    }
+    //public int index;
+    public string order,result,msg,value;
 }
 
 public class ExampleManager : MonoBehaviour
 {
     string URL = "https://script.google.com/macros/s/AKfycbwzwFulNGZgzlmNtrusrmJdqrOzs0eWIGhOGgYeYZKahT_GGACWDkZustH8vtwkDYYzKg/exec";
-
-    IEnumerator Start()
+    public MemberForm me;
+    public InputField IDInput, PassInput;
+    string id, pass;
+    
+    bool SetIDPass()
     {
-        WWWForm form = new WWWForm();
-        form.AddField("value", "값");
-        UnityWebRequest www = UnityWebRequest.Post(URL,form);
-        yield return www.SendWebRequest();
+        id = IDInput.text.Trim();
+        pass = PassInput.text.Trim();
 
-        string data = www.downloadHandler.text;
-        print(data);
+        if (id == "" || pass == "") return false;
+        else return true;
+    }
+
+    public void Registre()
+    {
+        if(!SetIDPass())
+        {
+            print("아이디 또는 비밀번호가 비었습니다.");
+            return;
+        }
+        WWWForm form = new WWWForm();
+        form.AddField("order", "register");
+        form.AddField("id", id);
+        form.AddField("pass", pass);
+
+        StartCoroutine(Post(form));
+    }
+
+    public void Login()
+    {
+        if(!SetIDPass())
+        {
+            print("아이디 또는 비밀번호가 비어있습니다.");
+            return;
+        }
+        WWWForm form = new WWWForm();
+        form.AddField("order", "login");
+        form.AddField("id", id);
+        form.AddField("pass", pass);
+
+        StartCoroutine(Post(form));
+    }
+
+
+    IEnumerator Post(WWWForm form)
+    {
+        using (UnityWebRequest www = UnityWebRequest.Post(URL, form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.isDone) print(www.downloadHandler.text);
+            else print("웹의 응답이 없습니다.");
+            www.Dispose();
+        }
     }
 
     public void NextScene()

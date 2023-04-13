@@ -28,7 +28,6 @@ public class SceneMgr : MonoBehaviour
                 mess.gameObject.SetActive(true);
                 if (Input.GetMouseButtonDown(0))
                 {
-                   print("??");
                    asyncOperation.allowSceneActivation = true;
                 }
             }
