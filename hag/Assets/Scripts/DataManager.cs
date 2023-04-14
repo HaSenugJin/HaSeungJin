@@ -17,7 +17,6 @@ class DataForm
     }
 }
 
-
 public class DataManager : MonoBehaviour
 {
     private string userName;

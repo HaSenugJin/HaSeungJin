@@ -3,11 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
+
+[System.Serializable]
+public class me
+{
+    public int money;
+}
+
 
 public class ButtonController : MonoBehaviour
 {
+    const string URL = "https://script.google.com/macros/s/AKfycbwzwFulNGZgzlmNtrusrmJdqrOzs0eWIGhOGgYeYZKahT_GGACWDkZustH8vtwkDYYzKg/exec";
+    public me me2;
     public void GameStart()
     {
+        UnityWebRequest request = UnityWebRequest.Get(URL);
+        MemberForm json = JsonUtility.FromJson<MemberForm>(request.downloadHandler.text);
+        
+        WWWForm form = new WWWForm();
+        form.AddField("order", "getmoeny");
+
+        StartCoroutine(moeny(form));
         ControllerManager.GetInstance().GameIsPaused = false;
         ControllerManager.GetInstance().boom = false;
         ControllerManager.GetInstance().loss = false;
@@ -17,7 +34,7 @@ public class ButtonController : MonoBehaviour
         ControllerManager.GetInstance().PlayerBulletDmg = 1.0f;
         ControllerManager.GetInstance().player_HP = 20.0f;
         ControllerManager.GetInstance().PlayerSpeed = 6.0f;
-        ControllerManager.GetInstance().moeny = 0;
+        ControllerManager.GetInstance().moeny = json.money;
         ControllerManager.GetInstance().EnemyKill = 0;
         ControllerManager.GetInstance().WHP = 80.0f;
         ControllerManager.GetInstance().UHP = 150.0f;
@@ -28,5 +45,21 @@ public class ButtonController : MonoBehaviour
     public void GameExit()
     {
         Application.Quit();
+    }
+
+    public void moeny1(string json)
+    {
+        me2 = JsonUtility.FromJson<me>(json);
+
+
+    }
+
+    IEnumerator moeny(WWWForm form)
+    {
+        using (UnityWebRequest www = UnityWebRequest.Post(URL, form))
+        {
+            yield return www.SendWebRequest();
+            www.Dispose();
+        }
     }
 }
