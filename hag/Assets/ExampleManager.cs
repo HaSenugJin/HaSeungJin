@@ -146,17 +146,12 @@ public class ExampleManager : MonoBehaviour
 
         if (me.b == false)
         {
-            print("아이디, 또는 비밀번호가 다릅니다. ");
+            print(me.msg);
             return;
         }
 
         print(me.order + "을 실행했습니다. 메시지 : " + me.msg);
         SceneManager.LoadScene("MainMenu");
-    }
-
-    public void NextScene()
-    {
-        SceneManager.LoadScene("ProgressScene");
     }
 }
 

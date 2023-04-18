@@ -54,7 +54,7 @@ public class Test : MonoBehaviour
         Buttons[0].GetComponent<Button>().enabled = false;
         //StartCoroutine(pushbutton_c(0, 0.5f));
         */
-
+        
         if (ControllerManager.GetInstance().moeny >= 500)
         {
             ControllerManager.GetInstance().BulletSpeed += 5.0f;

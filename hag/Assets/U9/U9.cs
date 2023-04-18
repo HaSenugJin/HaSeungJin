@@ -45,9 +45,7 @@ public class U9 : MonoBehaviour
 
         if (Distance < 12.0f)
         {
-            
-            
-            
+
             Anim.SetTrigger("Attack");
             Attack = true;
         }

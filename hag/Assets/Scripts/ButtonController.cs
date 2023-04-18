@@ -19,9 +19,11 @@ public class ButtonController : MonoBehaviour
     //public me me2;
     public void GameStart()
     {
+        ControllerManager.GetInstance();
         //UnityWebRequest request = UnityWebRequest.Get(URL);
         //MemberForm json = JsonUtility.FromJson<MemberForm>(request.downloadHandler.text);
         
+        /*
         WWWForm form = new WWWForm();
         //form.AddField("order", "getmoeny");
         //print(json.money);
@@ -40,6 +42,7 @@ public class ButtonController : MonoBehaviour
         ControllerManager.GetInstance().WHP = 80.0f;
         ControllerManager.GetInstance().UHP = 150.0f;
         ControllerManager.GetInstance().EnemyHP = 8.0f;
+        */
         SceneManager.LoadScene("Game Start");
     }
 
