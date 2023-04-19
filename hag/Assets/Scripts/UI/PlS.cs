@@ -9,6 +9,6 @@ public class PlS : MonoBehaviour
 
     void Update()
     {
-        mm.text = ControllerManager.GetInstance().PlayerSpeed.ToString();
+        mm.text = ControllerManager.GetInstance().bullethp.ToString();
     }
 }

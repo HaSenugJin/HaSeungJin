@@ -90,6 +90,7 @@ public class ControllerManager
     public float PlayerSpeed = 6.0f;
     public int moeny = 0;
     public int EnemyKill = 0;
+    public int bullethp = 1;
 
     //W
     public float WHP = 80.0f;

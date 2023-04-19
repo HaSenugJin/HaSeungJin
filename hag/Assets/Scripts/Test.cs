@@ -102,7 +102,7 @@ public class Test : MonoBehaviour
         
         if (ControllerManager.GetInstance().moeny >= 500)
         {
-            ControllerManager.GetInstance().PlayerSpeed += 1.0f;
+            ++ControllerManager.GetInstance().bullethp;
             ControllerManager.GetInstance().moeny -= 500;
         }
     }

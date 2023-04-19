@@ -7,11 +7,10 @@ public class BulletController : MonoBehaviour
     // ** 총알이 날아가는 속도
     private float Speed;
 
-    // ** 총알이 충돌한 횟수
-    private int hp;
-
     // ** 이펙트효과 원본
     public GameObject fxPrefab;
+
+    private int hp;
 
     // ** 총알이 날아가야할 방향
     public Vector3 Direction { get; set; }
@@ -20,9 +19,7 @@ public class BulletController : MonoBehaviour
     {
         // ** 속도 초기값
         Speed = ControllerManager.GetInstance().BulletSpeed;
-
-        // ** 충돌 횟수를 3으로 지정한다.
-        hp = 1;
+        hp = ControllerManager.GetInstance().bullethp;
     }
 
     void Update()
@@ -34,6 +31,7 @@ public class BulletController : MonoBehaviour
     // ** 충돌체와 물리엔진이 포함된 오브젝트가 다른 충돌체와 충돌한다면 실행되는 함수. 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         // ** 충돌횟수 차감.
         --hp;
 
@@ -57,7 +55,8 @@ public class BulletController : MonoBehaviour
         }
 
         // ** 총알의 충돌 횟수가 0이 되면 총알 삭제.
-        if(hp==0)
-            Destroy(this.gameObject, 0.016f);
+        if(hp == 0)
+            Destroy(this.gameObject);
+        print(ControllerManager.GetInstance().bullethp);
     }
 }
