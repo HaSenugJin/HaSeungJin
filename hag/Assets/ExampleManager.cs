@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Text;
+using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 
 [System.Serializable]
 public class MemberForm
@@ -19,6 +22,13 @@ public class ExampleManager : MonoBehaviour
     public MemberForm me;
     public InputField IDInput, PassInput,ValueInput;
     string id, pass;
+    private string emailpattern = @"^[\w-.]+@([\w-]+.)+[\w-]{2,4}$";
+    public Text message;
+
+    private void Start()
+    {
+        message.text = ""; 
+    }
 
     bool SetIDPass()
     {
@@ -31,6 +41,8 @@ public class ExampleManager : MonoBehaviour
 
     public void Registre()
     {
+        string email = IDInput.text;
+
         if (!SetIDPass())
         {
             print("아이디 또는 비밀번호가 비었습니다.");
@@ -42,22 +54,41 @@ public class ExampleManager : MonoBehaviour
         form.AddField("pass", pass);
 
         StartCoroutine(Post(form));
+        /*
+        if (Regex.IsMatch(email, emailpattern))
+        {
+            //string password = Security(PassInput.text);
+            WWWForm form = new WWWForm();
+            form.AddField("order", "register");
+            form.AddField("id", id);
+            form.AddField("pass", pass);
+
+            StartCoroutine(Post(form));
+            print("?");
+        }
+        else
+        {
+            print("이메일 형식이 잘못되었습니다.");
+            return;
+        }
+        */
+
     }
 
     public void Login()
     {
         if (!SetIDPass())
         {
-            print("아이디 또는 비밀번호가 비어있습니다.");
+            print("아이디 또는 비밀번호가 비었습니다.");
             return;
         }
-
         WWWForm form = new WWWForm();
         form.AddField("order", "login");
         form.AddField("id", id);
         form.AddField("pass", pass);
 
         StartCoroutine(login(form));
+        print("?");
     }
 
     void OnApplicationQuit()
@@ -152,6 +183,20 @@ public class ExampleManager : MonoBehaviour
 
         print(me.order + "을 실행했습니다. 메시지 : " + me.msg);
         SceneManager.LoadScene("MainMenu");
+    }
+
+    string Security(string str)
+    {
+        //패스워드의 암호및 복호화
+        SHA256 sha = new SHA256Managed();
+        byte[] hash = sha.ComputeHash(Encoding.ASCII.GetBytes(str));
+        StringBuilder stringBuilder = new StringBuilder();
+
+        foreach (byte b in hash)
+        {
+            stringBuilder.AppendFormat("{0:x2}", b);
+        }
+        return stringBuilder.ToString();
     }
 }
 

@@ -21,7 +21,6 @@ public class BossController : MonoBehaviour
 
     private float CoolDown;
     private float Speed;
-    private int HP;
 
     private bool SkillAttack;
     private bool Attack;
@@ -44,7 +43,6 @@ public class BossController : MonoBehaviour
     {
         CoolDown = 1.5f;
         Speed = 1.0f;
-        HP = 30000;
 
         SkillAttack = false;
         Attack = false;
