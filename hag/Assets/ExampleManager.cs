@@ -28,6 +28,7 @@ public class ExampleManager : MonoBehaviour
     private void Start()
     {
         message.text = ""; 
+        
     }
 
     bool SetIDPass()
@@ -45,50 +46,41 @@ public class ExampleManager : MonoBehaviour
 
         if (!SetIDPass())
         {
-            print("아이디 또는 비밀번호가 비었습니다.");
+            message.text = "아이디 또는 비밀번호가 비었습니다.";
             return;
         }
-        WWWForm form = new WWWForm();
-        form.AddField("order", "register");
-        form.AddField("id", id);
-        form.AddField("pass", pass);
 
-        StartCoroutine(Post(form));
-        /*
         if (Regex.IsMatch(email, emailpattern))
         {
-            //string password = Security(PassInput.text);
+            string password = Security(PassInput.text);
             WWWForm form = new WWWForm();
             form.AddField("order", "register");
             form.AddField("id", id);
             form.AddField("pass", pass);
 
             StartCoroutine(Post(form));
-            print("?");
         }
         else
         {
-            print("이메일 형식이 잘못되었습니다.");
+            message.text = "이메일 형식이 잘못되었습니다.";
             return;
         }
-        */
-
     }
 
     public void Login()
     {
         if (!SetIDPass())
         {
-            print("아이디 또는 비밀번호가 비었습니다.");
+            message.text = "아이디 또는 비밀번호가 비었습니다.";
             return;
         }
+        string password = Security(PassInput.text);
         WWWForm form = new WWWForm();
         form.AddField("order", "login");
         form.AddField("id", id);
         form.AddField("pass", pass);
-
+        
         StartCoroutine(login(form));
-        print("?");
     }
 
     void OnApplicationQuit()
@@ -111,6 +103,7 @@ public class ExampleManager : MonoBehaviour
     public void GetValue()
     {
         WWWForm form = new WWWForm();
+        
         form.AddField("order", "getValue");
 
         StartCoroutine(Post(form));
@@ -126,8 +119,8 @@ public class ExampleManager : MonoBehaviour
             {
                 Response(www.downloadHandler.text);
             }
-            else print("웹의 응답이 없습니다.");
-            www.Dispose();  
+            else message.text = "웹의 응답이 없습니다.";
+
         }
     }
 
@@ -136,6 +129,7 @@ public class ExampleManager : MonoBehaviour
         using (UnityWebRequest www = UnityWebRequest.Post(URL, form))
         {
             yield return www.SendWebRequest();
+
             if (www.isDone && me.b)
             {
                 log(www.downloadHandler.text);
@@ -144,8 +138,8 @@ public class ExampleManager : MonoBehaviour
             {
                 log(www.downloadHandler.text);
             }
-            else print("웹의 응답이 없습니다.");
-            www.Dispose();
+            else message.text = "웹의 응답이 없습니다.";
+
         }
     }
 
@@ -157,11 +151,11 @@ public class ExampleManager : MonoBehaviour
 
         if(me.result=="Error")
         {
-            print(me.order + "을 실행할 수 없습니다. 에러 메시지 : " + me.msg);
+            message.text = me.order + "을 실행할 수 없습니다. 에러 메시지 : " + me.msg;
             return;
         }
 
-        print(me.order + "을 실행했습니다. 메시지 : " + me.msg);
+        message.text = me.order + "을 실행했습니다. 메시지 : " + me.msg;
 
         if(me.order=="getValue")
         {
@@ -172,16 +166,16 @@ public class ExampleManager : MonoBehaviour
     void log(string json)
     {
         if (string.IsNullOrEmpty(json)) return;
-
+        
         me = JsonUtility.FromJson<MemberForm>(json);
-
+        
         if (me.b == false)
         {
             print(me.msg);
             return;
         }
 
-        print(me.order + "을 실행했습니다. 메시지 : " + me.msg);
+        message.text = me.order + "을 실행했습니다. 메시지 : " + me.msg;
         SceneManager.LoadScene("MainMenu");
     }
 
