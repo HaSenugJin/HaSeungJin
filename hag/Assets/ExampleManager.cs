@@ -148,8 +148,8 @@ public class ExampleManager : MonoBehaviour
         if (string.IsNullOrEmpty(json)) return;
 
         me = JsonUtility.FromJson<MemberForm>(json);
-
-        if(me.result=="Error")
+  
+        if (me.result=="Error")
         {
             message.text = me.order + "을 실행할 수 없습니다. 에러 메시지 : " + me.msg;
             return;
