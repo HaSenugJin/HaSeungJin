@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using System.Text;
 
+/*
 [System.Serializable]
 class DataForm
 {
@@ -69,3 +70,4 @@ public class DataManager : MonoBehaviour
         fileStream.Close();
     }
 }
+*/

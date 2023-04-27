@@ -9,9 +9,6 @@ public class EnemyManager : MonoBehaviour
 
     private bool W2;
     private bool U9;
-    private GameObject Wspown;
-    private GameObject Uspown;
-
 
     private int Enemy;
 
@@ -29,7 +26,9 @@ public class EnemyManager : MonoBehaviour
     private GameObject Parent;
 
     // ** Enemy로 사용할 원형 객체
-    private GameObject Prefab;
+    private string Prefab = "Enemy";
+    private string Wspown = "W2";
+    private string Uspown = "Up";
 
     // ** 플레이어의 누적 이동 거리
     public float Distance;
@@ -51,11 +50,12 @@ public class EnemyManager : MonoBehaviour
             // ** 생성되는 Enemy를 담아둘 상위 객체
             Parent = new GameObject("EnemyList");
 
-            // ** Enemy로 사용할 원형 객체
-            Prefab = Resources.Load("Prefabs/Enemy/Enemy") as GameObject;
 
-            Wspown = Resources.Load("W2") as GameObject;
-            Uspown = Resources.Load("U9") as GameObject;
+            // ** Enemy로 사용할 원형 객체
+            //Prefab = Resources.Load("Prefabs/Enemy/Enemy") as GameObject;
+            //
+            //Wspown = Resources.Load("W2") as GameObject;
+            //Uspown = Resources.Load("U9") as GameObject;
         }
     }
 
@@ -66,7 +66,7 @@ public class EnemyManager : MonoBehaviour
         {
             ++Enemy;
             // ** Enemy 원형객체를 복제한다.
-            GameObject Obj = Instantiate(Prefab);
+            GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(Prefab));
 
             // ** Enemy 작동 스크립트 포함.
             //Obj.AddComponent<EnemyController>();
@@ -98,7 +98,7 @@ public class EnemyManager : MonoBehaviour
             if (ControllerManager.GetInstance().EnemyKill >= 30)
             {
                 // ** Enemy 원형객체를 복제한다.
-                GameObject Obj = Instantiate(Wspown);
+                GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(Wspown));
 
                 // ** 클론의 위치를 초기화.
                 Obj.transform.position = new Vector3(
@@ -113,7 +113,7 @@ public class EnemyManager : MonoBehaviour
             if (ControllerManager.GetInstance().EnemyKill >= 50)
             {
                 // ** Enemy 원형객체를 복제한다.
-                GameObject Obj = Instantiate(Uspown);
+                GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(Uspown));
 
                 // ** 클론의 위치를 초기화.
                 Obj.transform.position = new Vector3(

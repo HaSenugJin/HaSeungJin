@@ -8,8 +8,8 @@ public class B : MonoBehaviour
 
     private GameObject Target;
     private float BulletDmg;
-    public GameObject fxPrefab;
-    public GameObject fxPrefab2;
+    private string fxPrefab = "Smoke";
+    private string fxPrefab2 = "Hit";
     // ** 총알이 날아가야할 방향
     public Vector3 Direction { get; set; }
     private int hp;
@@ -17,8 +17,7 @@ public class B : MonoBehaviour
     {
         BulletDmg = ControllerManager.GetInstance().BDmg;
         Target = GameObject.Find("Player");
-        fxPrefab = Resources.Load("Prefabs/FX/Smoke") as GameObject;
-        fxPrefab2 = Resources.Load("Prefabs/FX/Hit") as GameObject;
+        
     }
 
     private void Start()
@@ -44,7 +43,7 @@ public class B : MonoBehaviour
         {
             
             ControllerManager.GetInstance().player_HP -= BulletDmg;
-            GameObject Obj = Instantiate(fxPrefab);
+            GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(fxPrefab));
 
             // ** 이펙트효과의 위치를 지정
             Obj.transform.position = transform.position;
@@ -57,7 +56,7 @@ public class B : MonoBehaviour
         if(collision.transform.tag == "Bullet")
         {
             --hp;
-            GameObject Obj = Instantiate(fxPrefab2);
+            GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(fxPrefab2));
 
             // ** 이펙트효과의 위치를 지정
             Obj.transform.position = transform.position;

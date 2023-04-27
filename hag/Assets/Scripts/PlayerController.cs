@@ -16,10 +16,10 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer playerRenderer;
 
     // ** 복제할 총알 원본
-    private GameObject BulletPrefab;
+    private string BulletPrefab= "Bullet";
 
     // ** 복제할 FX 원본
-    private GameObject fxPrefab;
+    private string fxPrefab= "Hit";
 
     // 추후 list로 변경
     public GameObject[] stageBack = new GameObject[7];
@@ -54,12 +54,7 @@ public class PlayerController : MonoBehaviour
         animator = this.GetComponent<Animator>(); 
 
         // ** player 의 SpriteRenderer를 받아온다.
-        playerRenderer = this.GetComponent<SpriteRenderer>();
-
-        // ** [Resources] 폴더에서 사용할 리소스를 들고온다.
-        BulletPrefab = Resources.Load("Prefabs/Bullet") as GameObject;
-        //fxPrefab = Resources.Load("Prefabs/FX/Smoke") as GameObject;
-        fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
+        playerRenderer = this.GetComponent<SpriteRenderer>();;
     }
 
     // ** 유니티 기본 제공 함수
@@ -159,7 +154,7 @@ public class PlayerController : MonoBehaviour
                     Attack = true;
                 }
                 // ** 총알원본을 본제한다.
-                GameObject Obj = Instantiate(BulletPrefab);
+                GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(BulletPrefab));
 
                 // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
                 Obj.transform.position = transform.position;

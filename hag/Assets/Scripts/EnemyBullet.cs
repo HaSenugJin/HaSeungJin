@@ -10,14 +10,16 @@ public class EnemyBullet : MonoBehaviour
     private int hp;
     private GameObject Target;
     private float BulletDmg;
-    private GameObject fxPrefab;
+    private GameObject Parent = null;
+    private string fxPre = "Hit";
     // ** 총알이 날아가야할 방향
     public Vector3 Direction { get; set; }
 
     private void Awake()
     {
         Target = GameObject.Find("Player");
-        fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
+        Parent = new GameObject("hit");
+        //fxPrefab = Resources.Load("Prefabs/FX/Hit") as GameObject;
         BulletDmg = ControllerManager.GetInstance().EnemyBulletDmg;
     }
 
@@ -43,10 +45,16 @@ public class EnemyBullet : MonoBehaviour
         // ** 충돌횟수 차감.
         --hp;
 
-        GameObject Obj = Instantiate(fxPrefab);
+        GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(fxPre));
 
         // ** 이펙트효과의 위치를 지정
         Obj.transform.position = transform.position;
+
+        // ** 클론의 이름 초기화.
+        Obj.transform.name = "hit";
+
+        // ** 클론의 계층구조 설정.
+        Obj.transform.parent = Parent.transform;
 
         // ** collision = 충돌한 대상. 
         if (collision.transform.tag == "Player")

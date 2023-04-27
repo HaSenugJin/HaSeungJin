@@ -6,10 +6,12 @@ public class U9 : MonoBehaviour
 {
     AudioSource audioSoure;
     public GameObject Target;
+    private string BulletPrefab = "U9B";
+    private string onSkill="B";
+
     public float CoolDown;
     public float Speed;
-    private GameObject BulletPrefab;
-    private GameObject onSkill;
+
     public float HP;
     private Animator Anim;
     private Vector3 Movement;
@@ -19,11 +21,11 @@ public class U9 : MonoBehaviour
     private List<GameObject> Bullets = new List<GameObject>();
     private List<GameObject> Skills = new List<GameObject>();
 
+
+
     private void Awake()
     {
         Target = GameObject.Find("Player");
-        BulletPrefab = Resources.Load("Prefabs/Enemy/U9B") as GameObject;
-        onSkill = Resources.Load("B")as GameObject;
         Anim = GetComponent<Animator>();
     }
 
@@ -65,7 +67,7 @@ public class U9 : MonoBehaviour
         {
             Anim.SetTrigger("Skill");
 
-            GameObject Obj = Instantiate(onSkill);
+            GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(onSkill));
 
             // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
             Obj.transform.position = transform.position;
@@ -109,7 +111,7 @@ public class U9 : MonoBehaviour
     private void BU()
     {
         audioSoure.Play();
-        GameObject Obj = Instantiate(BulletPrefab);
+        GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(BulletPrefab));
 
         // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
         Obj.transform.position = transform.position;

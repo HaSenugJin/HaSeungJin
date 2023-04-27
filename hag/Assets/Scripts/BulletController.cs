@@ -8,7 +8,7 @@ public class BulletController : MonoBehaviour
     private float Speed;
 
     // ** 이펙트효과 원본
-    public GameObject fxPrefab;
+    public string fxPrefab = "Hit";
 
     private int hp;
 
@@ -36,7 +36,7 @@ public class BulletController : MonoBehaviour
         --hp;
 
         // ** 이펙트효과 복제.
-        GameObject Obj = Instantiate(fxPrefab);
+        GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(fxPrefab));
 
         // ** 이펙트효과의 위치를 지정
         Obj.transform.position = transform.position;
@@ -57,6 +57,5 @@ public class BulletController : MonoBehaviour
         // ** 총알의 충돌 횟수가 0이 되면 총알 삭제.
         if(hp == 0)
             Destroy(this.gameObject);
-        print(ControllerManager.GetInstance().bullethp);
     }
 }

@@ -13,11 +13,11 @@ public class BulletPattern : MonoBehaviour
     public Pattern pattern = Pattern.Explosion;
     public Sprite sprite;
     private List<GameObject> BulletList = new List<GameObject>();
-    private GameObject BulletPrefab;
+    private string BulletPrefab = "PattrenBullet";
     
     void Start()
     {
-        BulletPrefab = Resources.Load("Prefabs/PattrenBullet") as GameObject;
+        
 
         switch (pattern)
         {
@@ -60,7 +60,7 @@ public class BulletPattern : MonoBehaviour
     {
         for(int i = 0; i < _count; ++i)
         {
-            GameObject obj = Instantiate(BulletPrefab);
+            GameObject obj = Instantiate(pre.GetInstence.getPrefnbByName(BulletPrefab));
             BulletControll controller = obj.GetComponent<BulletControll>();
             controller.Option = _option;
             _angle += 5.0f;
@@ -85,7 +85,7 @@ public class BulletPattern : MonoBehaviour
 
         while(i < (iCount) *3)
         {
-            GameObject obj = Instantiate(BulletPrefab);
+            GameObject obj = Instantiate(pre.GetInstence.getPrefnbByName(BulletPrefab));
 
             BulletControll controller = obj.GetComponent<BulletControll>();
 
@@ -140,7 +140,7 @@ public class BulletPattern : MonoBehaviour
 
         for (int i = 0; i < _count; ++i)
         {
-            GameObject obj = Instantiate(BulletPrefab);
+            GameObject obj = Instantiate(pre.GetInstence.getPrefnbByName(BulletPrefab));
             BulletControll controller = obj.GetComponent<BulletControll>();
             controller.Option = _option;
             _angle += 5.0f;
@@ -157,7 +157,7 @@ public class BulletPattern : MonoBehaviour
 
     public void GuideBulletPattern()
     {
-        GameObject obj = Instantiate(BulletPrefab);
+        GameObject obj = Instantiate(pre.GetInstence.getPrefnbByName(BulletPrefab));
 
         BulletControll controller = obj.GetComponent<BulletControll>();
 

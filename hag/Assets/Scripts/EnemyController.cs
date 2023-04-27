@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     public GameObject Target;
     public float CoolDown;
     public float Speed;
-    private GameObject BulletPrefab;
+    private string BulletPrefab = "EnemyBullet";
     public float HP;
     private Animator Anim;
     private Vector3 Movement;
@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         Target = GameObject.Find("Player");
-        BulletPrefab = Resources.Load("Prefabs/Enemy/EnemyBullet") as GameObject;
+        
 
         Anim = GetComponent<Animator>();
     }
@@ -90,7 +90,7 @@ public class EnemyController : MonoBehaviour
 
     private void BU()
     {
-        GameObject Obj = Instantiate(BulletPrefab);
+        GameObject Obj = Instantiate(pre.GetInstence.getPrefnbByName(BulletPrefab));
 
         // ** 복제된 총알의 위치를 현재 플레이어의 위치로 초기화한다.
         Obj.transform.position = transform.position;
