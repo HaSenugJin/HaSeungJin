@@ -16,7 +16,11 @@ public class PlayerCon : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Return))
         {
-            Instantiate(pre.GetInstence.getPrefnbByName(EnemyName)).transform.SetParent(Parent.transform);
+           GameObject Object = ObjectPoolManager.GetInstence.GetObject(EnemyName);
+
+            Object.SetActive(true);
+            Object.transform.SetParent(Parent.transform);
         }
+        //Instantiate(pre.GetInstence.getPrefnbByName(EnemyName)).transform.SetParent(Parent.transform);
     }
 }
