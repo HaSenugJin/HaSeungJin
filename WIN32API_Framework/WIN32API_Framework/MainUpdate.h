@@ -6,9 +6,9 @@ class MainUpdate
 {
 private:
 	HDC m_hdc;
+	GameObject* m_pPlayer;
 
 	RECT rcPoint;
-	GameObject* m_pPlayer;
 
 public:
 	void Strat();

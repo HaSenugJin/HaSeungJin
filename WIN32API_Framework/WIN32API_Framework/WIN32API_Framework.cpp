@@ -45,8 +45,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     MSG msg;
     msg.message = NULL;
-    // 기본 메시지 루프입니다:
-
 
     MainUpdate Main;
     Main.Strat();
