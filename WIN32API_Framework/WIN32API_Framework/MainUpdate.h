@@ -1,17 +1,14 @@
 #pragma once
 #include "include.h"
 
+class GameObject;
 class MainUpdate
 {
 private:
 	HDC m_hdc;
-	HDC m_hdc2;
-	HDC m_hdc3;
-	int StartX, StartY;
-	int EndX, EndY;
+
 	RECT rcPoint;
-	RECT rcPoint2;
-	RECT rcPoint3;
+	GameObject* m_pPlayer;
 
 public:
 	void Strat();

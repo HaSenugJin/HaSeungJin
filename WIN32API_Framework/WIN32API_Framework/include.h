@@ -7,3 +7,4 @@
 #include <Windows.h>
 
 #include "Define.h"
+#include "Structs.h"
