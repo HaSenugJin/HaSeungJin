@@ -1,6 +1,10 @@
 #include "Bullet.h"
 #include "Enemy.h"
 
+Enemy e;
+Vector3 a = e.GetPosition();
+Tranform d = e.GetTransform();
+
 Bullet::Bullet()
 {
 }
@@ -11,7 +15,6 @@ Bullet::~Bullet()
 
 void Bullet::Strat()
 {
-	
 	transform.position = Vector3(0.0f, 0.0f, 0.0f);
 	transform.rotation = Vector3(0.0f, 0.0f, 0.0f);
 	transform.scale = Vector3(30.0f, 30.0f, 0.0f);
@@ -37,7 +40,7 @@ int Bullet::Update()
 		return 1;
 	}
 
-
+	
 	return 0;
 }
 
