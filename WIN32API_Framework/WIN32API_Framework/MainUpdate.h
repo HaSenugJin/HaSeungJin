@@ -7,12 +7,13 @@ class MainUpdate
 private:
 	HDC m_hdc;
 	GameObject* m_pPlayer;
+	GameObject* enemy;
 
 	RECT rcPoint;
 
 public:
 	void Strat();
-	void Update();
+	int Update();
 	void Render();
 	void Destroy();
 public:
