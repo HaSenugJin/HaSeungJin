@@ -1,9 +1,4 @@
 #include "Bullet.h"
-#include "Enemy.h"
-
-Enemy e;
-Vector3 a = e.GetPosition();
-Tranform d = e.GetTransform();
 
 Bullet::Bullet()
 {
@@ -13,22 +8,25 @@ Bullet::~Bullet()
 {
 }
 
-void Bullet::Strat()
+GameObject* Bullet::Start()
 {
 	transform.position = Vector3(0.0f, 0.0f, 0.0f);
 	transform.rotation = Vector3(0.0f, 0.0f, 0.0f);
 	transform.scale = Vector3(30.0f, 30.0f, 0.0f);
 
-	Speed = 15.0f;
+	Speed = 15;
+	Key = "Bullet";
+	return this;
 }
 
-void Bullet::Strat(Vector3 _position)
+void Bullet::Start(Vector3 _position)
 {
 	transform.position = _position;
 	transform.rotation = Vector3(0.0f, 0.0f, 0.0f);
 	transform.scale = Vector3(30.0f, 30.0f, 0.0f);
 
 	Speed = 15.0f;
+	Key = "Bullet";
 }
 
 int Bullet::Update()

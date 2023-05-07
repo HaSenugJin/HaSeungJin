@@ -1,7 +1,5 @@
 #include "Enemy.h"
 
-Enemy e;
-
 Enemy::Enemy()
 {
 
@@ -12,7 +10,7 @@ Enemy::~Enemy()
 
 }
 
-void Enemy::Strat()
+GameObject* Enemy::Start()
 {
 	srand((unsigned int)GetTickCount64());
 	transform.position =
@@ -20,7 +18,10 @@ void Enemy::Strat()
 	transform.rotation = Vector3(0.0f, 0.0f, 0.0f);
 	transform.scale = Vector3(150.0f, 150.0f, 0.0f);
 
-	Speed = 1.0f;
+	Speed = 0.5f;
+	Key = "Enemy";
+
+	return this;
 }
 
 int Enemy::Update()
@@ -51,6 +52,6 @@ void Enemy::Destroy()
 
 
 
-void Enemy::Strat(Vector3 _position)
+void Enemy::Start(Vector3 _position)
 {
 }
