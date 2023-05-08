@@ -36,6 +36,7 @@ void SceneManager::SetScene(SCENEID _State)
 		SceneState = new Stage;
 		break;
 	}
+
 	SceneState->Start();
 }
 

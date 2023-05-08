@@ -15,17 +15,12 @@ Player::~Player()
 GameObject* Player::Start()
 {
 	transform.position = Vector3(WIDTH * 0.5f, HEIGET * 0.5f, 0.0f);
-	transform.rotation = Vector3(0.0f, 0.0f, 0.0f);
+	transform.direction = Vector3(0.0f, 0.0f, 0.0f);
 	transform.scale = Vector3(100.0f, 100.0f, 0.0f);
 
 	Speed = 5.0f;
 
 	return this;
-}
-
-void Player::Start(Vector3 _position)
-{
-
 }
 
 int Player::Update()
@@ -75,7 +70,9 @@ void Player::Destroy()
 GameObject* Player::CreateBullet()
 {
 	GameObject* bullet = new Bullet;
-	bullet->Start(transform.position);
+
+	bullet->Start();
+	bullet->SetPosition(transform.position);
 
 	return bullet;
 }

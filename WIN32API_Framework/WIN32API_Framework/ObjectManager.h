@@ -18,8 +18,7 @@ private:
 public:
 	void AddObject(GameObject* _Object);
 
-	list<GameObject*>* GetObjectList(string key);
-
+	list<GameObject*>* GetObjectList(const string& key);
 private:
 	ObjectManager();
 public:
