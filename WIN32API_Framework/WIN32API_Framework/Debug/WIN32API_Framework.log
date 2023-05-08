@@ -1,8 +1,8 @@
 ﻿  Bullet.cpp
   Enemy.cpp
+  GameObject.cpp
   Logo.cpp
   MainUpdate.cpp
-  GameObject.cpp
   Menu.cpp
   ObjectManager.cpp
   Player.cpp

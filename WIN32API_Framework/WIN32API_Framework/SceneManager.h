@@ -6,7 +6,6 @@ class SceneManager
 {
 private:
 	static SceneManager* Instance;
-
 public:
 	static SceneManager* GetInstance()
 	{
@@ -14,7 +13,6 @@ public:
 			Instance = new SceneManager;
 		return Instance;
 	}
-
 private:
 	Scene* SceneState;
 public:
