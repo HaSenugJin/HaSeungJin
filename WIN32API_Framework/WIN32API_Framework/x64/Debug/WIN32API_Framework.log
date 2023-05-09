@@ -1,8 +1,5 @@
-﻿  Bullet.cpp
-  Enemy.cpp
-  GameObject.cpp
-  ObjectManager.cpp
+﻿  Logo.cpp
+  Menu.cpp
   Player.cpp
-  Stage.cpp
   코드를 생성하고 있습니다...
   WIN32API_Framework.vcxproj -> C:\Users\SGA\Desktop\H123\WIN32API_Framework\x64\Debug\WIN32API_Framework.exe

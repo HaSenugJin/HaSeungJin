@@ -42,7 +42,7 @@ int Stage::Update()
 	}
 	else
 		BulletList = ObjectManager::GetInstance()->GetObjectList("Bullet");
-	
+
 	return 0;
 }
 
