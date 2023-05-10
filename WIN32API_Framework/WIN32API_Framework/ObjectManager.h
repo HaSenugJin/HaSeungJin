@@ -4,6 +4,14 @@
 class GameObject;
 class ObjectManager
 {
+public:
+	Single(ObjectManager)
+private:
+	int value;
+public:
+	int GetValue() { return value; }
+	void SetValue(int _value) { value = _value; }
+/*
 private:
 	static ObjectManager* Instance;
 public:
@@ -13,6 +21,7 @@ public:
 			Instance = new ObjectManager;
 		return Instance;
 	}
+*/
 private:
 	map<string, list<GameObject*>> ObjectList;
 public:
