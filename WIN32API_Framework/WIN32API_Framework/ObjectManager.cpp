@@ -3,7 +3,7 @@
 
 ObjectManager* ObjectManager::Instance = nullptr;
 
-ObjectManager::ObjectManager() : //value(0)
+ObjectManager::ObjectManager() //: value(0)
 {
 	
 }

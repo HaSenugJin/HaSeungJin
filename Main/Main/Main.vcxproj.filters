@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\H123\Main.cpp">
+    <ClCompile Include="Main2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\repos\List\List\Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
