@@ -1,7 +1,6 @@
 #pragma once
 #include "include.h"
 
-class GameObject;
 class MainUpdate
 {
 private:

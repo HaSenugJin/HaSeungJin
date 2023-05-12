@@ -10,21 +10,25 @@ typedef struct tagNode
 }NODE;
 
 NODE* List;
+NODE* End;
 int Length;
 
 void Push(int value)
 {
+	/*
 	NODE* nextNode = List;
 
 	while (nextNode->next != nullptr)
 		nextNode = nextNode->next;
-
+	*/
 	//create
-	nextNode->next = new NODE;
+	End = new NODE;
 
 	//initialize
-	nextNode->next->next = nullptr;
-	nextNode->next->value = value;
+	End->next = nullptr;
+	End->value = value;
+
+	End = End->next;
 
 	++Length;
 }
@@ -72,15 +76,15 @@ int main()
 	List = new NODE;
 
 	//initialize
-	List->next = nullptr;
+	End = List->next = nullptr;
 	List->value = 0;
-
+	End = List->next;
 	Push(10);
 	Push(20);
 	Push(30);
 	Push(40);
 
-	insert(0, 25);
+	insert(2, 25);
 	
 	//두번째 노드를 nextNode에 넘겨준다
 	NODE* nextNode = List->next;
