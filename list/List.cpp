@@ -92,24 +92,31 @@ void remove(int count)
 	nextNode->next = tempNode;
 }
 
-//제일뒤에원소추가
-void pop(int count)
+void pop()
 {
-	if (Length == Length)
+	if (Length < 1)
+		return;
+	else if(Length < 2)
 	{
-		NODE* node = new NODE;
-
-		//** initialize
-		node->next = nullptr;
-		node->value = count;
-
-		End->next = node;
-		End = node;
-		++Length;
+		delete List->next;
+		List->next = nullptr;
+		End = List;
 	}
+	else
+	{
+		NODE* nextNode = List;
+		while (nextNode->next->next != nullptr)
+		{
+			nextNode = nextNode->next;
+		}
+
+		End = nextNode;
+		delete nextNode->next;
+		nextNode->next = nullptr;
+	}
+	--Length;
 }
 
-//제일뒤에원소삭제
 void back(int count)
 {
 	if (Length == Length)
@@ -183,8 +190,6 @@ int main(void)
 	push(20);
 	push(30);
 	push(40);
-	pop(13);
-	pop(13);
 
 	// ** 두번째 노드를 nextNode 에 넘겨준다.
 	NODE* nextNode = List->next;
