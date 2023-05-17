@@ -16,6 +16,7 @@ void push(int n)
 		return;
 	}
 	int* Temp = new int[length + 1];
+	
 	for (int i = 0; i < length; ++i)
 		Temp[i] = numbers[i];
 
