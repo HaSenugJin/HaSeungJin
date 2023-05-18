@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\SGA\Desktop\H123\iterator\iterator\main.cpp(17,9): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+C:\Users\SGA\Desktop\H123\iterator\iterator\main.cpp(18,9): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+  iterator.vcxproj -> C:\Users\SGA\Desktop\H123\iterator\Debug\iterator.exe
