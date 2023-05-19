@@ -12,13 +12,24 @@ typedef struct Score
 
 	string name;
 
-	Score() : Kor(0),Eng(0),Math(0) {}
-	Score(int _kor,int _eng, int _math)
+	Score() : name(""), Kor(0), Eng(0), Math(0) {}
+
+	Score(string _name) : name(_name), Kor(0), Eng(0), Math(0) {}
+
+	Score(int _kor, int _eng, int _math)
 		: Kor(_kor), Eng(_eng), Math(_math) {}
-};
+
+	Score(string _name, int _kor, int _eng, int _math)
+		: name(_name), Kor(_kor), Eng(_eng), Math(_math) {}
+}Score;
+
+map<string, list<Score>> StudenList;
+Score CreateScore(string _name, int _kor, int _eng, int _math);
+bool AddStudent(string _key, Score _score);
 
 int main()
 {
+	
 	/*
 	map<string, Score> list;
 
@@ -49,13 +60,50 @@ int main()
 	}
 	*/
 	
-	map<string, list<Score>> StudenList;
 
 	string key = "È«";
-	Score score = Score(10, 20, 30);
-	score.name = "±æµ¿";
+	string name = "±æµ¿";
 
+	Score score = CreateScore(name, 10, 20, 30);
 
+	if (AddStudent(key, score))
+	{
+		cout << "log" << endl;
+	}
+	
+	for (map<string, list<Score>>::iterator iter = StudenList.begin();
+		iter != StudenList.end(); ++iter)
+	{
+		for (list<Score>::iterator iter2 = iter->second.begin();
+			iter2 != iter->second.end(); ++iter2)
+		{
+			cout << iter2->name << endl;
+			cout << iter2->Kor << endl;
+			cout << iter2->Eng << endl;
+			cout << iter2->Math << endl << endl;
+		}
+	}
 
 	return 0;
+}
+
+Score CreateScore(string _name, int _kor, int _eng, int _math)
+{
+	return Score(_name, _kor, _eng, _math);
+}
+
+bool AddStudent(string _key, Score _score)
+{
+	map<string, list<Score>>::iterator iter = StudenList.find(_key);
+
+	if (iter == StudenList.end())
+	{
+		list<Score> templist;
+		templist.push_back(_score);
+		StudenList.insert(make_pair(_key, templist));
+	}
+	else
+		iter->second.push_back(_score);
+	
+	return true;
 }
