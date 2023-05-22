@@ -2,6 +2,7 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "ObjectManager.h"
+#include"Protoptype.h"
 
 Stage::Stage() : m_player(nullptr), EnemyList(nullptr), BulletList(nullptr)
 {
@@ -15,8 +16,29 @@ Stage::~Stage()
 
 void Stage::Start()
 {
-	m_player = (new Player)->Start();
-	ObjectManager::GetInstance()->AddObject((new Enemy)->Start());
+	GetSingle(Protoptype)->Start();
+
+	{
+		GameObject* ProtoObj = GetSingle(Protoptype)->GetGameObject("Player");
+
+		if (ProtoObj != nullptr)
+		{
+			m_player = ProtoObj->Clone();
+			m_player->Start();
+		}
+	}
+
+
+	{
+		GameObject* ProtoObj = GetSingle(Protoptype)->GetGameObject("Enemy");
+
+		if (ProtoObj != nullptr)
+		{
+			GameObject* Object = ProtoObj->Clone();
+			ObjectManager::GetInstance()->AddObject(Object->Start());
+		}
+	}
+
 	EnemyList = ObjectManager::GetInstance()->GetObjectList("Enemy");
 }
 

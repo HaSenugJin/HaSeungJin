@@ -4,75 +4,101 @@
 
 using namespace std;
 
-typedef struct Score
+
+typedef struct tagVector3
 {
+	float x, y, z;
+	/*
+	tagVector3()
+	{
+		x = 0.0f;
+		y = 0.0f;
+		z = 0.0f;
+	}
+	*/
+
+	tagVector3() : x(0.0f), y(0.0f), z(0.0f) {}
+
+	tagVector3(float _x, float _y) : x(_x), y(_y), z(0.0f) {}
+
+	tagVector3(float _x, float _y, float _z)
+		: x(_x), y(_y), z(_z) {}
+}Vector3;
+
+
+
+typedef struct tagScore
+{
+	string name;
 	int Kor;
 	int Eng;
 	int Math;
 
-	string name;
+	tagScore() : name(""), Kor(0), Eng(0), Math(0) {}
 
-	Score() : name(""), Kor(0), Eng(0), Math(0) {}
+	tagScore(string _name) : name(_name), Kor(0), Eng(0), Math(0) {}
 
-	Score(string _name) : name(_name), Kor(0), Eng(0), Math(0) {}
+	tagScore(int _kor, int _eng, int _math)
+		: name(""), Kor(_kor), Eng(_eng), Math(_math) {}
 
-	Score(int _kor, int _eng, int _math)
-		: Kor(_kor), Eng(_eng), Math(_math) {}
-
-	Score(string _name, int _kor, int _eng, int _math)
+	tagScore(string _name, int _kor, int _eng, int _math)
 		: name(_name), Kor(_kor), Eng(_eng), Math(_math) {}
 }Score;
 
-map<string, list<Score>> StudenList;
-Score CreateScore(string _name, int _kor, int _eng, int _math);
+
+
+
+
+map<string, list<Score>> StudentList;
+
+Score CreateScore(string _name, int _kor, int _Eng, int _math);
 bool AddStudent(string _key, Score _score);
 
-int main()
+int main(void)
 {
-	
 	/*
-	map<string, Score> list;
+	map<string, Score> List;
 
 	string key = "홍";
 	Score score = Score(10, 20, 30);
-	score.name = "길동";
 
-	list.insert(make_pair(score.name, score));
+	List.insert(make_pair(key, score));
 
 	score = Score(100, 200, 300);
-	list[score.name] = score;
+	score.name = "길동";
 
-	cout << list[score.name].Kor << endl;
-	cout << list[score.name].Eng << endl;
-	cout << list[score.name].Math << endl;
+	List[key] = score;
 
-	multimap<string, Score> multilist;
+	cout << key + List[key].name << endl;
+	cout << List[key].Kor << endl;
+	cout << List[key].Eng << endl;
+	cout << List[key].Math << endl;
 
-	multilist.insert(make_pair(score.name, score));
-	multilist.insert(make_pair(score.name, score));
+	multimap<string, Score> multiList;
 
-	for (multimap<string, Score>::iterator iter = multilist.begin(); iter != multilist.end(); ++iter)
+	multiList.insert(make_pair(key, score));
+	multiList.insert(make_pair(key, score));
+
+
+	for (multimap<string, Score>::iterator iter = multiList.begin(); iter != multiList.end(); ++iter)
 	{
-		cout << "[" << score.name << "]" << endl;
-		cout <<"국어점수" << " : " << iter->second.Kor << endl;
-		cout <<"영어점수" << " : " << iter->second.Eng << endl;
-		cout <<"수학점수" << " : " << iter->second.Math << endl;
+		cout << "[" << iter->first << "]" << endl;
+		cout << "국어점수" << " : " << iter->second.Kor << endl;
+		cout << "영어점수" << " : " << iter->second.Eng << endl;
+		cout << "수학점수" << " : " << iter->second.Math << endl << endl;
 	}
 	*/
-	
 
 	string key = "홍";
 	string name = "길동";
 
 	Score score = CreateScore(name, 10, 20, 30);
 
-	if (AddStudent(key, score))
-	{
-		cout << "log" << endl;
-	}
-	
-	for (map<string, list<Score>>::iterator iter = StudenList.begin();
-		iter != StudenList.end(); ++iter)
+	if (!AddStudent(key, score))
+		cout << "Log" << endl;
+
+	for (map<string, list<Score>>::iterator iter = StudentList.begin();
+		iter != StudentList.end(); ++iter)
 	{
 		for (list<Score>::iterator iter2 = iter->second.begin();
 			iter2 != iter->second.end(); ++iter2)
@@ -94,16 +120,16 @@ Score CreateScore(string _name, int _kor, int _eng, int _math)
 
 bool AddStudent(string _key, Score _score)
 {
-	map<string, list<Score>>::iterator iter = StudenList.find(_key);
+	map<string, list<Score>>::iterator iter = StudentList.find(_key);
 
-	if (iter == StudenList.end())
+	if (iter == StudentList.end())
 	{
-		list<Score> templist;
-		templist.push_back(_score);
-		StudenList.insert(make_pair(_key, templist));
+		list<Score> tempList;
+		tempList.push_back(_score);
+		StudentList.insert(make_pair(_key, tempList));
 	}
 	else
 		iter->second.push_back(_score);
-	
+
 	return true;
 }

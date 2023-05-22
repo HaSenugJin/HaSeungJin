@@ -4,68 +4,77 @@
 
 using namespace std;
 
-// iterator = 반복자
+
+// ** iterator = 반복자 = 포인터 = 주소
 
 
-int main()
+int main(void)
 {
-	list<int> numbers;
-	numbers.push_back(100);
-	numbers.push_back(200);
+	list<int> Numbers;
 
+	Numbers.push_back(100);
+	Numbers.push_back(200);
 
-	numbers.begin();
-	numbers.end();
+	Numbers.insert(Numbers.begin(), 50);
+	Numbers.insert(Numbers.end(), 300);
 
-	numbers.insert(numbers.begin(), 50);
-	numbers.insert(numbers.end(), 300);
-
-	list<int>::iterator iter = numbers.begin();
-
-	numbers.insert(iter, 25);
+	list<int>::iterator iter = Numbers.begin();
+	Numbers.insert(iter, 25);
 
 	++iter;
 	++iter;
 	++iter;
 
-	numbers.insert(iter, 250);
+	Numbers.insert(iter, 250);
 
-	for (list<int>::iterator iter = numbers.begin(); iter != numbers.end(); ++iter)
-	{
+	for (list<int>::iterator iter = Numbers.begin(); iter != Numbers.end(); ++iter)
 		cout << (*iter) << endl;
-	}
 
-	map<string, int> list;
+	// ====================================================================================
+	cout << "====================================================================================" << endl;
+	// ====================================================================================
 
-	list["AAA"] = 10;
-	list["BBB"] = 20;
-	list["CCC"] = 30;
+	map<string, int> List;
+
+	List["AAA"] = 10;
+	List["BBB"] = 20;
+	List["CCC"] = 30;
+
 
 	/*
-	for (int i = 0; i < list.size(); ++i)
-	{
-		cout << list[i] << endl;
-	}
+	for (int i = 0; i < List.size(); ++i)
+		cout << List[i] << endl;
 	*/
-	cout << endl;
-	cout << endl;
-	for (map<string, int>::iterator iter = list.begin(); iter != list.end(); ++iter)
+
+	for (map<string, int>::iterator iter = List.begin(); iter != List.end(); ++iter)
 		cout << iter->first << " : " << (*iter).second << endl;
 
+
+	// ====================================================================================
+	cout << "====================================================================================" << endl;
+	// ====================================================================================
+
+
 	const int size = 16;
+	int Array[size] = { 1, 2, 3, 4, 5, 6, 7 };
 
-	int Array[size] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 };
-
-	
 	for (int i = 0; i < size; ++i)
-		cout << Array[i] << ", ";
+		cout << Array[i] << endl;
 
-	cout << endl;
-	cout << endl;
+	// ====================================================================================
+	cout << "====================================================================================" << endl;
+	// ====================================================================================
 
-	int* iter2 = &Array[0];
-	cout << (*iter2) << endl;
-	cout << (*iter2 + 5) << endl;
+	{
+		int* iter = Array;
+		cout << (*iter) << endl;
+
+		cout << *(++iter) << endl;
+
+		cout << *(iter + 5) << endl;
+		cout << *(iter) << endl;
+	}
+
 
 	return 0;
 }

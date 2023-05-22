@@ -2,6 +2,7 @@
 #include "Bullet.h"
 #include "ObjectManager.h"
 #include "InputManager.h"
+#include "Protoptype.h"
 
 Player::Player()
 {
@@ -63,7 +64,6 @@ void Player::Render(HDC hdc)
 		int(transform.position.y - (transform.scale.y * 0.5f)),
 		int(transform.position.x + (transform.scale.x * 0.5f)),
 		int(transform.position.y + (transform.scale.y * 0.5f)));
-
 }
 
 void Player::Destroy()
@@ -72,10 +72,18 @@ void Player::Destroy()
 
 GameObject* Player::CreateBullet()
 {
-	GameObject* bullet = new Bullet;
+	GameObject* protoObj = GetSingle(Protoptype)->GetGameObject("Bullet");
 
-	bullet->Start();
-	bullet->SetPosition(transform.position);
+	if (protoObj != nullptr)
+	{
+		GameObject* Object = protoObj->Clone();
+		Object->Start();
+		Object->SetPosition(transform.position);
 
-	return bullet;
+		return Object;
+	}
+	else
+	{
+		return nullptr;
+	}
 }

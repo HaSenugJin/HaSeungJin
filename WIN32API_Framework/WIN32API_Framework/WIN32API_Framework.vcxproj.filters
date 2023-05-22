@@ -61,6 +61,9 @@
     <Filter Include="소스 파일\99. Manager\InputManager">
       <UniqueIdentifier>{cb3a58da-cde5-4eb8-91a6-945c437de1db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\98. Fattern">
+      <UniqueIdentifier>{c6da9a4f-816b-4a71-a198-b3c1756a8f3d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -126,6 +129,9 @@
     <ClInclude Include="InputManager.h">
       <Filter>소스 파일\99. Manager\InputManager</Filter>
     </ClInclude>
+    <ClInclude Include="Protoptype.h">
+      <Filter>소스 파일\98. Fattern</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WIN32API_Framework.cpp">
@@ -166,6 +172,9 @@
     </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>소스 파일\99. Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Protoptype.cpp">
+      <Filter>소스 파일\98. Fattern</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
