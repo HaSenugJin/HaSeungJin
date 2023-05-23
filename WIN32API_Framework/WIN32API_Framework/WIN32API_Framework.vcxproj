@@ -151,7 +151,9 @@
     <ClInclude Include="MainUpdate.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="ObjectFactory.h" />
     <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="Objectpool.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Protoptype.h" />
     <ClInclude Include="Resource.h" />
@@ -171,6 +173,7 @@
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="Objectpool.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Protoptype.cpp" />
     <ClCompile Include="Scene.cpp" />

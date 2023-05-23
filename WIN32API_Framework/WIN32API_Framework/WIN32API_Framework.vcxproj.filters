@@ -64,6 +64,15 @@
     <Filter Include="소스 파일\98. Fattern">
       <UniqueIdentifier>{c6da9a4f-816b-4a71-a198-b3c1756a8f3d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\98. Fattern\Prototype">
+      <UniqueIdentifier>{fe9693a8-3109-40de-bf19-4a76e7345516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\98. Fattern\ObjectPool">
+      <UniqueIdentifier>{34d29b74-a631-43c1-b21d-9c768875a2d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99. Manager\Factory">
+      <UniqueIdentifier>{64ab316d-30ed-4dae-9b6b-22e1223566d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -130,7 +139,13 @@
       <Filter>소스 파일\99. Manager\InputManager</Filter>
     </ClInclude>
     <ClInclude Include="Protoptype.h">
-      <Filter>소스 파일\98. Fattern</Filter>
+      <Filter>소스 파일\98. Fattern\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="Objectpool.h">
+      <Filter>소스 파일\98. Fattern\ObjectPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>소스 파일\99. Manager\Factory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -174,7 +189,10 @@
       <Filter>소스 파일\99. Manager\InputManager</Filter>
     </ClCompile>
     <ClCompile Include="Protoptype.cpp">
-      <Filter>소스 파일\98. Fattern</Filter>
+      <Filter>소스 파일\98. Fattern\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="Objectpool.cpp">
+      <Filter>소스 파일\98. Fattern\ObjectPool</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

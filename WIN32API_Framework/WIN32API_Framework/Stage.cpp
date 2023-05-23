@@ -3,6 +3,7 @@
 #include "Enemy.h"
 #include "ObjectManager.h"
 #include"Protoptype.h"
+//#include "CollisionManager.h"
 
 Stage::Stage() : m_player(nullptr), EnemyList(nullptr), BulletList(nullptr)
 {
@@ -64,6 +65,17 @@ int Stage::Update()
 	}
 	else
 		BulletList = ObjectManager::GetInstance()->GetObjectList("Bullet");
+
+	//Ãæµ¹
+	/*
+	CollisionManager c;
+
+	if (c.CircleCollision(GetSingle(Protoptype)->GetGameObject("Enemy"), GetSingle(Protoptype)->GetGameObject("Bullet")))
+	{
+
+	}
+	*/
+	
 
 	return 0;
 }
