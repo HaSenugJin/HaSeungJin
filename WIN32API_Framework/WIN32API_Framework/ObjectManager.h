@@ -1,11 +1,12 @@
 #pragma once
-#include "include.h"
+#include "Include.h"
 
 class GameObject;
 class ObjectManager
 {
 private:
 	static ObjectManager* Instance;
+
 public:
 	static ObjectManager* GetInstance()
 	{
@@ -24,4 +25,6 @@ private:
 public:
 	~ObjectManager();
 };
+
+
 

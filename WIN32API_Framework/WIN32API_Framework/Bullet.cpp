@@ -8,6 +8,7 @@ Bullet::~Bullet()
 {
 }
 
+
 GameObject* Bullet::Start()
 {
 	transform.position = Vector3(0.0f, 0.0f, 0.0f);
@@ -15,7 +16,9 @@ GameObject* Bullet::Start()
 	transform.scale = Vector3(30.0f, 30.0f, 0.0f);
 
 	Speed = 15;
+
 	Key = "Bullet";
+
 	return this;
 }
 
@@ -24,11 +27,8 @@ int Bullet::Update()
 	transform.position += transform.direction * Speed;
 
 	if (transform.position.x > WIDTH)
-	{
 		return 1;
-	}
 
-	
 	return 0;
 }
 
@@ -43,5 +43,4 @@ void Bullet::Render(HDC hdc)
 
 void Bullet::Destroy()
 {
-
 }

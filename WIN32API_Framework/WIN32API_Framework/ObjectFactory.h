@@ -13,7 +13,7 @@ public:
 		return Obj;
 	}
 
-	static GameObject* CreateObject(const float& _x, const float& _y)
+	static GameObject* CreateObject(const float& _x,const float& _y)
 	{
 		GameObject* Obj = new T();
 		Obj->Start();
@@ -30,4 +30,4 @@ public:
 
 		return Obj;
 	}
-};
+}; 

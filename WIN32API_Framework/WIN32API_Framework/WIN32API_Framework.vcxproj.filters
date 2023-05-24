@@ -14,64 +14,52 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="헤더 파일\Headers">
-      <UniqueIdentifier>{f1c447bb-aa7e-4d36-af57-44d594d1786a}</UniqueIdentifier>
+      <UniqueIdentifier>{35f9a7c7-405d-481a-b713-af06d4614634}</UniqueIdentifier>
     </Filter>
     <Filter Include="헤더 파일\Include">
-      <UniqueIdentifier>{90cffef1-a348-4bcb-9bed-a31cc74c180b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. GameObject">
-      <UniqueIdentifier>{8729cac2-93b8-4ae4-9406-b80c6f551837}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. GameObject\Bullet">
-      <UniqueIdentifier>{5d146a73-61bb-4add-b56b-090d399cc8ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. GameObject\Player">
-      <UniqueIdentifier>{6ce2656e-f003-4775-8f28-925612752222}</UniqueIdentifier>
+      <UniqueIdentifier>{45aa63c2-fd0c-43bc-a4ac-e23332f6cd05}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\00. MainUpdate">
-      <UniqueIdentifier>{148e9d1f-a38b-4e1d-a050-ea2cc1164b6f}</UniqueIdentifier>
+      <UniqueIdentifier>{4cdbf8ae-fc98-4e26-a57c-e4c974595817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. GameObject">
+      <UniqueIdentifier>{ab35d55f-19d0-42de-8ff8-a755e7c41f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. GameObject\Player">
+      <UniqueIdentifier>{34dd56e2-cc62-4bb1-8dfe-29b43f8ac8bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. GameObject\Bullet">
+      <UniqueIdentifier>{48419ffc-a849-4d4b-8951-4b11dfe62daf}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\01. GameObject\Enemy">
-      <UniqueIdentifier>{f90141b7-6b7b-4aaa-95a3-21e2b40c754d}</UniqueIdentifier>
+      <UniqueIdentifier>{7c5b14e4-721f-49d2-bca8-dab98c2edd82}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\99. Manager">
-      <UniqueIdentifier>{780a4653-bd83-4bf5-a9ff-e2489318a78a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\99. Manager\SceneManager">
-      <UniqueIdentifier>{6637c159-15bc-4d31-b7cb-75dd778503af}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\02. Scene">
-      <UniqueIdentifier>{5150eec9-c249-46be-8ca8-b1b1d4a816ec}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\02. Scene\Logo">
-      <UniqueIdentifier>{2f0277d6-c702-4a67-b751-3f6752181430}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\02. Scene\Menu">
-      <UniqueIdentifier>{a5de612b-e71e-4bc0-b385-9d7454a68123}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\02. Scene\Stage">
-      <UniqueIdentifier>{399a8822-5522-4fd4-a184-07ba9d5ef3b9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\99. Manager\CollisionManager">
-      <UniqueIdentifier>{27f30a4a-1498-4359-a08e-0dd385e8f3cf}</UniqueIdentifier>
+      <UniqueIdentifier>{fd51637a-ce1b-4b9b-b185-6b8f3b70231f}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\99. Manager\ObjectManager">
-      <UniqueIdentifier>{ebaae405-cf94-448c-9098-db758cd90133}</UniqueIdentifier>
+      <UniqueIdentifier>{520c4271-ef74-4ef1-a0f7-8ca947924a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99. Manager\CollisionManager">
+      <UniqueIdentifier>{06e09dca-e1d1-4ced-aa7e-558fe840f010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99. Manager\SceneManager">
+      <UniqueIdentifier>{1173ef2f-e1ed-46a1-b77e-cf3182d2753c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Scene">
+      <UniqueIdentifier>{ebd93711-df23-441f-a2cb-9fa6fb0de481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Scene\Logo">
+      <UniqueIdentifier>{9ef93c45-9992-4a84-9547-52afc77602b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Scene\Menu">
+      <UniqueIdentifier>{dea2f2a9-57e5-4cda-8e93-6e4ae2fdedb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Scene\Stage">
+      <UniqueIdentifier>{9b3623c2-5d59-4941-aec4-55a131344c65}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\99. Manager\InputManager">
-      <UniqueIdentifier>{cb3a58da-cde5-4eb8-91a6-945c437de1db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\98. Fattern">
-      <UniqueIdentifier>{c6da9a4f-816b-4a71-a198-b3c1756a8f3d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\98. Fattern\Prototype">
-      <UniqueIdentifier>{fe9693a8-3109-40de-bf19-4a76e7345516}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\98. Fattern\ObjectPool">
-      <UniqueIdentifier>{34d29b74-a631-43c1-b21d-9c768875a2d3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\99. Manager\Factory">
-      <UniqueIdentifier>{64ab316d-30ed-4dae-9b6b-22e1223566d0}</UniqueIdentifier>
+      <UniqueIdentifier>{cfb9b6b7-1317-4f7f-ae6e-677338ce29c7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -87,14 +75,17 @@
     <ClInclude Include="WIN32API_Framework.h">
       <Filter>헤더 파일\Headers</Filter>
     </ClInclude>
+    <ClInclude Include="MainUpdate.h">
+      <Filter>소스 파일\00. MainUpdate</Filter>
+    </ClInclude>
     <ClInclude Include="Define.h">
       <Filter>헤더 파일\Include</Filter>
     </ClInclude>
-    <ClInclude Include="include.h">
+    <ClInclude Include="Include.h">
       <Filter>헤더 파일\Include</Filter>
     </ClInclude>
-    <ClInclude Include="MainUpdate.h">
-      <Filter>소스 파일\00. MainUpdate</Filter>
+    <ClInclude Include="GameObject.h">
+      <Filter>소스 파일\01. GameObject</Filter>
     </ClInclude>
     <ClInclude Include="Structs.h">
       <Filter>헤더 파일\Include</Filter>
@@ -108,17 +99,20 @@
     <ClInclude Include="Enemy.h">
       <Filter>소스 파일\01. GameObject\Enemy</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>소스 파일\01. GameObject</Filter>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\99. Manager\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>소스 파일\99. Manager\CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\99. Manager\SceneManager</Filter>
     </ClInclude>
     <ClInclude Include="Enum.h">
       <Filter>헤더 파일\Include</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>소스 파일\99. Manager\SceneManager</Filter>
+      <Filter>소스 파일\02. Scene</Filter>
     </ClInclude>
     <ClInclude Include="Logo.h">
       <Filter>소스 파일\02. Scene\Logo</Filter>
@@ -129,23 +123,8 @@
     <ClInclude Include="Stage.h">
       <Filter>소스 파일\02. Scene\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="CollisionManager.h">
-      <Filter>소스 파일\99. Manager\CollisionManager</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjectManager.h">
-      <Filter>소스 파일\99. Manager\ObjectManager</Filter>
-    </ClInclude>
     <ClInclude Include="InputManager.h">
       <Filter>소스 파일\99. Manager\InputManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Protoptype.h">
-      <Filter>소스 파일\98. Fattern\Prototype</Filter>
-    </ClInclude>
-    <ClInclude Include="Objectpool.h">
-      <Filter>소스 파일\98. Fattern\ObjectPool</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjectFactory.h">
-      <Filter>소스 파일\99. Manager\Factory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="MainUpdate.cpp">
       <Filter>소스 파일\00. MainUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>소스 파일\01. GameObject</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>소스 파일\01. GameObject\Player</Filter>
@@ -164,14 +146,14 @@
     <ClCompile Include="Enemy.cpp">
       <Filter>소스 파일\01. GameObject\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>소스 파일\01. GameObject</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\99. Manager\ObjectManager</Filter>
     </ClCompile>
     <ClCompile Include="SceneManager.cpp">
       <Filter>소스 파일\99. Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\02. Scene</Filter>
     </ClCompile>
     <ClCompile Include="Logo.cpp">
       <Filter>소스 파일\02. Scene\Logo</Filter>
@@ -182,17 +164,8 @@
     <ClCompile Include="Stage.cpp">
       <Filter>소스 파일\02. Scene\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="ObjectManager.cpp">
-      <Filter>소스 파일\99. Manager\ObjectManager</Filter>
-    </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>소스 파일\99. Manager\InputManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Protoptype.cpp">
-      <Filter>소스 파일\98. Fattern\Prototype</Filter>
-    </ClCompile>
-    <ClCompile Include="Objectpool.cpp">
-      <Filter>소스 파일\98. Fattern\ObjectPool</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -207,5 +180,8 @@
     <Image Include="WIN32API_Framework.ico">
       <Filter>리소스 파일</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
