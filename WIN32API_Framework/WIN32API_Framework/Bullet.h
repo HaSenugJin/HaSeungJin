@@ -1,6 +1,7 @@
 #pragma once
 #include "GameObject.h"
 
+
 class Bullet : public GameObject
 {
 public:
@@ -9,7 +10,10 @@ public:
 	virtual void Render(HDC hdc)override;
 	virtual void Destroy()override;
 public:
-	Bullet();
+	virtual GameObject* Clone()override { return new Bullet(*this); }
+public:
+	Bullet() ;
+	Bullet(Transform _transform) : GameObject(_transform) {}
 	virtual ~Bullet();
 };
 
