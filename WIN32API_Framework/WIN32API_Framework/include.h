@@ -18,6 +18,9 @@ using namespace std;
 //** 이미지 라이브러리
 #pragma comment(lib, "msimg32.lib")
 
+
+
+
 /*
 #include <gdiplus.h>
 using namespace Gdiplus;
