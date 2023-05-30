@@ -24,6 +24,7 @@ void Protptype::Start()
 	string key = "Player";
 	ProtptypeObject.insert(make_pair(key, (new Player(transform))->Start()->SetKey(key)));
 
+
 	key = "Enemy";
 	ProtptypeObject.insert(make_pair(key, (new Enemy(transform))->Start()->SetKey(key)));
 

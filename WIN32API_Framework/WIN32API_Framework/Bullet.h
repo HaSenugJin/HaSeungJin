@@ -1,7 +1,6 @@
 #pragma once
 #include "GameObject.h"
 
-
 class Bullet : public GameObject
 {
 public:
@@ -16,4 +15,3 @@ public:
 	Bullet(Transform _transform) : GameObject(_transform) {}
 	virtual ~Bullet();
 };
-
