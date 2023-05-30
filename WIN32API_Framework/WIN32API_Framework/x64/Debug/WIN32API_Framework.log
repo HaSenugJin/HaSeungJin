@@ -1,4 +1,4 @@
 ﻿  Player.cpp
-C:\Users\SGA\Desktop\H123\WIN32API_Framework\WIN32API_Framework\Player.cpp(106,21): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\SGA\Desktop\H123\WIN32API_Framework\WIN32API_Framework\Player.cpp(105,21): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  WIN32API_Framework.vcxproj -> C:\Users\SGA\Desktop\H123\WIN32API_Framework\x64\Debug\WIN32API_Framework.exe
+C:\Users\하승진\Desktop\H123\WIN32API_Framework\WIN32API_Framework\Player.cpp(184,21): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\하승진\Desktop\H123\WIN32API_Framework\WIN32API_Framework\Player.cpp(183,21): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  WIN32API_Framework.vcxproj -> C:\Users\하승진\Desktop\H123\WIN32API_Framework\x64\Debug\WIN32API_Framework.exe

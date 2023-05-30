@@ -7,7 +7,7 @@ class GameObject
 {
 protected:
 	Frame frame;
-	ULONGLONG Tiem;
+	ULONGLONG Time;
 
 	Transform transform;
 	float Speed;

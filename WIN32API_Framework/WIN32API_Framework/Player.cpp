@@ -22,9 +22,15 @@ Player::~Player()
 
 GameObject* Player::Start()
 {
+	Attack = false;
+	isJumping = false;
+	jumpHeight = 10.0f;
+	oldY = 0.0f;
+	curentY = 0.0f;
+
 	frame.CountX = 0;
 	frame.CountY = 0;
-	frame.EndFrame = 6;
+	frame.EndFrame = 7;
 	frame.FrameTime = 50;
 
 	transform.position = Vector3(WIDTH * 0.5f, HEIGHT * 0.5f, 0.0f);
@@ -34,26 +40,97 @@ GameObject* Player::Start()
 	Speed = 5.0f;
 
 	Key = "Player";
-	//Key = "PlayerL";
 
-	Tiem = GetTickCount64();
+	Time = GetTickCount64();
 	return this;
 }
 
 int Player::Update()
 {
-	frame.CountY = 0;
-	if (Tiem + frame.FrameTime < GetTickCount64())
+	if (Time + frame.FrameTime < GetTickCount64())
 	{
-		Tiem = GetTickCount64();
+		Time = GetTickCount64();
+		++frame.CountX;
+
 		if (frame.CountX == frame.EndFrame)
+		{
 			frame.CountX = 0;
 
-		++frame.CountX;
+			if (Attack)
+			{
+				Attack = false;
+				SetFrame(0, 0, 7, 150);
+			}
+		}
+	}
+
+	if (isJumping)
+	{
+		flightTime += 0.1f;
+
+		transform.position.y += -sinf(90 * PI / 180) * jumpHeight + (flightTime * flightTime * 0.98f);
+
+		if (curentY < transform.position.y)
+			SetFrame(frame.CountX, 3, 3, 50);
+		else
+			SetFrame(frame.CountX, 2, 3, 50);
+
+		curentY = transform.position.y;
+
+		if (oldY < transform.position.y)
+		{
+			flightTime = 0.0f;
+			transform.position.y = oldY;
+			isJumping = false;
+		}
 	}
 
 	DWORD dwKey = GetSingle(InputManager)->GetKey();
 
+	if (dwKey & KEYID_SPACE)
+	{
+		SetFrame(frame.CountX, 0, 7, 1500 / 7);
+		OnAttack();
+	}
+
+	if (dwKey & KEYID_CONTROL)
+		OnJump();
+
+	if (!Attack)
+	{
+		if (dwKey & KEYID_UP)
+			transform.position.y -= Speed;
+
+		if (dwKey & KEYID_DOWN)
+			transform.position.y += Speed;
+
+
+		if (GetAsyncKeyState('1'))
+			Option = 0;
+
+		if (GetAsyncKeyState('2'))
+			Option = 1;
+
+
+		if (dwKey & KEYID_LEFT)
+			transform.direction.x = (-1.0f);
+		else if (dwKey & KEYID_RIGHT)
+			transform.direction.x = 1.0f;
+		else
+			transform.direction.x = 0.0f;
+	}
+
+	if (transform.direction.x)
+	{
+		SetFrame(frame.CountX, 2, 7, 500 / 7);
+		OnMove();
+	}
+	else if (!isJumping)
+		SetFrame(frame.CountX, 0, 7, 1500 / 7);
+
+	return 0;
+
+	/*
 	if (dwKey & KEYID_UP)
 	{
 		frame.CountY = 8;
@@ -92,6 +169,7 @@ int Player::Update()
 	
 
 	return 0;
+	*/
 }
 
 void Player::Render(HDC hdc)
@@ -149,3 +227,51 @@ GameObject* Player::CreateBullet(string _Key)
 
 	return Obj;
 }
+
+void Player::SetFrame(int _frame, int _locomotion, int _endFrame, float _frameTime)
+{
+	frame.CountX = _frame;
+	frame.CountY = _locomotion;
+	frame.EndFrame = _endFrame;
+	frame.FrameTime = _frameTime;
+}
+
+void Player::OnAttack()
+{
+	if (Attack)
+		return;
+
+	Attack = true;
+	SetFrame(0, 5, 4, 1500 / 4);
+
+	switch (Option)
+	{
+	case 0:
+		ObjectManager::GetInstance()->AddObject(CreateBullet<NormalBullet>("NormalBullet"));
+		break;
+
+	case 1:
+		ObjectManager::GetInstance()->AddObject(CreateBullet<GuideBullet>("GuideBullet"));
+		break;
+
+	}
+}
+
+void Player::OnMove()
+{
+	transform.position += transform.direction * Speed;
+	Key = transform.direction.x < 0 ? "PlayerL" : "Player";
+}
+
+
+
+void Player::OnJump()
+{
+	if (isJumping)
+		return;
+
+	isJumping = true;
+	oldY = transform.position.y;
+	frame.CountX = 0;
+}
+
