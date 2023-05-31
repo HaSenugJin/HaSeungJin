@@ -16,11 +16,9 @@ SceneManager::~SceneManager()
 
 void SceneManager::SetScene(SCENEID _State)
 {
+	//함수 앞에 ::붙어있으면 인라인함수
 	if (SceneState != nullptr)
-	{
-		delete SceneState;
-		SceneState = nullptr;
-	}
+		::Safe_Release(SceneState);
 
 	switch (_State)
 	{
@@ -51,6 +49,5 @@ void SceneManager::Render(HDC hdc)
 
 void SceneManager::Destroy()
 {
-	delete SceneState;
-	SceneState = nullptr;
+	::Safe_Release(SceneState);
 }

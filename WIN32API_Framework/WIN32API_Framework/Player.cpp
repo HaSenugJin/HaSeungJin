@@ -66,10 +66,14 @@ int Player::Update()
 
 	if (isJumping)
 	{
+		//누르는 힘을 적용
 		flightTime += 0.1f;
 
-		transform.position.y += -sinf(90 * PI / 180) * jumpHeight + (flightTime * flightTime * 0.98f);
+		//점프
+		transform.position.y += -sinf(90 * PI / 180)
+			* jumpHeight + (flightTime * flightTime * 0.98f);
 
+		//점프일 때 올라가는 중인지 떨어지는 중인지를 확인
 		if (curentY < transform.position.y)
 			SetFrame(frame.CountX, 3, 3, 50);
 		else
@@ -77,6 +81,7 @@ int Player::Update()
 
 		curentY = transform.position.y;
 
+		//최초의 점프 위치를 벗어나면 최초위치로 셋팅.
 		if (oldY < transform.position.y)
 		{
 			flightTime = 0.0f;
@@ -89,7 +94,7 @@ int Player::Update()
 
 	if (dwKey & KEYID_SPACE)
 	{
-		SetFrame(frame.CountX, 0, 7, 1500 / 7);
+		SetFrame(frame.CountX, 0, 7, 1500);
 		OnAttack();
 	}
 
@@ -122,11 +127,11 @@ int Player::Update()
 
 	if (transform.direction.x)
 	{
-		SetFrame(frame.CountX, 2, 7, 500 / 7);
+		SetFrame(frame.CountX, 2, 7, 500);
 		OnMove();
 	}
 	else if (!isJumping)
-		SetFrame(frame.CountX, 0, 7, 1500 / 7);
+		SetFrame(frame.CountX, 0, 7, 1500);
 
 	return 0;
 
@@ -233,7 +238,7 @@ void Player::SetFrame(int _frame, int _locomotion, int _endFrame, float _frameTi
 	frame.CountX = _frame;
 	frame.CountY = _locomotion;
 	frame.EndFrame = _endFrame;
-	frame.FrameTime = _frameTime;
+	frame.FrameTime = _frameTime / _endFrame;
 }
 
 void Player::OnAttack()

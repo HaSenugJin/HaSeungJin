@@ -37,3 +37,13 @@ private:							\
 	T& operator=(const T&) = delete;
 
 #define GetSingle(T) (*T::GetInstance())
+
+template <typename T>
+inline void Safe_Release(T& _Object)
+{
+	if (_Object)
+	{
+		delete _Object;
+		_Object = nullptr;
+	}
+}
