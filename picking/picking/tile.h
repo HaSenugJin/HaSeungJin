@@ -1,16 +1,19 @@
 #pragma once
-#include "Include.h"
-#include "object.h"
+#include "Object.h"
 
-class tile : object
+class Tile : public Object
 {
 private:
-	bool check;
+	int check;
+	Vector3 position;
+	Vector3 scale;
 public:
-	virtual void Start();
-	virtual void Update();
-	virtual void Render(HDC hdc);
-	virtual void Destroy();
-	tile();
-	virtual ~tile();
+	virtual void Start()override;
+	virtual void Update()override;
+	virtual void Render(HDC _hdc)override;
+	virtual void Destroy()override;
+public:
+	Tile();
+	virtual ~Tile();
 };
+

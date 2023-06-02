@@ -1,16 +1,17 @@
 #pragma once
 #include "Include.h"
 
-class object;
+class Object;
 class Stage
 {
 private:
-	object* obj;
+	Object* object;
 public:
 	void Start();
 	void Update();
-	void Render();
+	void Render(HDC _hdc);
 	void Destroy();
+public:
 	Stage();
 	~Stage();
 };

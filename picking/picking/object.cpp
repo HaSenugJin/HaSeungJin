@@ -1,9 +1,9 @@
-#include "object.h"
+#include "Object.h"
 
-object::object()
+Object::Object()
 {
 }
 
-object::~object()
+Object::~Object()
 {
 }

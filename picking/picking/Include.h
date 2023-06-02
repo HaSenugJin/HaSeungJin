@@ -3,13 +3,22 @@
 #include <vector>
 #include <list>
 #include <map>
-#include <Windows.h>
 #include <string>
+#include <Windows.h>
 #include <math.h>
 
 using namespace std;
 
-//이미지
+
+#include "Struct.h"
+
+
+// ** 이미지
 #pragma comment(lib, "msimg32.lib")
+
+
+
+
+
 
 extern HWND g_hWnd;

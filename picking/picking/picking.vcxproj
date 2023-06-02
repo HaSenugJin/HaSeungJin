@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{842eaf6b-4a20-4ced-bf4f-43b2d2952347}</ProjectGuid>
-    <RootNamespace>picking</RootNamespace>
+    <ProjectGuid>{fe563825-29c6-487e-b6fc-2ab3c04f79cb}</ProjectGuid>
+    <RootNamespace>Picking</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Picking</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -143,25 +142,26 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Include.h" />
     <ClInclude Include="MainUpdate.h" />
-    <ClInclude Include="object.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="Picking.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Stage.h" />
+    <ClInclude Include="Struct.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="tile.h" />
+    <ClInclude Include="Tile.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainUpdate.cpp" />
-    <ClCompile Include="object.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="Picking.cpp" />
     <ClCompile Include="Stage.cpp" />
-    <ClCompile Include="tile.cpp" />
+    <ClCompile Include="Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="picking.rc" />
+    <ResourceCompile Include="Picking.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="picking.ico" />
+    <Image Include="Picking.ico" />
     <Image Include="small.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -13,34 +13,34 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="헤더 파일\H">
-      <UniqueIdentifier>{90e2fb97-7155-4f7c-b7d1-cc1cb5720f8c}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Headers">
+      <UniqueIdentifier>{867f58b9-0be8-4548-8b3a-2a6b753ecd31}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\00. MainUpdate">
-      <UniqueIdentifier>{7cbb51a6-0deb-42d1-a790-77b6edbb742d}</UniqueIdentifier>
+      <UniqueIdentifier>{59ba23cf-d6c4-46ae-966b-db37e2e053b3}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\Stage">
-      <UniqueIdentifier>{c12717e2-f5d1-41c6-9c4e-f07f4f7341c3}</UniqueIdentifier>
+      <UniqueIdentifier>{905a6994-5efa-4b13-968e-4a60bb966ef1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\object">
-      <UniqueIdentifier>{8e48d9c4-f57e-453e-bfe6-db169cc3f295}</UniqueIdentifier>
+    <Filter Include="소스 파일\Object">
+      <UniqueIdentifier>{7c979b1e-4f5d-48ef-872e-0e1feaf1bf34}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\object\tile">
-      <UniqueIdentifier>{dbb3a264-38dc-4c12-afc4-af457a829570}</UniqueIdentifier>
+    <Filter Include="소스 파일\Object\Tile">
+      <UniqueIdentifier>{0e1e37d9-5a8c-461e-9306-aafb58a79a5f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
-      <Filter>헤더 파일\H</Filter>
+      <Filter>헤더 파일\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Picking.h">
-      <Filter>헤더 파일\H</Filter>
+      <Filter>헤더 파일\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>헤더 파일\H</Filter>
+      <Filter>헤더 파일\Headers</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>헤더 파일\H</Filter>
+      <Filter>헤더 파일\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Include.h">
       <Filter>헤더 파일</Filter>
@@ -51,11 +51,14 @@
     <ClInclude Include="Stage.h">
       <Filter>소스 파일\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="object.h">
-      <Filter>소스 파일\object</Filter>
+    <ClInclude Include="Object.h">
+      <Filter>소스 파일\Object</Filter>
     </ClInclude>
-    <ClInclude Include="tile.h">
-      <Filter>소스 파일\object\tile</Filter>
+    <ClInclude Include="Tile.h">
+      <Filter>소스 파일\Object\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,15 +71,15 @@
     <ClCompile Include="Stage.cpp">
       <Filter>소스 파일\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="object.cpp">
-      <Filter>소스 파일\object</Filter>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일\Object</Filter>
     </ClCompile>
-    <ClCompile Include="tile.cpp">
-      <Filter>소스 파일\object\tile</Filter>
+    <ClCompile Include="Tile.cpp">
+      <Filter>소스 파일\Object\Tile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="picking.rc">
+    <ResourceCompile Include="Picking.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
@@ -84,7 +87,7 @@
     <Image Include="small.ico">
       <Filter>리소스 파일</Filter>
     </Image>
-    <Image Include="picking.ico">
+    <Image Include="Picking.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

@@ -1,7 +1,7 @@
 #include "Stage.h"
-#include "tile.h"
+#include "Tile.h"
 
-Stage::Stage()
+Stage::Stage() : object(nullptr)
 {
 }
 
@@ -10,20 +10,25 @@ Stage::~Stage()
 	Destroy();
 }
 
+
 void Stage::Start()
 {
-	obj = new tile;
-	obj
+	object = new Tile;
+	object->Start();
 }
 
 void Stage::Update()
 {
+	object->Update();
 }
 
-void Stage::Render()
+void Stage::Render(HDC _hdc)
 {
+	object->Render(_hdc);
 }
 
 void Stage::Destroy()
 {
+	delete object;
+	object = nullptr;
 }

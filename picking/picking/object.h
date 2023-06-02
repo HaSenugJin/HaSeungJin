@@ -1,14 +1,15 @@
 #pragma once
 #include "Include.h"
 
-class object
+class Object
 {
 public:
 	virtual void Start()PURE;
 	virtual void Update()PURE;
-	virtual void Render()PURE;
+	virtual void Render(HDC _hdc)PURE;
 	virtual void Destroy()PURE;
-	object();
-	virtual ~object();
+public:
+	Object();
+	virtual ~Object();
 };
 

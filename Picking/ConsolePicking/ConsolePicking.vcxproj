@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cfcc6283-2346-4702-8b2f-cd0c7f286ad3}</ProjectGuid>
-    <RootNamespace>ConsolPciking</RootNamespace>
+    <ProjectGuid>{aa6e9fb4-02f4-4157-a252-d9c7605a18ac}</ProjectGuid>
+    <RootNamespace>ConsolePicking</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>ConsolePciking</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

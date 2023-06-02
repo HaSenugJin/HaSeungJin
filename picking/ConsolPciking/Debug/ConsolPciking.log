@@ -1,9 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(Debug\)에 다른 프로젝트(ConsolPciking.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
-  Main.cpp
-C:\Users\SGA\Desktop\H123\picking\ConsolPciking\Main.cpp(116,10): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\SGA\Desktop\H123\picking\ConsolPciking\Main.cpp(117,10): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\SGA\Desktop\H123\picking\ConsolPciking\Main.cpp(137,16): warning C4838: 'const float'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-C:\Users\SGA\Desktop\H123\picking\ConsolPciking\Main.cpp(137,16): warning C4244: '초기화 중': 'const float'에서 'SHORT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\SGA\Desktop\H123\picking\ConsolPciking\Main.cpp(137,20): warning C4838: 'const float'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-C:\Users\SGA\Desktop\H123\picking\ConsolPciking\Main.cpp(137,20): warning C4244: '초기화 중': 'const float'에서 'SHORT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  ConsolPciking.vcxproj -> C:\Users\SGA\Desktop\H123\picking\Debug\ConsolePciking.exe
