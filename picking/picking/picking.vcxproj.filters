@@ -13,24 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\H">
+      <UniqueIdentifier>{90e2fb97-7155-4f7c-b7d1-cc1cb5720f8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. MainUpdate">
+      <UniqueIdentifier>{7cbb51a6-0deb-42d1-a790-77b6edbb742d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Stage">
+      <UniqueIdentifier>{c12717e2-f5d1-41c6-9c4e-f07f4f7341c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\object">
+      <UniqueIdentifier>{8e48d9c4-f57e-453e-bfe6-db169cc3f295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\object\tile">
+      <UniqueIdentifier>{dbb3a264-38dc-4c12-afc4-af457a829570}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\H</Filter>
     </ClInclude>
     <ClInclude Include="Picking.h">
+      <Filter>헤더 파일\H</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일\H</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일\H</Filter>
+    </ClInclude>
+    <ClInclude Include="Include.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainUpdate.h">
+      <Filter>소스 파일\00. MainUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>소스 파일\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>소스 파일\object</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>소스 파일\object\tile</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Picking.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainUpdate.cpp">
+      <Filter>소스 파일\00. MainUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>소스 파일\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>소스 파일\object</Filter>
+    </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>소스 파일\object\tile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

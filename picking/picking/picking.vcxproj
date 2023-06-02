@@ -141,12 +141,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="MainUpdate.h" />
+    <ClInclude Include="object.h" />
     <ClInclude Include="Picking.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Stage.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="tile.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MainUpdate.cpp" />
+    <ClCompile Include="object.cpp" />
     <ClCompile Include="Picking.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="tile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="picking.rc" />
