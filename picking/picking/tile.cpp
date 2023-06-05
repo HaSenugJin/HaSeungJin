@@ -42,6 +42,7 @@ void Tile::Update()
 				hor = 0;
 				ver = !ver;
 			}
+			Sleep(80);
 		}
 	}
 
