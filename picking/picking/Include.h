@@ -11,6 +11,7 @@ using namespace std;
 
 
 #include "Struct.h"
+#include "Enum.h"
 
 
 // ** 이미지
@@ -48,7 +49,18 @@ private:							\
 
 
 // ** 타일 최대 개수
-const float MAX = COUNT_X * COUNT_Y;
+const int MAX = int(COUNT_X * COUNT_Y);
 
 
 extern HWND g_hWnd;
+
+
+template <typename T>
+inline void Safe_Release(T& _Object)
+{
+	if (_Object)
+	{
+		delete _Object;
+		_Object = nullptr;
+	}
+}

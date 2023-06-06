@@ -16,11 +16,13 @@ void Tile::Start()
 	position = Vector3(0.0f, 0.0f);
 	scale = Vector3(SCALE_X, SCALE_Y);
 
+	Option = 7;
+
 	hor = 0;
 	ver = 0;
 }
 
-void Tile::Update()
+int Tile::Update()
 {
 	POINT ptMouse;
 
@@ -35,17 +37,21 @@ void Tile::Update()
 	{
 		if (GetAsyncKeyState(VK_LBUTTON))
 		{
-			++hor;
+			hor = Option;
 
-			if (hor >= 4)
-			{
-				hor = 0;
-				ver = !ver;
-			}
+			if (hor >= 10)
+				return 1;// ** Áö·Ú.
+
 			Sleep(80);
 		}
 	}
 
+	if (GetAsyncKeyState(VK_TAB))
+	{
+		hor = Option;
+	}
+
+	return 0;
 }
 
 void Tile::Render(HDC _hdc)
