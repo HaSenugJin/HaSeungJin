@@ -1,0 +1,28 @@
+﻿  Bitmap.cpp
+  ImageManager.cpp
+  MainUpdate.cpp
+C:\Users\SGA\Desktop\H123\Picking\Picking\MainUpdate.cpp(17,22): warning C4244: '인수': 'ULONGLONG'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Object.cpp
+  Picking.cpp
+C:\Users\SGA\Desktop\H123\Picking\Picking\Picking.cpp(119,40): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Picking.cpp(119,40): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Picking.cpp(119,64): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Picking.cpp(119,64): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SceneManager.cpp
+  Stage.cpp
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(30,31): warning C4244: '인수': 'float'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(78,13): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(86,45): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(100,45): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(107,35): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(113,45): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(127,45): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(163,46): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(163,22): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(160,46): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(160,22): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(169,45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SGA\Desktop\H123\Picking\Picking\Stage.cpp(169,21): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Tile.cpp
+  코드를 생성하고 있습니다...
+  Picking.vcxproj -> C:\Users\SGA\Desktop\H123\Picking\x64\Debug\Picking.exe
